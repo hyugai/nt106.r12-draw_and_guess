@@ -1,0 +1,5 @@
+IF DB_ID(N'DrawAndGuess') IS NULL
+BEGIN
+    CREATE DATABASE DrawAndGuess;
+END;
+GO
