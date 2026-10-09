@@ -38,9 +38,9 @@ namespace Draw___Guess
             checkBox1 = new CheckBox();
             txtMatKhau = new TextBox();
             txtDangNhap = new TextBox();
-            label4 = new Label();
             label5 = new Label();
             label6 = new Label();
+            label4 = new Label();
             SuspendLayout();
             // 
             // txtThongBao
@@ -141,15 +141,6 @@ namespace Draw___Guess
             txtDangNhap.Size = new Size(361, 34);
             txtDangNhap.TabIndex = 14;
             // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Location = new Point(0, 0);
-            label4.Name = "label4";
-            label4.Size = new Size(50, 20);
-            label4.TabIndex = 15;
-            label4.Text = "label4";
-            // 
             // label5
             // 
             label5.AutoSize = true;
@@ -165,10 +156,20 @@ namespace Draw___Guess
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label6.ForeColor = Color.Red;
-            label6.Location = new Point(142, 284);
+            label6.Location = new Point(140, 284);
             label6.Name = "label6";
             label6.Size = new Size(0, 20);
             label6.TabIndex = 17;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label4.ForeColor = Color.Red;
+            label4.Location = new Point(140, 284);
+            label4.Name = "label4";
+            label4.Size = new Size(0, 20);
+            label4.TabIndex = 18;
             // 
             // Form1
             // 
@@ -176,9 +177,9 @@ namespace Draw___Guess
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveBorder;
             ClientSize = new Size(692, 479);
+            Controls.Add(label4);
             Controls.Add(label6);
             Controls.Add(label5);
-            Controls.Add(label4);
             Controls.Add(txtDangNhap);
             Controls.Add(txtMatKhau);
             Controls.Add(checkBox1);
@@ -209,8 +210,8 @@ namespace Draw___Guess
         private CheckBox checkBox1;
         private TextBox txtMatKhau;
         private TextBox txtDangNhap;
-        private Label label4;
         private Label label5;
         private Label label6;
+        private Label label4;
     }
 }
