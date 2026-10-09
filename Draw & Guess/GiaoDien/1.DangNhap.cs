@@ -13,10 +13,27 @@ namespace Draw___Guess
         {
             InitializeComponent();
         }
-        private string HamBam(string password)
-        {
 
+        private const int VONG_LAP = 600_000;
+
+        // Goi khi dang ky 
+        public static (string Salt, string Bam) Tao(string matKhau)
+        {
+            byte[] salt = RandomNumberGenerator.GetBytes(16);
+            byte[] bam = Rfc2898DeriveBytes.Pbkdf2(matKhau, salt, VONG_LAP, HashAlgorithmName.SHA256, 32);
+            return (Convert.ToBase64String(salt), Convert.ToBase64String(bam));
         }
+
+        // Goi khi dang nhap 
+        public static bool KiemTra(string matKhau, string saltLuu, string bamLuu)
+        {
+            byte[] salt = Convert.FromBase64String(saltLuu);
+            byte[] bamCu = Convert.FromBase64String(bamLuu);
+            byte[] bamMoi = Rfc2898DeriveBytes.Pbkdf2(
+                matKhau, salt, VONG_LAP, HashAlgorithmName.SHA256, 32);
+            return CryptographicOperations.FixedTimeEquals(bamCu, bamMoi);
+        } 
+
         private void Form1_Load(object sender, EventArgs e)
         {
 
@@ -54,21 +71,22 @@ namespace Draw___Guess
             using (SqlConnection connect = new SqlConnection(connectionstring))
             {
                 connect.Open();
-                string query = "SELECT MATKHAU FROM Users WHERE TEN = @Ten";
+                string query = "SELECT MATKHAU, SALT FROM Users WHERE TEN = @Ten";
+
                 using (SqlCommand cmd = new SqlCommand(query, connect))
                 {
                     cmd.Parameters.AddWithValue("@Ten", tenDangNhap);
+
                     using (SqlDataReader reader = cmd.ExecuteReader())
                     {
                         bool kiemtra = false;
+
                         if (reader.Read())
                         {
                             string matkhauSQL = reader["MATKHAU"].ToString();
-                            string matkhaubam = HamBam(matKhau);
-                            if (string.Equals(matkhauSQL, matkhaubam, StringComparison.OrdinalIgnoreCase))
-                            {
-                                kiemtra = true;
-                            }
+                            string saltSQL = reader["SALT"].ToString();
+
+                            kiemtra = KiemTra(matKhau, saltSQL, matkhauSQL);
                         }
                         if (kiemtra)
                         {

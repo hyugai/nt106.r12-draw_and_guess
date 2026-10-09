@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Draw & Guess")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4ae6c14157961f152593482c4784acca4ca3a391")]
 [assembly: System.Reflection.AssemblyProductAttribute("Draw & Guess")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Draw & Guess")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
