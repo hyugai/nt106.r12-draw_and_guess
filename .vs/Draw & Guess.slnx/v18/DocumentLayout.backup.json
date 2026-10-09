@@ -1,0 +1,87 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Yatta\\Tai lieu\\UIT\\LTMCB\\Lab01\\Draw \u0026 Guess\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9DBAD082-70FB-49C0-AEF0-B85D55606AEE}|Draw \u0026 Guess\\Draw \u0026 Guess.csproj|c:\\yatta\\tai lieu\\uit\\ltmcb\\lab01\\draw \u0026 guess\\draw \u0026 guess\\giaodien\\3.trangchu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9DBAD082-70FB-49C0-AEF0-B85D55606AEE}|Draw \u0026 Guess\\Draw \u0026 Guess.csproj|solutionrelative:draw \u0026 guess\\giaodien\\3.trangchu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9DBAD082-70FB-49C0-AEF0-B85D55606AEE}|Draw \u0026 Guess\\Draw \u0026 Guess.csproj|c:\\yatta\\tai lieu\\uit\\ltmcb\\lab01\\draw \u0026 guess\\draw \u0026 guess\\giaodien\\2.dangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9DBAD082-70FB-49C0-AEF0-B85D55606AEE}|Draw \u0026 Guess\\Draw \u0026 Guess.csproj|solutionrelative:draw \u0026 guess\\giaodien\\2.dangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9DBAD082-70FB-49C0-AEF0-B85D55606AEE}|Draw \u0026 Guess\\Draw \u0026 Guess.csproj|c:\\yatta\\tai lieu\\uit\\ltmcb\\lab01\\draw \u0026 guess\\draw \u0026 guess\\giaodien\\1.dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9DBAD082-70FB-49C0-AEF0-B85D55606AEE}|Draw \u0026 Guess\\Draw \u0026 Guess.csproj|solutionrelative:draw \u0026 guess\\giaodien\\1.dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9DBAD082-70FB-49C0-AEF0-B85D55606AEE}|Draw \u0026 Guess\\Draw \u0026 Guess.csproj|c:\\yatta\\tai lieu\\uit\\ltmcb\\lab01\\draw \u0026 guess\\draw \u0026 guess\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9DBAD082-70FB-49C0-AEF0-B85D55606AEE}|Draw \u0026 Guess\\Draw \u0026 Guess.csproj|solutionrelative:draw \u0026 guess\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "1.DangNhap.cs [Design]",
+              "DocumentMoniker": "C:\\Yatta\\Tai lieu\\UIT\\LTMCB\\Lab01\\Draw \u0026 Guess\\Draw \u0026 Guess\\GiaoDien\\1.DangNhap.cs",
+              "RelativeDocumentMoniker": "Draw \u0026 Guess\\GiaoDien\\1.DangNhap.cs",
+              "ToolTip": "C:\\Yatta\\Tai lieu\\UIT\\LTMCB\\Lab01\\Draw \u0026 Guess\\Draw \u0026 Guess\\GiaoDien\\1.DangNhap.cs [Design]",
+              "RelativeToolTip": "Draw \u0026 Guess\\GiaoDien\\1.DangNhap.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-07T07:14:42.113Z",
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "2.DangKy.cs [Design]",
+              "DocumentMoniker": "C:\\Yatta\\Tai lieu\\UIT\\LTMCB\\Lab01\\Draw \u0026 Guess\\Draw \u0026 Guess\\GiaoDien\\2.DangKy.cs",
+              "RelativeDocumentMoniker": "Draw \u0026 Guess\\GiaoDien\\2.DangKy.cs",
+              "ToolTip": "C:\\Yatta\\Tai lieu\\UIT\\LTMCB\\Lab01\\Draw \u0026 Guess\\Draw \u0026 Guess\\GiaoDien\\2.DangKy.cs [Design]",
+              "RelativeToolTip": "Draw \u0026 Guess\\GiaoDien\\2.DangKy.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-07T06:43:18.662Z",
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "3.TrangChu.cs [Design]",
+              "DocumentMoniker": "C:\\Yatta\\Tai lieu\\UIT\\LTMCB\\Lab01\\Draw \u0026 Guess\\Draw \u0026 Guess\\GiaoDien\\3.TrangChu.cs",
+              "RelativeDocumentMoniker": "Draw \u0026 Guess\\GiaoDien\\3.TrangChu.cs",
+              "ToolTip": "C:\\Yatta\\Tai lieu\\UIT\\LTMCB\\Lab01\\Draw \u0026 Guess\\Draw \u0026 Guess\\GiaoDien\\3.TrangChu.cs [Design]",
+              "RelativeToolTip": "Draw \u0026 Guess\\GiaoDien\\3.TrangChu.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-07T07:05:42.781Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Yatta\\Tai lieu\\UIT\\LTMCB\\Lab01\\Draw \u0026 Guess\\Draw \u0026 Guess\\Program.cs",
+              "RelativeDocumentMoniker": "Draw \u0026 Guess\\Program.cs",
+              "ToolTip": "C:\\Yatta\\Tai lieu\\UIT\\LTMCB\\Lab01\\Draw \u0026 Guess\\Draw \u0026 Guess\\Program.cs",
+              "RelativeToolTip": "Draw \u0026 Guess\\Program.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAAA0AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-07T06:37:04.564Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

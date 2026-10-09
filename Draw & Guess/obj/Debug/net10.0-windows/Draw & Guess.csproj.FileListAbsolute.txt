@@ -1,0 +1,19 @@
+C:\Yatta\Tai lieu\UIT\LTMCB\Lab01\Draw & Guess\Draw & Guess\obj\Debug\net10.0-windows\Draw___Guess.Form2.resources
+C:\Yatta\Tai lieu\UIT\LTMCB\Lab01\Draw & Guess\Draw & Guess\obj\Debug\net10.0-windows\Draw___Guess.Form1.resources
+C:\Yatta\Tai lieu\UIT\LTMCB\Lab01\Draw & Guess\Draw & Guess\obj\Debug\net10.0-windows\Draw___Guess.Form3.resources
+C:\Yatta\Tai lieu\UIT\LTMCB\Lab01\Draw & Guess\Draw & Guess\obj\Debug\net10.0-windows\Draw & Guess.csproj.GenerateResource.cache
+C:\Yatta\Tai lieu\UIT\LTMCB\Lab01\Draw & Guess\Draw & Guess\obj\Debug\net10.0-windows\Draw & Guess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Yatta\Tai lieu\UIT\LTMCB\Lab01\Draw & Guess\Draw & Guess\obj\Debug\net10.0-windows\Draw & Guess.AssemblyInfoInputs.cache
+C:\Yatta\Tai lieu\UIT\LTMCB\Lab01\Draw & Guess\Draw & Guess\obj\Debug\net10.0-windows\Draw & Guess.AssemblyInfo.cs
+C:\Yatta\Tai lieu\UIT\LTMCB\Lab01\Draw & Guess\Draw & Guess\obj\Debug\net10.0-windows\Draw & Guess.csproj.CoreCompileInputs.cache
+C:\Yatta\Tai lieu\UIT\LTMCB\Lab01\Draw & Guess\Draw & Guess\bin\Debug\net10.0-windows\Draw & Guess.exe
+C:\Yatta\Tai lieu\UIT\LTMCB\Lab01\Draw & Guess\Draw & Guess\bin\Debug\net10.0-windows\Draw & Guess.deps.json
+C:\Yatta\Tai lieu\UIT\LTMCB\Lab01\Draw & Guess\Draw & Guess\bin\Debug\net10.0-windows\Draw & Guess.runtimeconfig.json
+C:\Yatta\Tai lieu\UIT\LTMCB\Lab01\Draw & Guess\Draw & Guess\bin\Debug\net10.0-windows\Draw & Guess.dll
+C:\Yatta\Tai lieu\UIT\LTMCB\Lab01\Draw & Guess\Draw & Guess\bin\Debug\net10.0-windows\Draw & Guess.pdb
+C:\Yatta\Tai lieu\UIT\LTMCB\Lab01\Draw & Guess\Draw & Guess\obj\Debug\net10.0-windows\Draw & Guess.dll
+C:\Yatta\Tai lieu\UIT\LTMCB\Lab01\Draw & Guess\Draw & Guess\obj\Debug\net10.0-windows\refint\Draw & Guess.dll
+C:\Yatta\Tai lieu\UIT\LTMCB\Lab01\Draw & Guess\Draw & Guess\obj\Debug\net10.0-windows\Draw & Guess.pdb
+C:\Yatta\Tai lieu\UIT\LTMCB\Lab01\Draw & Guess\Draw & Guess\obj\Debug\net10.0-windows\Draw & Guess.genruntimeconfig.cache
+C:\Yatta\Tai lieu\UIT\LTMCB\Lab01\Draw & Guess\Draw & Guess\obj\Debug\net10.0-windows\ref\Draw & Guess.dll
+C:\Yatta\Tai lieu\UIT\LTMCB\Lab01\Draw & Guess\Draw & Guess\obj\Debug\net10.0-windows\Draw & G.382D6123.Up2Date
