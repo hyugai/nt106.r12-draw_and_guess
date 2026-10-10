@@ -1,29 +1,45 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Yatta\\Tai lieu\\UIT\\LTMCB\\Draw \u0026 Guess\\",
+  "WorkspaceRootPath": "C:\\Users\\Lenovo\\Documents\\GitHub\\nt106.r12-draw_and_guess\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{27A1EA8B-7092-2BD5-74A7-F8FAD8C75F78}|Draw \u0026 Guess\\Draw \u0026 Guess.csproj|c:\\yatta\\tai lieu\\uit\\ltmcb\\draw \u0026 guess\\draw \u0026 guess\\giaodien\\1.dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{27A1EA8B-7092-2BD5-74A7-F8FAD8C75F78}|Draw \u0026 Guess\\Draw \u0026 Guess.csproj|solutionrelative:draw \u0026 guess\\giaodien\\1.dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{27A1EA8B-7092-2BD5-74A7-F8FAD8C75F78}|Draw \u0026 Guess\\Draw \u0026 Guess.csproj|c:\\users\\lenovo\\documents\\github\\nt106.r12-draw_and_guess\\draw \u0026 guess\\giaodien\\2.dangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27A1EA8B-7092-2BD5-74A7-F8FAD8C75F78}|Draw \u0026 Guess\\Draw \u0026 Guess.csproj|solutionrelative:draw \u0026 guess\\giaodien\\2.dangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{27A1EA8B-7092-2BD5-74A7-F8FAD8C75F78}|Draw \u0026 Guess\\Draw \u0026 Guess.csproj|c:\\yatta\\tai lieu\\uit\\ltmcb\\draw \u0026 guess\\draw \u0026 guess\\giaodien\\3.trangchu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{27A1EA8B-7092-2BD5-74A7-F8FAD8C75F78}|Draw \u0026 Guess\\Draw \u0026 Guess.csproj|c:\\users\\lenovo\\documents\\github\\nt106.r12-draw_and_guess\\draw \u0026 guess\\giaodien\\1.dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27A1EA8B-7092-2BD5-74A7-F8FAD8C75F78}|Draw \u0026 Guess\\Draw \u0026 Guess.csproj|solutionrelative:draw \u0026 guess\\giaodien\\1.dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:4:0:{27A1EA8B-7092-2BD5-74A7-F8FAD8C75F78}|Draw \u0026 Guess\\Draw \u0026 Guess.csproj|c:\\users\\lenovo\\documents\\github\\nt106.r12-draw_and_guess\\draw \u0026 guess\\giaodien\\1.dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:4:0:{27A1EA8B-7092-2BD5-74A7-F8FAD8C75F78}|Draw \u0026 Guess\\Draw \u0026 Guess.csproj|solutionrelative:draw \u0026 guess\\giaodien\\1.dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:3:0:{27A1EA8B-7092-2BD5-74A7-F8FAD8C75F78}|Draw \u0026 Guess\\Draw \u0026 Guess.csproj|c:\\users\\lenovo\\documents\\github\\nt106.r12-draw_and_guess\\draw \u0026 guess\\giaodien\\1.dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:3:0:{27A1EA8B-7092-2BD5-74A7-F8FAD8C75F78}|Draw \u0026 Guess\\Draw \u0026 Guess.csproj|solutionrelative:draw \u0026 guess\\giaodien\\1.dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:2:0:{27A1EA8B-7092-2BD5-74A7-F8FAD8C75F78}|Draw \u0026 Guess\\Draw \u0026 Guess.csproj|c:\\users\\lenovo\\documents\\github\\nt106.r12-draw_and_guess\\draw \u0026 guess\\giaodien\\1.dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:2:0:{27A1EA8B-7092-2BD5-74A7-F8FAD8C75F78}|Draw \u0026 Guess\\Draw \u0026 Guess.csproj|solutionrelative:draw \u0026 guess\\giaodien\\1.dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27A1EA8B-7092-2BD5-74A7-F8FAD8C75F78}|Draw \u0026 Guess\\Draw \u0026 Guess.csproj|C:\\Users\\Lenovo\\Documents\\GitHub\\nt106.r12-draw_and_guess\\draw \u0026 guess\\giaodien\\3.trangchu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{27A1EA8B-7092-2BD5-74A7-F8FAD8C75F78}|Draw \u0026 Guess\\Draw \u0026 Guess.csproj|solutionrelative:draw \u0026 guess\\giaodien\\3.trangchu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{27A1EA8B-7092-2BD5-74A7-F8FAD8C75F78}|Draw \u0026 Guess\\Draw \u0026 Guess.csproj|c:\\yatta\\tai lieu\\uit\\ltmcb\\draw \u0026 guess\\draw \u0026 guess\\giaodien\\2.dangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{27A1EA8B-7092-2BD5-74A7-F8FAD8C75F78}|Draw \u0026 Guess\\Draw \u0026 Guess.csproj|C:\\Users\\Lenovo\\Documents\\GitHub\\nt106.r12-draw_and_guess\\draw \u0026 guess\\giaodien\\2.dangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{27A1EA8B-7092-2BD5-74A7-F8FAD8C75F78}|Draw \u0026 Guess\\Draw \u0026 Guess.csproj|solutionrelative:draw \u0026 guess\\giaodien\\2.dangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9DBAD082-70FB-49C0-AEF0-B85D55606AEE}|Draw \u0026 Guess\\Draw \u0026 Guess.csproj|C:\\Yatta\\Tai lieu\\UIT\\LTMCB\\Draw \u0026 Guess\\draw \u0026 guess\\giaodien\\2.dangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{9DBAD082-70FB-49C0-AEF0-B85D55606AEE}|Draw \u0026 Guess\\Draw \u0026 Guess.csproj|C:\\Users\\Lenovo\\Documents\\GitHub\\nt106.r12-draw_and_guess\\draw \u0026 guess\\giaodien\\2.dangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{9DBAD082-70FB-49C0-AEF0-B85D55606AEE}|Draw \u0026 Guess\\Draw \u0026 Guess.csproj|solutionrelative:draw \u0026 guess\\giaodien\\2.dangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9DBAD082-70FB-49C0-AEF0-B85D55606AEE}|Draw \u0026 Guess\\Draw \u0026 Guess.csproj|C:\\Yatta\\Tai lieu\\UIT\\LTMCB\\Draw \u0026 Guess\\draw \u0026 guess\\giaodien\\1.dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{9DBAD082-70FB-49C0-AEF0-B85D55606AEE}|Draw \u0026 Guess\\Draw \u0026 Guess.csproj|C:\\Users\\Lenovo\\Documents\\GitHub\\nt106.r12-draw_and_guess\\draw \u0026 guess\\giaodien\\1.dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{9DBAD082-70FB-49C0-AEF0-B85D55606AEE}|Draw \u0026 Guess\\Draw \u0026 Guess.csproj|solutionrelative:draw \u0026 guess\\giaodien\\1.dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{27A1EA8B-7092-2BD5-74A7-F8FAD8C75F78}|Draw \u0026 Guess\\Draw \u0026 Guess.csproj|c:\\yatta\\tai lieu\\uit\\ltmcb\\draw \u0026 guess\\draw \u0026 guess\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{27A1EA8B-7092-2BD5-74A7-F8FAD8C75F78}|Draw \u0026 Guess\\Draw \u0026 Guess.csproj|c:\\users\\lenovo\\documents\\github\\nt106.r12-draw_and_guess\\draw \u0026 guess\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{27A1EA8B-7092-2BD5-74A7-F8FAD8C75F78}|Draw \u0026 Guess\\Draw \u0026 Guess.csproj|solutionrelative:draw \u0026 guess\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -34,51 +50,108 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "1.DangNhap.cs [Design]",
-              "DocumentMoniker": "C:\\Yatta\\Tai lieu\\UIT\\LTMCB\\Draw \u0026 Guess\\Draw \u0026 Guess\\GiaoDien\\1.DangNhap.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\GitHub\\nt106.r12-draw_and_guess\\Draw \u0026 Guess\\GiaoDien\\1.DangNhap.cs",
               "RelativeDocumentMoniker": "Draw \u0026 Guess\\GiaoDien\\1.DangNhap.cs",
               "ToolTip": "C:\\Yatta\\Tai lieu\\UIT\\LTMCB\\Lab01\\Draw \u0026 Guess\\Draw \u0026 Guess\\GiaoDien\\1.DangNhap.cs [Design]",
-              "RelativeToolTip": "..\\Lab01\\Draw \u0026 Guess\\Draw \u0026 Guess\\GiaoDien\\1.DangNhap.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Yatta\\Tai lieu\\UIT\\LTMCB\\Lab01\\Draw \u0026 Guess\\Draw \u0026 Guess\\GiaoDien\\1.DangNhap.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-07T07:14:42.113Z",
               "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "2.DangKy.cs [Design]",
-              "DocumentMoniker": "C:\\Yatta\\Tai lieu\\UIT\\LTMCB\\Draw \u0026 Guess\\Draw \u0026 Guess\\GiaoDien\\2.DangKy.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\GitHub\\nt106.r12-draw_and_guess\\Draw \u0026 Guess\\GiaoDien\\2.DangKy.cs",
               "RelativeDocumentMoniker": "Draw \u0026 Guess\\GiaoDien\\2.DangKy.cs",
               "ToolTip": "C:\\Yatta\\Tai lieu\\UIT\\LTMCB\\Lab01\\Draw \u0026 Guess\\Draw \u0026 Guess\\GiaoDien\\2.DangKy.cs [Design]",
-              "RelativeToolTip": "..\\Lab01\\Draw \u0026 Guess\\Draw \u0026 Guess\\GiaoDien\\2.DangKy.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Yatta\\Tai lieu\\UIT\\LTMCB\\Lab01\\Draw \u0026 Guess\\Draw \u0026 Guess\\GiaoDien\\2.DangKy.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-07T06:43:18.662Z",
               "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "3.TrangChu.cs [Design]",
-              "DocumentMoniker": "C:\\Yatta\\Tai lieu\\UIT\\LTMCB\\Draw \u0026 Guess\\Draw \u0026 Guess\\GiaoDien\\3.TrangChu.cs",
-              "RelativeDocumentMoniker": "Draw \u0026 Guess\\GiaoDien\\3.TrangChu.cs",
-              "ToolTip": "C:\\Yatta\\Tai lieu\\UIT\\LTMCB\\Draw \u0026 Guess\\Draw \u0026 Guess\\GiaoDien\\3.TrangChu.cs [Design]",
-              "RelativeToolTip": "Draw \u0026 Guess\\GiaoDien\\3.TrangChu.cs [Design]",
+              "DocumentIndex": 0,
+              "Title": "2.DangKy.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\GitHub\\nt106.r12-draw_and_guess\\Draw \u0026 Guess\\GiaoDien\\2.DangKy.cs",
+              "RelativeDocumentMoniker": "Draw \u0026 Guess\\GiaoDien\\2.DangKy.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Documents\\GitHub\\nt106.r12-draw_and_guess\\Draw \u0026 Guess\\GiaoDien\\2.DangKy.cs",
+              "RelativeToolTip": "Draw \u0026 Guess\\GiaoDien\\2.DangKy.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAowAsAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-07T07:05:42.781Z",
+              "WhenOpened": "2026-10-10T13:13:13.353Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "1.DangNhap.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\GitHub\\nt106.r12-draw_and_guess\\Draw \u0026 Guess\\GiaoDien\\1.DangNhap.cs",
+              "RelativeDocumentMoniker": "Draw \u0026 Guess\\GiaoDien\\1.DangNhap.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Documents\\GitHub\\nt106.r12-draw_and_guess\\Draw \u0026 Guess\\GiaoDien\\1.DangNhap.cs",
+              "RelativeToolTip": "Draw \u0026 Guess\\GiaoDien\\1.DangNhap.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAQAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-10T13:12:21.58Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "1.DangNhap.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\GitHub\\nt106.r12-draw_and_guess\\Draw \u0026 Guess\\GiaoDien\\1.DangNhap.cs",
+              "RelativeDocumentMoniker": "Draw \u0026 Guess\\GiaoDien\\1.DangNhap.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Documents\\GitHub\\nt106.r12-draw_and_guess\\Draw \u0026 Guess\\GiaoDien\\1.DangNhap.cs [Design]",
+              "RelativeToolTip": "Draw \u0026 Guess\\GiaoDien\\1.DangNhap.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-10T13:12:15.448Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "1.DangNhap.cs [Design]",
-              "DocumentMoniker": "C:\\Yatta\\Tai lieu\\UIT\\LTMCB\\Draw \u0026 Guess\\Draw \u0026 Guess\\GiaoDien\\1.DangNhap.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\GitHub\\nt106.r12-draw_and_guess\\Draw \u0026 Guess\\GiaoDien\\1.DangNhap.cs",
               "RelativeDocumentMoniker": "Draw \u0026 Guess\\GiaoDien\\1.DangNhap.cs",
-              "ToolTip": "C:\\Yatta\\Tai lieu\\UIT\\LTMCB\\Draw \u0026 Guess\\Draw \u0026 Guess\\GiaoDien\\1.DangNhap.cs [Design]",
+              "ToolTip": "C:\\Users\\Lenovo\\Documents\\GitHub\\nt106.r12-draw_and_guess\\Draw \u0026 Guess\\GiaoDien\\1.DangNhap.cs [Design]",
+              "RelativeToolTip": "Draw \u0026 Guess\\GiaoDien\\1.DangNhap.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-10T13:12:11.967Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "3.TrangChu.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\GitHub\\nt106.r12-draw_and_guess\\Draw \u0026 Guess\\GiaoDien\\3.TrangChu.cs",
+              "RelativeDocumentMoniker": "Draw \u0026 Guess\\GiaoDien\\3.TrangChu.cs",
+              "ToolTip": "C:\\Yatta\\Tai lieu\\UIT\\LTMCB\\Draw \u0026 Guess\\Draw \u0026 Guess\\GiaoDien\\3.TrangChu.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Yatta\\Tai lieu\\UIT\\LTMCB\\Draw \u0026 Guess\\Draw \u0026 Guess\\GiaoDien\\3.TrangChu.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-07T07:05:42.781Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "1.DangNhap.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\GitHub\\nt106.r12-draw_and_guess\\Draw \u0026 Guess\\GiaoDien\\1.DangNhap.cs",
+              "RelativeDocumentMoniker": "Draw \u0026 Guess\\GiaoDien\\1.DangNhap.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Documents\\GitHub\\nt106.r12-draw_and_guess\\Draw \u0026 Guess\\GiaoDien\\1.DangNhap.cs [Design]",
               "RelativeToolTip": "Draw \u0026 Guess\\GiaoDien\\1.DangNhap.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-09T11:04:02.146Z",
@@ -86,11 +159,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "2.DangKy.cs [Design]",
-              "DocumentMoniker": "C:\\Yatta\\Tai lieu\\UIT\\LTMCB\\Draw \u0026 Guess\\Draw \u0026 Guess\\GiaoDien\\2.DangKy.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\GitHub\\nt106.r12-draw_and_guess\\Draw \u0026 Guess\\GiaoDien\\2.DangKy.cs",
               "RelativeDocumentMoniker": "Draw \u0026 Guess\\GiaoDien\\2.DangKy.cs",
-              "ToolTip": "C:\\Yatta\\Tai lieu\\UIT\\LTMCB\\Draw \u0026 Guess\\Draw \u0026 Guess\\GiaoDien\\2.DangKy.cs [Design]",
+              "ToolTip": "C:\\Users\\Lenovo\\Documents\\GitHub\\nt106.r12-draw_and_guess\\Draw \u0026 Guess\\GiaoDien\\2.DangKy.cs [Design]",
               "RelativeToolTip": "Draw \u0026 Guess\\GiaoDien\\2.DangKy.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-09T11:04:00.627Z",
@@ -98,15 +171,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Yatta\\Tai lieu\\UIT\\LTMCB\\Draw \u0026 Guess\\Draw \u0026 Guess\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\GitHub\\nt106.r12-draw_and_guess\\Draw \u0026 Guess\\Program.cs",
               "RelativeDocumentMoniker": "Draw \u0026 Guess\\Program.cs",
-              "ToolTip": "C:\\Yatta\\Tai lieu\\UIT\\LTMCB\\Draw \u0026 Guess\\Draw \u0026 Guess\\Program.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Documents\\GitHub\\nt106.r12-draw_and_guess\\Draw \u0026 Guess\\Program.cs",
               "RelativeToolTip": "Draw \u0026 Guess\\Program.cs",
               "ViewState": "AgIAAAEAAAAAAAAAAAAAAA0AAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-07T06:37:04.564Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 541,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d3750d8a-574b-4fb3-b7e2-aa8af40e8231}"
             }
           ]
         }
