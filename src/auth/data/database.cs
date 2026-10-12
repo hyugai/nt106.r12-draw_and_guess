@@ -1,44 +1,37 @@
+
 using Microsoft.Data.SqlClient;
-using DotNetEnv;
 
 namespace auth.data;
 
 public static class Database
 {
-    static Database() // initializer
+    public static SqlConnection CreateConnection()
     {
-        Env.NoClobber().TraversePath().Load();
-    }
-
-    public static SqlConnection ConnectToSqlServer()
-    {
-        string connection =
+        string connectionString =
             Environment.GetEnvironmentVariable("DRAW_GUESS_DB")
             ?? throw new InvalidOperationException(
                 "Missing DRAW_GUESS_DB environment variable."
             );
 
-        return new SqlConnection(connection);
+        return new SqlConnection(connectionString);
     }
 
-    // test ConnectToSqlServer
-    public static async Task<bool> TestSqlConnectionAsync()
+    public static async Task<bool> TestConnectionAsync()
     {
         try
         {
-            await using var conn = ConnectToSqlServer();
+            await using var connection = CreateConnection();
+            await connection.OpenAsync();
 
-            await conn.OpenAsync();
-            await using var sql_cmd = new SqlCommand("SELECT 1", conn);
+            await using var command =
+                new SqlCommand("SELECT 1", connection);
 
-            var result = await sql_cmd.ExecuteScalarAsync();
+            var result = await command.ExecuteScalarAsync();
 
             return Convert.ToInt32(result) == 1;
         }
-        catch (Exception ex)
+        catch (Exception)
         {
-            Console.WriteLine(ex.Message);
-
             return false;
         }
     }
