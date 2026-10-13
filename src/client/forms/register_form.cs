@@ -201,12 +201,11 @@ public partial class RegisterForm : Form
 
     private void login_button_Click(object? sender, EventArgs e)
     {
-        MessageBox.Show(
-            "Chức năng đăng nhập đang được phát triển.",
-            "Thông báo",
-            MessageBoxButtons.OK,
-            MessageBoxIcon.Information
-        );
+        this.Hide();
+        using (LoginForm dangnhap = new LoginForm())
+        {
+            dangnhap.ShowDialog();
+        }
     }
 }
 

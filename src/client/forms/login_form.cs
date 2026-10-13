@@ -65,8 +65,15 @@ public partial class LoginForm : Form
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Information
                 );
+                //this.Hide();
+                //using (HomeForm trangchu = new HomeForm())
+                //{
+                //    trangchu.ShowDialog();
+                //}
+                //this.Show();
                 txtDangNhap.Clear();
                 txtMatKhau.Clear();
+                txtDangNhap.Focus();
             }
             else
             {
@@ -107,7 +114,6 @@ public partial class LoginForm : Form
         {
             dangky.ShowDialog();
         }
-        this.Show();
         txtMatKhau.Clear();
     }
 
