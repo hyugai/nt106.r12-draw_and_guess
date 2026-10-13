@@ -42,6 +42,6 @@ internal static class Program
         //    return;
 
         // Open RegisterForm only when database connection succeeds
-        Application.Run(new RegisterForm());
+        Application.Run(new LoginForm());
     }
 }
