@@ -65,12 +65,12 @@ public partial class LoginForm : Form
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Information
                 );
-                //this.Hide();
-                //using (HomeForm trangchu = new HomeForm())
-                //{
-                //    trangchu.ShowDialog();
-                //}
-                //this.Show();
+                this.Hide();
+                using (HomeForm trangchu = new HomeForm(tenDangNhap))
+                {
+                    trangchu.ShowDialog();
+                }
+                this.Show();
                 txtDangNhap.Clear();
                 txtMatKhau.Clear();
                 txtDangNhap.Focus();
