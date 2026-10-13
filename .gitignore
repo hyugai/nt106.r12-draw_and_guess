@@ -56,7 +56,7 @@ CodeCoverage/
 TestResult.xml
 nunit-*.xml
 
-# Environemnt configuration
-#.env
-#.env.*
-#!.env.example
+# Visual Studio
+.vs/
+*.csproj.user
+*.suo
