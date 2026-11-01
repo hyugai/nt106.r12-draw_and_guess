@@ -10,8 +10,8 @@ The game uses a Client–Server architecture, where the Server manages Rooms, Pl
 
 # 2. Core Subdomains
 
-- **Classic Mode (MVP)**, manages Painter assignment, drawing Strokes, validating Guesses, and awarding Scores.
-- **Imposter Mode (Future)**, manages hidden roles, collaborative drawing, voting, and determining winners.
+- **Classic Mode (MVP)**, assigns a Painter to draw a Secret Word while Guessers submit Guesses, validates answers, and awards Scores.
+- **Imposter Mode (Future)**, assigns Players as Normal Players who know the Secret Word or an Imposter who does not, manages turn-based drawing on a shared canvas, voting, and determines the winning side.
 
 # 3. Supporting Subdomains
 
