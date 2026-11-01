@@ -10,35 +10,18 @@ The game uses a Client–Server architecture, where the Server manages Rooms, Pl
 
 # 2. Core Subdomains
 
-## 2.1. Classic Mode (MVP)
+- **Classic Mode (MVP)**, manages Painter assignment, drawing Strokes, validating Guesses, and awarding Scores.
+- **Imposter Mode (Future)**, manages hidden roles, collaborative drawing, voting, and determining winners.
 
-A drawing-and-guessing game where a **Painter** draws a **Secret Word** while other Players act as **Guessers** and submit **Guesses** to earn **Scores**.
+# 3. Supporting Subdomains
 
-**Core Gameplay:**
+- **Round Management**, manages Round lifecycle, timers, status, and progression.
+- **Room Management**, manages Rooms, Hosts, Player membership, readiness, and Room settings.
+- **Secret Word Management**, maintains the Word Bank and provides Secret Words for each Round.
+- **Match History (Optional)**, stores completed matches, final Scores, and game results.
 
-```mermaid
-flowchart TD
-    A[Players Join Room] --> B[Start Round]
-    B --> C[Assign Painter & Secret Word]
-    C --> D[Painter Draws Strokes]
-    D --> E[Guessers Submit Guesses]
-    E --> F[Award Scores]
-    F --> G[Next Round / Final Results]
-```
+# 4. Generic Subdomains
 
-## 2.2. Imposter Mode (Future)
-
-A social deduction game where Players collaboratively draw a Secret Word, but one Player is secretly assigned as the **Imposter** and does not know the word.
-
-**Core Gameplay:**
-
-```mermaid
-flowchart TD
-    A[Players Join Room] --> B[Assign Secret Roles]
-    B --> C[Start Round]
-    C --> D[Players Take Turns Drawing Strokes]
-    D --> E[Players Vote for Imposter]
-    E --> F[Reveal Imposter]
-    F --> G[Determine Winner]
-```
-
+- **Player Identity**, assigns each Player a unique identifier and display name, supporting Guest Players.
+- **Authentication (Optional)**, manages Player registration, login, and authentication.
+- **Player Profile (Optional)**, stores persistent Player information and preferences.
