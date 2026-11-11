@@ -2,7 +2,7 @@
 
 ## Start here: current handoff
 
-- Main editable artifact: `system-context-diagram.drawio.xml` in this directory.
+- Main editable artifact: `c4-model.drawio.xml` in this directory.
   It is an uncompressed, six-page draw.io XML file, not application source code.
 - The requested architecture diagrams and subsequent formatting changes have
   been applied. There is no previously authorized implementation work left
@@ -131,7 +131,7 @@ Important elements on `server-concurrency-overview`:
 
 ## Preserve the C4 Context legend
 
-When editing `system-context-diagram.drawio.xml`, leave the entire Legend group
+When editing `c4-model.drawio.xml`, leave the entire Legend group
 on the `C4 Context` page unchanged unless the user explicitly requests a change
 to that legend.
 
@@ -155,7 +155,7 @@ to that legend.
   the entire document just to modify one page: that can rewrite protected XML.
 - Python is available as `python3`; `python` was not available. Python's standard
   `xml.etree.ElementTree` can inspect this XML. `xmllint` is also available.
-- Basic XML validation: `xmllint --noout system-context-diagram.drawio.xml`.
+- Basic XML validation: `xmllint --noout c4-model.drawio.xml`.
   Additionally check duplicate IDs per page and that each cell's parent, source,
   and target reference exists on that page. Object-wrapped C4 nodes carry their
   IDs on `<object>`, not necessarily on the nested `<mxCell>`.

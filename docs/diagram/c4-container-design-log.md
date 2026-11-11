@@ -5,7 +5,7 @@ Date: 2026-11-07
 Status: Applied on 2026-11-07 after the user instructed “now apply changes to drawio file”.
 Microsoft SQL Server is the selected database.
 
-Target file: `system-context-diagram.drawio.xml`
+Target file: `c4-model.drawio.xml`
 
 ## Scope and requirements
 
@@ -108,7 +108,7 @@ details to coordinate with their respective owners.
 
 ## Application record
 
-Applied to the `C4 Container` page of `system-context-diagram.drawio.xml`.
+Applied to the `C4 Container` page of `c4-model.drawio.xml`.
 
 - Implemented the logged plan with explicit wrapped descriptions and spacious
   placement of model elements and labels.

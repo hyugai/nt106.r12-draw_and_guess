@@ -4,7 +4,7 @@ Date: 2026-11-07
 
 Status: Approved by the user and applied to the C4 Context page on 2026-11-07.
 
-Target file: `system-context-diagram.drawio.xml`
+Target file: `c4-model.drawio.xml`
 Target page: `C4 Context`
 Proposed title: **Draw & Guess Game — System Context**
 
@@ -79,7 +79,7 @@ in later detailed designs:
 ## Application record
 
 The user authorized application with “now apply changes”. The design above has
-been applied to `system-context-diagram.drawio.xml` on the `C4 Context` page.
+been applied to `c4-model.drawio.xml` on the `C4 Context` page.
 
 - Updated the title, Player and Host descriptions, Game description, and existing
   relationships.
