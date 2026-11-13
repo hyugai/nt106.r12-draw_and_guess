@@ -121,3 +121,58 @@ Applied to the `C4 Container` page of `c4-model.drawio.xml`.
   overlapping explanatory note.
 - No draw.io Desktop renderer was available. Final visual confirmation remains
   necessary in the draw.io editor.
+
+
+## 2026-11-13 — Approved SignalR architecture and server components
+
+This decision supersedes earlier custom-TCP gameplay statements in this log and the historical architecture section of `AGENTS.md` in this directory. The user explicitly selected ASP.NET Core SignalR for realtime gameplay and approved Vietnamese updates to Context, Container, Component, and the concurrency overview only.
+
+- Container now shows WinForms with SignalR .NET Client, one ASP.NET Core process containing Minimal API and SignalR Hub, and SQL Server through EF Core. Accounts and sessions use HTTPS/JSON; gameplay uses SignalR over HTTPS, with WebSockets/WSS when available.
+- Hub instances do not own room state. The server remains authoritative; private keywords, hints, and roles go only to eligible recipients. Active rooms remain in memory. Google sign-in remains planned.
+- Replaced the Component template's empty model area with ten logical responsibilities: authentication/session, gameplay Hub, lobby/rooms, sequential room processing/match coordination, Normal rules, Imposter rules, canvas, keyword/hint selection, filtered delivery, and persistence. Added external client/database containers and explicit dependencies.
+- Component responsibilities do not imply separate services or threads. Open scoring, tie, reconnect, and host-transfer policies remain open. The diagrams describe target architecture, not verified application implementation.
+- Preserved all original notation legends, page IDs/names, Class page, and swimlane page. The latter two remain byte-for-byte unchanged and may show older terminology.
+- Validation: XML parsing, unique IDs, parent/source/target references, relative edge geometry, and preservation checks passed. Rendered Context, Container, Component, and overview previews were inspected; expanded relationship labels after visual review. Temporary preview artifacts are under `/tmp`, outside repository deliverables.
+
+Technical references consulted: [SignalR overview](https://learn.microsoft.com/aspnet/core/signalr/), [authentication and authorization](https://learn.microsoft.com/aspnet/core/signalr/authn-and-authz), and [Hub lifecycle](https://learn.microsoft.com/aspnet/core/signalr/hubs).
+
+
+## 2026-11-13 — Add planned Redis SignalR backplane
+
+- Authorization: the user approved adding Redis to the C4 Container page only, with English records in this log and `agent.md`.
+- Added `ct-redis`, a separate Redis data-store container inside the Draw & Guess system boundary, labeled in Vietnamese as a planned SignalR backplane for multiple server instances.
+- Added `ct-e-redis`, Game Server → Redis, for distributing SignalR updates across servers, labeled `Redis protocol / TLS`. TLS is a target design choice, not verified deployment configuration.
+- Redis is scoped to the backplane in this change. SQL Server retains durable accounts, keywords, and match results; Redis does not replace authoritative in-memory room state. No cache, shared room directory, RabbitMQ, or multi-server deployment was implemented.
+- Validation passed: XML parsing, unique IDs, parent/source/target references, relative edge geometry, and rendered Container preview inspection. All pre-existing Container elements, including its legend, are unchanged; all five other diagram pages are byte-for-byte identical to the pre-edit snapshot.
+
+
+## 2026-11-13 — Remove Redis from current Container architecture
+
+- Authorization: the user approved removing Redis and its Game Server relationship from the C4 Container page and updating the English logs.
+- Removed only `ct-redis` and `ct-e-redis`. The current architecture uses one ASP.NET Core server process with SignalR and SQL Server; Redis is deferred. This supersedes the earlier Redis addition for the current diagram.
+- Validation passed: XML parsing, unique IDs, parent/source/target references, relative edge geometry, and absence of Redis on the Container page. All remaining Container elements and legends are unchanged; all five other pages are byte-for-byte preserved. No new rendered preview was generated for this removal.
+
+
+## 2026-11-13 — Clarify HTTPS initialization and SignalR transports
+
+- Authorization: user approved the finalized Vietnamese wording for the two gameplay relationships and associated English log updates.
+- Updated only `ct-e-actions` and `ct-e-updates` on the Container page. Client → Server explicitly describes HTTPS connection initialization followed by secure WebSocket (WSS) delivery or an HTTPS fallback transport. Server → Client describes updates through the established WSS or HTTPS fallback connection. Both identify ASP.NET Core SignalR separately from transport details.
+- Expanded label width from 190px to 260px for readability. Account traffic remains HTTPS/JSON. No connection policy or application code was changed.
+- Validation passed: XML parsing, unique IDs, graph references, relative edge geometry, and rendered preview inspection. Exactly two relationship elements differ from the pre-edit snapshot; every other Container element and all five other pages are preserved.
+
+
+## 2026-11-13 — Remove Google Identity from Container scope
+
+- Authorization: the user approved removing the optional Google Identity integration from the Container diagram after discussion of its necessity.
+- Removed `ct-google`, `ct-e-google-client`, and `ct-e-google-server`; removed the Google identity-link reference from the database description. Existing HTTPS/JSON account authentication remains.
+- Validation passed: XML parsing, unique IDs, graph references, relative edge geometry, no remaining Google references on the Container page, unchanged legends and remaining elements, and byte-for-byte preservation of all five other pages. No new render was generated.
+- Scope: Container page only. Context and concurrency pages retain their earlier Google references; cross-page alignment would require a separate approved change. No application code or authentication implementation was modified.
+
+
+## 2026-11-13 — Balance Container layout for Google Docs
+
+- Authorization: user approved the proposed Container-only layout update, preserving wording/architecture and updating the two English logs.
+- Centered the Player/Host pair above the client; aligned client, server, and SQL Server vertically. Moved the architecture note beside the server, rerouted account traffic, repositioned relationship labels, and increased model typography for document use.
+- Reduced page size from 1700 × 2100 to a compact landscape 1600 × 1470. Moved the entire original 696 × 220 legend group below the diagram without changing its contents, size, or internal geometry.
+- Rendered previews exposed clipped actor/database text in the first layout; adjusted actor typography and shape heights, then inspected the corrected final preview. Temporary final PNG: `/tmp/c4-container-balanced-final.png`. Actual readability in the destination Google Doc depends on insertion size and was not tested in Google Docs.
+- Validation passed: XML, unique IDs, references, relative edges, unchanged names/descriptions/technology and label text, unchanged relationships, intact legend contents, and byte-for-byte preservation of all five other pages.

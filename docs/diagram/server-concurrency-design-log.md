@@ -167,3 +167,14 @@ explains event examples, ready continuations, pending I/O, and per-room ordering
 Reserved a dedicated 190px-high text box and shifted the drawing and connector
 waypoints down by 220px to avoid overlap. Expanded page height accordingly.
 All other pages remain unchanged; XML validation passed.
+
+
+## 2026-11-13 — Approved SignalR concurrency overview
+
+Updated only `server-concurrency-overview` (`Concurrency Diagram - v0`) after user approval. This entry supersedes its earlier custom-TCP receive/framing/send design.
+
+- Translated actual overview content into Vietnamese. SignalR Hub invocations now feed validated actions into sequential room queues; state lives outside Hub instances. Timer expiry and membership changes use the same ordering path.
+- Retained shared .NET thread-pool execution, asynchronous non-blocking I/O, room independence, and recipient-specific secret delivery. Application-managed bounded outbound queues feed one ordered sender per connection through IHubContext. These queues and ordering are application design obligations, not automatic SignalR guarantees.
+- Added a Vietnamese transport note: SignalR handles transport/framing; WebSockets/WSS is used when available. Reconnect, queue limits, and host transfer remain unspecified.
+- Preserved the original English reading-guide legend exactly as approved and noted its historical origin separately. Preserved the older swimlane page byte-for-byte; it still depicts the prior TCP design.
+- Checks passed: XML, IDs, graph references, relative edges, preserved legends and untouched pages. Inspected a rendered overview and widened relationship labels to avoid stacked words. Final label changes received structural validation.

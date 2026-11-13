@@ -111,3 +111,8 @@ distance between people and the software system:
   user-authorized group move is an exception to the default legend position rule.
 - Verified that only these three Y coordinates changed in the diagram, and that
   XML validation passed. All other pages remain unchanged.
+
+
+## 2026-11-13 — Approved Vietnamese context labels
+
+The user approved the revised four-page update. Translated actual Context model names, descriptions, and relationships into Vietnamese; clarified Host as a Player role and Google sign-in as planned integration. Preserved page identity, geometry, and the complete notation legend. This is a design update, not evidence of implemented features. XML, IDs, references, legend preservation, and rendered preview checks passed.
