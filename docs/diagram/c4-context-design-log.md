@@ -174,3 +174,12 @@ The user approved the revised four-page update. Translated actual Context model 
 - Output: 1589 × 1607 PNG at 2×, white background, 16-unit border.
 - Verification: inspected final render and its A4 portrait proof at 16 cm width, report margins (left 3 cm, others 2 cm), with caption. Figure height about 16.18 cm; body text about 13.7 pt at insertion size. No clipping/overlap seen. XML/IDs/references/relative edges, normalized wording, endpoints, PNG signature/dimensions, unchanged source hashes, and `git diff --check` passed.
 - Limits: actual Google Docs insertion remains to be checked; preserve aspect ratio and use one image per page. Both editable XML files are unchanged.
+
+
+## 2026-11-14 — Remove the Context export headline
+
+- Authorization: the user approved removing the top Draw & Guess headline and cropping the freed space in the Context PNG, with updates to both logs.
+- Files changed: `docs/diagram/c4-context.png`, `docs/diagram/c4-context-design-log.md`, and `agent.md`.
+- Changes: re-rendered a temporary Context copy without the title, retaining the current enlarged fonts, actor/system boxes, Vietnamese descriptions, Kẻ giả mạo terminology, dashed arrows and label alignment. Export is 1589 × 1457, 2× on white with a 16-unit border. The system name inside the system box remains.
+- Verification: inspected the rendered image for clipping and text/arrow separation; temporary XML/IDs/references/relative edges and dashed styles passed. PNG signature/dimensions passed. SHA-256 confirms both repository XML sources remain unchanged. No application tests needed.
+- Pending: actual Google Docs placement and report references; deferred Container source layout; Context source/export terminology synchronization; architecture evidence, unresolved policies/instructor confirmation, and final report review.

@@ -255,3 +255,32 @@
 - Outputs: part 1 2870 × 2170; part 2 1770 × 2170.
 - Verification: inspected both final renders; bottom notes are absent and lane borders/diagram elements are not clipped. Temporary XML/ID/reference and A–D marker checks passed; all remaining cells match the prior export copies. PNG signatures/dimensions and source SHA-256 preservation passed. No application tests were required.
 - Limits/pending: explanatory bottom notes are omitted from the images as requested. Google Docs insertion/page fit and report references remain pending, along with deferred Container/Component source layouts, report explanations/multi-room walkthrough, implementation/testing evidence, instructor confirmation/failure policies, and final document review.
+
+
+## 2026-11-14 — Align Component responsibilities with Context, Container, and concurrency
+
+- Authorization: the user approved the eight corrections identified in the cross-diagram review.
+- Files changed: `docs/diagram/c4-model.drawio.xml`, `docs/diagram/c4-container-design-log.md`, and `agent.md`.
+- Changes: updated Component terminology to Kẻ giả mạo/bỏ phiếu; aligned realtime transport labels; clarified Hub validation, room resolution/membership checks, authoritative room-state ownership, ordered canvas updates, host startup permissions, per-connection bounded queues/senders, and account writes. Added delivery-to-room-management failure notification feeding the existing room-event queue path. Retained ten logical components and open gameplay/failure policies.
+- Verification: XML parsing, unique IDs, parent/source/target references and relative edge geometry pass for all seven pages. The six other page blocks are byte-for-byte unchanged. Inspected temporary Component renders; corrected narrow wrapping of the new failure label. Updated descriptions fit existing boxes. Full page layout optimization remains deferred. No application tests were required; this records target architecture only.
+- Pending: Component/Container layout and export refinement; Context source/export terminology synchronization; Google Docs sizing and report references; architecture explanations/multi-room walkthrough; implementation/testing evidence; scoring/tie/reconnect/host-transfer/queue policies and instructor confirmation; final report review.
+
+
+## 2026-11-14 — Split Component diagram into two Google Docs report pages
+
+- Authorization: the user approved two compact portrait pages in the original XML, two PNG exports without the c4 prefix, and updates to the design and shared logs.
+- Files changed: `docs/diagram/c4-model.drawio.xml`, `docs/diagram/component-1.png`, `docs/diagram/component-2.png`, `docs/diagram/c4-container-design-log.md`, and `agent.md`.
+- Added pages: `component-report-1` (reception and delivery) and `component-report-2` (room processing and data). All seven existing pages remain byte-for-byte unchanged, including the complete overview. A/B/C endpoints preserve room actions, outgoing events, and account-persistence dependencies. Both pages identify the same server process.
+- Layout: two columns, compact boxes, consistent 22-unit body and 20-unit relationship text, light backgrounds, explicit label placement, and shared C#/ASP.NET Core boundary labels replacing repeated component technology tags. All ten component descriptions are preserved. Template legends and bottom notes are excluded from report views; the overview retains design notes.
+- Exports: both PNGs are 1866 × 2836, 2×, white background, 16-unit border, with matching bounds for consistent insertion scale.
+- Verification: XML, unique IDs, references, relative edges, exact component-description comparison, and logical endpoint comparison through A–C passed. Inspected final renders and two-page A4 proof `/tmp/component-a4-proof.pdf`. At 16 cm width each image is 24.32 cm tall, body text approximately 10.69 pt and relationships 9.72 pt; both fit with captions using left 3 cm and other 2 cm margins. Corrected intermediate label overlaps. No application tests required.
+- Limits/pending: actual Google Docs insertion and exported report PDF remain unchecked. Pending: report references/placement; deferred Container source layout; Context source/export terminology synchronization; architecture explanations/multi-room walkthrough; implementation/testing evidence; unresolved policies/instructor confirmation; final report review.
+
+
+## 2026-11-14 — Remove the Context export headline
+
+- Authorization: the user approved removing the top Draw & Guess headline and cropping the freed space in the Context PNG, with updates to both logs.
+- Files changed: `docs/diagram/c4-context.png`, `docs/diagram/c4-context-design-log.md`, and `agent.md`.
+- Changes: re-rendered a temporary Context copy without the title, retaining the current enlarged fonts, actor/system boxes, Vietnamese descriptions, Kẻ giả mạo terminology, dashed arrows and label alignment. Export is 1589 × 1457, 2× on white with a 16-unit border. The system name inside the system box remains.
+- Verification: inspected the rendered image for clipping and text/arrow separation; temporary XML/IDs/references/relative edges and dashed styles passed. PNG signature/dimensions passed. SHA-256 confirms both repository XML sources remain unchanged. No application tests needed.
+- Pending: actual Google Docs placement and report references; deferred Container source layout; Context source/export terminology synchronization; architecture evidence, unresolved policies/instructor confirmation, and final report review.

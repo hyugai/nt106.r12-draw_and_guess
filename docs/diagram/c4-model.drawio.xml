@@ -1,4 +1,4 @@
-<mxfile host="Electron" agent="5.0 (Macintosh)" pages="7">
+<mxfile host="Electron" agent="5.0 (Macintosh)" pages="9">
   <diagram id="zNMGI6wU0Mi8Qe2H5Q59" name="C4 Context">
     <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -312,37 +312,37 @@
         <mxCell id="cp-auth" parent="cp-boundary" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=15;align=center;verticalAlign=middle;spacing=12;rounded=0;fillColor=#438dd5;strokeColor=#1168bd;fontColor=#ffffff;" value="&lt;b&gt;Xác thực và phiên&lt;/b&gt;&lt;br&gt;[Thành phần: C# / .NET]&lt;br&gt;&lt;br&gt;Minimal API: tài khoản và phiên chơi.&lt;br&gt;Kiểm tra danh tính / quyền truy cập." vertex="1">
           <mxGeometry height="180" width="480" x="70" y="130" as="geometry" />
         </mxCell>
-        <mxCell id="cp-hub" parent="cp-boundary" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=15;align=center;verticalAlign=middle;spacing=12;rounded=0;fillColor=#438dd5;strokeColor=#1168bd;fontColor=#ffffff;" value="&lt;b&gt;Cổng gameplay SignalR&lt;/b&gt;&lt;br&gt;[Thành phần: C# / .NET]&lt;br&gt;&lt;br&gt;Nhận lời gọi Hub đã xác thực.&lt;br&gt;Kiểm tra dữ liệu và định tuyến phòng.&lt;br&gt;Không giữ trạng thái phòng trong Hub." vertex="1">
+        <mxCell id="cp-hub" parent="cp-boundary" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=15;align=center;verticalAlign=middle;spacing=12;rounded=0;fillColor=#438dd5;strokeColor=#1168bd;fontColor=#ffffff;" value="&lt;b&gt;Cổng gameplay SignalR&lt;/b&gt;&lt;br&gt;[Thành phần: C# / .NET]&lt;br&gt;&lt;br&gt;Nhận lời gọi Hub đã xác thực.&lt;br&gt;Kiểm tra dữ liệu; chuyển tới quản lý phòng.&lt;br&gt;Không giữ trạng thái phòng trong Hub." vertex="1">
           <mxGeometry height="180" width="480" x="880" y="130" as="geometry" />
         </mxCell>
-        <mxCell id="cp-delivery" parent="cp-boundary" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=15;align=center;verticalAlign=middle;spacing=12;rounded=0;fillColor=#438dd5;strokeColor=#1168bd;fontColor=#ffffff;" value="&lt;b&gt;Lọc và phân phối sự kiện&lt;/b&gt;&lt;br&gt;[Thành phần: C# / .NET]&lt;br&gt;&lt;br&gt;Từ khóa / gợi ý / vai ẩn gửi riêng.&lt;br&gt;Hàng đợi ứng dụng có giới hạn.&lt;br&gt;Gửi tuần tự qua IHubContext." vertex="1">
+        <mxCell id="cp-delivery" parent="cp-boundary" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=15;align=center;verticalAlign=middle;spacing=12;rounded=0;fillColor=#438dd5;strokeColor=#1168bd;fontColor=#ffffff;" value="&lt;b&gt;Lọc và phân phối sự kiện&lt;/b&gt;&lt;br&gt;[Thành phần: C# / .NET]&lt;br&gt;&lt;br&gt;Từ khóa / gợi ý / vai ẩn gửi riêng.&lt;br&gt;Hàng gửi có giới hạn cho từng kết nối.&lt;br&gt;Một bộ gửi tuần tự mỗi kết nối qua IHubContext.&lt;br&gt;Lỗi gửi / đầy hàng: dừng gửi, dọn dẹp, báo quản lý phòng." vertex="1">
           <mxGeometry height="180" width="480" x="1690" y="130" as="geometry" />
         </mxCell>
-        <mxCell id="cp-rooms" parent="cp-boundary" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=15;align=center;verticalAlign=middle;spacing=12;rounded=0;fillColor=#438dd5;strokeColor=#1168bd;fontColor=#ffffff;" value="&lt;b&gt;Sảnh và quản lý phòng&lt;/b&gt;&lt;br&gt;[Thành phần: C# / .NET]&lt;br&gt;&lt;br&gt;Tạo / vào / rời phòng, cấu hình,&lt;br&gt;thành viên và quyền chủ phòng.&lt;br&gt;Chuyển thay đổi tới bộ xử lý phòng." vertex="1">
+        <mxCell id="cp-rooms" parent="cp-boundary" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=15;align=center;verticalAlign=middle;spacing=12;rounded=0;fillColor=#438dd5;strokeColor=#1168bd;fontColor=#ffffff;" value="&lt;b&gt;Sảnh và quản lý phòng&lt;/b&gt;&lt;br&gt;[Thành phần: C# / .NET]&lt;br&gt;&lt;br&gt;Tạo / vào / rời phòng; xác định phòng, kiểm tra thành viên.&lt;br&gt;Chọn chế độ; kiểm tra quyền bắt đầu trận.&lt;br&gt;Chuyển hành động / sự kiện rời phòng tới hàng đợi phòng." vertex="1">
           <mxGeometry height="180" width="480" x="880" y="500" as="geometry" />
         </mxCell>
         <mxCell id="cp-normal" parent="cp-boundary" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=15;align=center;verticalAlign=middle;spacing=12;rounded=0;fillColor=#438dd5;strokeColor=#1168bd;fontColor=#ffffff;" value="&lt;b&gt;Luật Vẽ đoán&lt;/b&gt;&lt;br&gt;[Thành phần: C# / .NET]&lt;br&gt;&lt;br&gt;Quyền vẽ, kiểm tra đáp án,&lt;br&gt;kết thúc lượt và điểm theo luật chốt.&lt;br&gt;Công thức điểm còn mở." vertex="1">
           <mxGeometry height="180" width="480" x="70" y="880" as="geometry" />
         </mxCell>
-        <mxCell id="cp-match" parent="cp-boundary" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=15;align=center;verticalAlign=middle;spacing=12;rounded=0;fillColor=#438dd5;strokeColor=#1168bd;fontColor=#ffffff;" value="&lt;b&gt;Bộ xử lý phòng và điều phối trận&lt;/b&gt;&lt;br&gt;[Thành phần: C# / .NET]&lt;br&gt;&lt;br&gt;Một hàng đợi tuần tự cho mỗi phòng.&lt;br&gt;Giai đoạn, lượt, deadline và chuyển vòng.&lt;br&gt;Nhận cả sự kiện hết giờ / mất kết nối." vertex="1">
+        <mxCell id="cp-match" parent="cp-boundary" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=15;align=center;verticalAlign=middle;spacing=12;rounded=0;fillColor=#438dd5;strokeColor=#1168bd;fontColor=#ffffff;" value="&lt;b&gt;Bộ xử lý phòng và điều phối trận&lt;/b&gt;&lt;br&gt;[Thành phần: C# / .NET]&lt;br&gt;&lt;br&gt;Giữ trạng thái phòng / trận có thẩm quyền.&lt;br&gt;Một hàng đợi tuần tự mỗi phòng: hành động, hết giờ, vào / rời phòng.&lt;br&gt;Bắt đầu trận; quản lý giai đoạn, lượt và chuyển vòng." vertex="1">
           <mxGeometry height="180" width="480" x="880" y="880" as="geometry" />
         </mxCell>
-        <mxCell id="cp-imposter" parent="cp-boundary" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=15;align=center;verticalAlign=middle;spacing=12;rounded=0;fillColor=#438dd5;strokeColor=#1168bd;fontColor=#ffffff;" value="&lt;b&gt;Luật Imposter&lt;/b&gt;&lt;br&gt;[Thành phần: C# / .NET]&lt;br&gt;&lt;br&gt;Vai ẩn; từ khóa / gợi ý riêng.&lt;br&gt;Hai lượt vẽ đảo thứ tự, thảo luận, vote.&lt;br&gt;Hòa phiếu / điểm còn mở." vertex="1">
+        <mxCell id="cp-imposter" parent="cp-boundary" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=15;align=center;verticalAlign=middle;spacing=12;rounded=0;fillColor=#438dd5;strokeColor=#1168bd;fontColor=#ffffff;" value="&lt;b&gt;Luật Kẻ giả mạo&lt;/b&gt;&lt;br&gt;[Thành phần: C# / .NET]&lt;br&gt;&lt;br&gt;Vai ẩn; từ khóa / gợi ý riêng.&lt;br&gt;Hai lượt vẽ đảo thứ tự, thảo luận, bỏ phiếu.&lt;br&gt;Hòa phiếu / điểm còn mở." vertex="1">
           <mxGeometry height="180" width="480" x="1690" y="880" as="geometry" />
         </mxCell>
-        <mxCell id="cp-canvas" parent="cp-boundary" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=15;align=center;verticalAlign=middle;spacing=12;rounded=0;fillColor=#438dd5;strokeColor=#1168bd;fontColor=#ffffff;" value="&lt;b&gt;Quản lý canvas&lt;/b&gt;&lt;br&gt;[Thành phần: C# / .NET]&lt;br&gt;&lt;br&gt;Kiểm tra quyền và đóng góp nét vẽ.&lt;br&gt;Giữ trạng thái canvas, chủ sở hữu nét.&lt;br&gt;Khóa vẽ theo giai đoạn / lượt." vertex="1">
+        <mxCell id="cp-canvas" parent="cp-boundary" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=15;align=center;verticalAlign=middle;spacing=12;rounded=0;fillColor=#438dd5;strokeColor=#1168bd;fontColor=#ffffff;" value="&lt;b&gt;Quản lý canvas&lt;/b&gt;&lt;br&gt;[Thành phần: C# / .NET]&lt;br&gt;&lt;br&gt;Kiểm tra quyền và đóng góp nét vẽ.&lt;br&gt;Giữ canvas và chủ sở hữu nét; cập nhật theo hàng đợi phòng.&lt;br&gt;Khóa vẽ theo giai đoạn / lượt." vertex="1">
           <mxGeometry height="180" width="480" x="70" y="1270" as="geometry" />
         </mxCell>
         <mxCell id="cp-keywords" parent="cp-boundary" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=15;align=center;verticalAlign=middle;spacing=12;rounded=0;fillColor=#438dd5;strokeColor=#1168bd;fontColor=#ffffff;" value="&lt;b&gt;Chọn từ khóa và gợi ý&lt;/b&gt;&lt;br&gt;[Thành phần: C# / .NET]&lt;br&gt;&lt;br&gt;Chọn từ hệ thống cho từng vòng.&lt;br&gt;Cặp đáp án — gợi ý được chuẩn bị.&lt;br&gt;Không để chủ phòng cung cấp đáp án." vertex="1">
           <mxGeometry height="180" width="480" x="880" y="1270" as="geometry" />
         </mxCell>
-        <mxCell id="cp-data" parent="cp-boundary" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=15;align=center;verticalAlign=middle;spacing=12;rounded=0;fillColor=#438dd5;strokeColor=#1168bd;fontColor=#ffffff;" value="&lt;b&gt;Truy cập dữ liệu&lt;/b&gt;&lt;br&gt;[Thành phần: C# / .NET]&lt;br&gt;&lt;br&gt;EF Core / SQL Server provider.&lt;br&gt;Đọc tài khoản, từ khóa và gợi ý.&lt;br&gt;Lưu kết quả trận bất đồng bộ." vertex="1">
+        <mxCell id="cp-data" parent="cp-boundary" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=15;align=center;verticalAlign=middle;spacing=12;rounded=0;fillColor=#438dd5;strokeColor=#1168bd;fontColor=#ffffff;" value="&lt;b&gt;Truy cập dữ liệu&lt;/b&gt;&lt;br&gt;[Thành phần: C# / .NET]&lt;br&gt;&lt;br&gt;EF Core / SQL Server provider.&lt;br&gt;Đọc / ghi tài khoản; đọc từ khóa / gợi ý.&lt;br&gt;Lưu kết quả trận bất đồng bộ." vertex="1">
           <mxGeometry height="180" width="480" x="1690" y="1270" as="geometry" />
         </mxCell>
         <mxCell id="cp-e-hub-auth" edge="1" parent="cp-boundary" source="cp-hub" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#555555;fontSize=13;labelBackgroundColor=#ffffff;whiteSpace=wrap;exitX=0;exitY=0.5;entryX=1;entryY=0.5;" target="cp-auth" value="&lt;div style=&quot;width:240px;white-space:nowrap;text-align:center&quot;&gt;Kiểm tra phiên&lt;/div&gt;">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="cp-e-hub-room" edge="1" parent="cp-boundary" source="cp-hub" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#555555;fontSize=13;labelBackgroundColor=#ffffff;whiteSpace=wrap;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="cp-rooms" value="&lt;div style=&quot;width:240px;white-space:nowrap;text-align:center&quot;&gt;Định tuyến hành động&lt;/div&gt;">
+        <mxCell id="cp-e-hub-room" edge="1" parent="cp-boundary" source="cp-hub" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#555555;fontSize=13;labelBackgroundColor=#ffffff;whiteSpace=wrap;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="cp-rooms" value="&lt;div style=&quot;width:240px;white-space:nowrap;text-align:center&quot;&gt;Xác định phòng / kiểm tra thành viên&lt;/div&gt;">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="cp-e-room-match" edge="1" parent="cp-boundary" source="cp-rooms" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#555555;fontSize=13;labelBackgroundColor=#ffffff;whiteSpace=wrap;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="cp-match" value="&lt;div style=&quot;width:240px;white-space:nowrap;text-align:center&quot;&gt;Đưa sự kiện vào hàng đợi&lt;/div&gt;">
@@ -403,7 +403,7 @@
         <mxCell id="cp-notes" parent="AVTp8zRlv71y_wTY7c-L-1" style="text;html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=15;align=center;verticalAlign=middle;spacing=12;align=left;" value="&lt;b&gt;Quy tắc thiết kế&lt;/b&gt;&lt;br&gt;Thành phần là trách nhiệm logic, không phải service hay thread riêng.&lt;br&gt;Trạng thái phòng ở bộ nhớ; khởi động lại server kết thúc trận đang chơi.&lt;br&gt;Kết quả DB ảnh hưởng trạng thái phải áp dụng đúng thứ tự trong phòng.&lt;br&gt;Luật chưa chốt, reconnect và chuyển chủ phòng chưa được xác định." vertex="1">
           <mxGeometry height="140" width="2050" x="920" y="1930" as="geometry" />
         </mxCell>
-        <mxCell id="cp-e-client-hub" edge="1" parent="AVTp8zRlv71y_wTY7c-L-1" source="cp-client" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#555555;fontSize=13;labelBackgroundColor=#ffffff;whiteSpace=wrap;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="cp-hub" value="&lt;div style=&quot;width:240px;white-space:nowrap;text-align:center&quot;&gt;Hành động / SignalR qua HTTPS&lt;/div&gt;">
+        <mxCell id="cp-e-client-hub" edge="1" parent="AVTp8zRlv71y_wTY7c-L-1" source="cp-client" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#555555;fontSize=13;labelBackgroundColor=#ffffff;whiteSpace=wrap;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="cp-hub" value="&lt;div style=&quot;width:240px;white-space:normal;text-align:center&quot;&gt;SignalR: khởi tạo qua HTTPS;&lt;br&gt;hành động thời gian thực qua&lt;br&gt;WSS hoặc HTTPS dự phòng&lt;/div&gt;">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="cp-e-client-auth" edge="1" parent="AVTp8zRlv71y_wTY7c-L-1" source="cp-client" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#555555;fontSize=13;labelBackgroundColor=#ffffff;whiteSpace=wrap;exitX=0;exitY=0.5;entryX=0.5;entryY=0;" target="cp-auth" value="&lt;div style=&quot;width:240px;white-space:nowrap;text-align:center&quot;&gt;Tài khoản / HTTPS JSON&lt;/div&gt;">
@@ -413,7 +413,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="cp-e-delivery-client" edge="1" parent="AVTp8zRlv71y_wTY7c-L-1" source="cp-delivery" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#555555;fontSize=13;labelBackgroundColor=#ffffff;whiteSpace=wrap;exitX=1;exitY=0.2;entryX=1;entryY=0.5;" target="cp-client" value="&lt;div style=&quot;width:240px;white-space:nowrap;text-align:center&quot;&gt;Cập nhật / SignalR&lt;/div&gt;">
+        <mxCell id="cp-e-delivery-client" edge="1" parent="AVTp8zRlv71y_wTY7c-L-1" source="cp-delivery" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#555555;fontSize=13;labelBackgroundColor=#ffffff;whiteSpace=wrap;exitX=1;exitY=0.2;entryX=1;entryY=0.5;" target="cp-client" value="&lt;div style=&quot;width:240px;white-space:normal;text-align:center&quot;&gt;SignalR: cập nhật thời gian thực&lt;br&gt;qua kết nối WSS hoặc&lt;br&gt;HTTPS dự phòng&lt;/div&gt;">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="3020" y="390" />
@@ -423,6 +423,12 @@
         </mxCell>
         <mxCell id="cp-e-data-db" edge="1" parent="AVTp8zRlv71y_wTY7c-L-1" source="cp-data" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#555555;fontSize=13;labelBackgroundColor=#ffffff;whiteSpace=wrap;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="cp-db" value="&lt;div style=&quot;width:240px;white-space:nowrap;text-align:center&quot;&gt;TDS qua TLS&lt;/div&gt;">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cp-e-delivery-room-failure" edge="1" parent="cp-boundary" source="cp-delivery" target="cp-rooms" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#555555;fontSize=13;labelBackgroundColor=#ffffff;whiteSpace=wrap;exitX=0;exitY=0.7;entryX=1;entryY=0.5;" value="&lt;div style=&quot;width:240px;white-space:normal;text-align:center&quot;&gt;Lỗi kết nối / gửi / đầy hàng&lt;br&gt;→ xếp sự kiện rời phòng&lt;/div&gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="150" y="0" as="offset" />
+            <Array as="points"><mxPoint x="1580" y="256" /><mxPoint x="1580" y="590" /></Array>
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
@@ -1207,6 +1213,275 @@
         <mxGeometry relative="1" x="-1" as="geometry">
           <mxPoint x="-317.0" y="-30.0" as="offset" />
         </mxGeometry>
+      </mxCell>
+    </root>
+  </mxGraphModel>
+</diagram>
+
+<diagram id="component-report-1" name="Thành phần máy chủ — Phần 1">
+  <mxGraphModel page="1" pageScale="1" pageWidth="920" pageHeight="1420" background="#ffffff">
+    <root>
+      <mxCell id="0" />
+      <mxCell id="1" parent="0" />
+      <mxCell id="title" parent="1" vertex="1" value="&lt;b&gt;Thành phần máy chủ — Phần 1&lt;/b&gt;&lt;br&gt;Tiếp nhận và phân phối" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=22;align=center;verticalAlign=middle;spacing=12;strokeColor=none;fillColor=none;fontSize=26;">
+        <mxGeometry x="20" y="0" width="860" height="80" as="geometry" />
+      </mxCell>
+      <mxCell id="server" parent="1" vertex="1" value="" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=22;align=center;verticalAlign=middle;spacing=12;fillColor=none;strokeColor=#1168bd;dashed=1;">
+        <mxGeometry x="20" y="400" width="860" height="960" as="geometry" />
+      </mxCell>
+      <mxCell id="boundary-label" parent="1" vertex="1" value="&lt;b&gt;Máy chủ trò chơi • C# / ASP.NET Core&lt;/b&gt;&lt;br&gt;Một tiến trình • kiến trúc mục tiêu" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=22;align=center;verticalAlign=middle;spacing=12;strokeColor=none;fillColor=none;fontSize=20;spacing=0;">
+        <mxGeometry x="40" y="415" width="820" height="65" as="geometry" />
+      </mxCell>
+      <mxCell id="cp-client" parent="1" vertex="1" value="&lt;b&gt;Ứng dụng người chơi&lt;/b&gt;&lt;br&gt;[Container: C# / WinForms]&lt;br&gt;SignalR .NET Client" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=22;align=center;verticalAlign=middle;spacing=12;fillColor=#eeeeee;strokeColor=#666666;">
+        <mxGeometry x="270" y="180" width="360" height="140" as="geometry" />
+      </mxCell>
+      <mxCell id="cp-auth" parent="1" vertex="1" value="&lt;b&gt;Xác thực và phiên&lt;/b&gt;&lt;br&gt;Minimal API: tài khoản và phiên chơi.&lt;br&gt;Kiểm tra danh tính / quyền truy cập." style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=22;align=center;verticalAlign=middle;spacing=12;rounded=1;arcSize=8;fillColor=#d9e8fb;strokeColor=#1168bd;fontColor=#102a43;">
+        <mxGeometry x="40" y="510" width="360" height="190" as="geometry" />
+      </mxCell>
+      <mxCell id="cp-hub" parent="1" vertex="1" value="&lt;b&gt;Cổng gameplay SignalR&lt;/b&gt;&lt;br&gt;Nhận lời gọi Hub đã xác thực.&lt;br&gt;Kiểm tra dữ liệu; chuyển tới quản lý phòng.&lt;br&gt;Không giữ trạng thái phòng trong Hub." style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=22;align=center;verticalAlign=middle;spacing=12;rounded=1;arcSize=8;fillColor=#d9e8fb;strokeColor=#1168bd;fontColor=#102a43;">
+        <mxGeometry x="500" y="510" width="360" height="190" as="geometry" />
+      </mxCell>
+      <mxCell id="cp-delivery" parent="1" vertex="1" value="&lt;b&gt;Lọc và phân phối sự kiện&lt;/b&gt;&lt;br&gt;Từ khóa / gợi ý / vai ẩn gửi riêng.&lt;br&gt;Hàng gửi có giới hạn cho từng kết nối.&lt;br&gt;Một bộ gửi tuần tự mỗi kết nối qua IHubContext.&lt;br&gt;Lỗi gửi / đầy hàng: dừng gửi, dọn dẹp, báo quản lý phòng." style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=22;align=center;verticalAlign=middle;spacing=12;rounded=1;arcSize=8;fillColor=#d9e8fb;strokeColor=#1168bd;fontColor=#102a43;">
+        <mxGeometry x="40" y="820" width="360" height="270" as="geometry" />
+      </mxCell>
+      <mxCell id="cp-rooms" parent="1" vertex="1" value="&lt;b&gt;Sảnh và quản lý phòng&lt;/b&gt;&lt;br&gt;Tạo / vào / rời phòng; xác định phòng, kiểm tra thành viên.&lt;br&gt;Chọn chế độ; kiểm tra quyền bắt đầu trận.&lt;br&gt;Chuyển hành động / sự kiện rời phòng tới hàng đợi phòng." style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=22;align=center;verticalAlign=middle;spacing=12;rounded=1;arcSize=8;fillColor=#d9e8fb;strokeColor=#1168bd;fontColor=#102a43;">
+        <mxGeometry x="500" y="820" width="360" height="270" as="geometry" />
+      </mxCell>
+      <mxCell id="cp-e-client-auth" parent="1" edge="1" source="cp-client" target="cp-auth" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#536273;strokeWidth=1.5;fontSize=20;fontFamily=Helvetica;labelBackgroundColor=#ffffff;exitX=0;exitY=0.5;entryX=0.5;entryY=0;">
+        <mxGeometry relative="1" as="geometry">
+          <Array as="points">
+            <mxPoint x="220" y="250" />
+          </Array>
+        </mxGeometry>
+      </mxCell>
+      <mxCell id="cp-e-client-hub" parent="1" edge="1" source="cp-client" target="cp-hub" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#536273;strokeWidth=1.5;fontSize=20;fontFamily=Helvetica;labelBackgroundColor=#ffffff;exitX=1;exitY=0.5;entryX=0.5;entryY=0;">
+        <mxGeometry relative="1" as="geometry">
+          <Array as="points">
+            <mxPoint x="680" y="250" />
+          </Array>
+        </mxGeometry>
+      </mxCell>
+      <mxCell id="cp-e-hub-auth" parent="1" edge="1" source="cp-hub" target="cp-auth" value="&lt;div style=&quot;width:90px;white-space:normal;text-align:center&quot;&gt;Kiểm tra&lt;br&gt;phiên&lt;/div&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#536273;strokeWidth=1.5;fontSize=20;fontFamily=Helvetica;labelBackgroundColor=#ffffff;exitX=0;exitY=0.5;entryX=1;entryY=0.5;">
+        <mxGeometry relative="1" as="geometry" />
+      </mxCell>
+      <mxCell id="cp-e-hub-room" parent="1" edge="1" source="cp-hub" target="cp-rooms" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#536273;strokeWidth=1.5;fontSize=20;fontFamily=Helvetica;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;entryX=0.5;entryY=0;">
+        <mxGeometry relative="1" as="geometry" />
+      </mxCell>
+      <mxCell id="cp-e-delivery-client" parent="1" edge="1" source="cp-delivery" target="cp-client" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#536273;strokeWidth=1.5;fontSize=20;fontFamily=Helvetica;labelBackgroundColor=#ffffff;exitX=0;exitY=0.5;entryX=0.5;entryY=0;">
+        <mxGeometry relative="1" as="geometry">
+          <Array as="points">
+            <mxPoint x="10" y="955" />
+            <mxPoint x="10" y="140" />
+            <mxPoint x="450" y="140" />
+          </Array>
+        </mxGeometry>
+      </mxCell>
+      <mxCell id="mark-C" parent="1" vertex="1" value="C" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=22;align=center;verticalAlign=middle;spacing=12;shape=ellipse;spacing=0;strokeColor=#b71c1c;fontColor=#b71c1c;fillColor=#ffffff;fontStyle=1;">
+        <mxGeometry x="200" y="760" width="40" height="40" as="geometry" />
+      </mxCell>
+      <mxCell id="cp-e-auth-data" parent="1" edge="1" source="cp-auth" target="mark-C" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#536273;strokeWidth=1.5;fontSize=20;fontFamily=Helvetica;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;entryX=0.5;entryY=0;">
+        <mxGeometry relative="1" as="geometry" />
+      </mxCell>
+      <mxCell id="C-caption" parent="1" vertex="1" value="C → phần 2" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=22;align=center;verticalAlign=middle;spacing=12;strokeColor=none;fillColor=none;fontSize=20;spacing=0;">
+        <mxGeometry x="45" y="760" width="140" height="50" as="geometry" />
+      </mxCell>
+      <mxCell id="mark-B" parent="1" vertex="1" value="B" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=22;align=center;verticalAlign=middle;spacing=12;shape=ellipse;spacing=0;strokeColor=#b71c1c;fontColor=#b71c1c;fillColor=#ffffff;fontStyle=1;">
+        <mxGeometry x="92" y="1260" width="40" height="40" as="geometry" />
+      </mxCell>
+      <mxCell id="cp-e-match-delivery" parent="1" edge="1" source="mark-B" target="cp-delivery" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#536273;strokeWidth=1.5;fontSize=20;fontFamily=Helvetica;labelBackgroundColor=#ffffff;exitX=0.5;exitY=0;entryX=0.2;entryY=1;">
+        <mxGeometry relative="1" as="geometry">
+          <Array as="points" />
+        </mxGeometry>
+      </mxCell>
+      <mxCell id="mark-A" parent="1" vertex="1" value="A" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=22;align=center;verticalAlign=middle;spacing=12;shape=ellipse;spacing=0;strokeColor=#b71c1c;fontColor=#b71c1c;fillColor=#ffffff;fontStyle=1;">
+        <mxGeometry x="768" y="1260" width="40" height="40" as="geometry" />
+      </mxCell>
+      <mxCell id="cp-e-room-match" parent="1" edge="1" source="cp-rooms" target="mark-A" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#536273;strokeWidth=1.5;fontSize=20;fontFamily=Helvetica;labelBackgroundColor=#ffffff;exitX=0.8;exitY=1;entryX=0.5;entryY=0;">
+        <mxGeometry relative="1" as="geometry">
+          <Array as="points" />
+        </mxGeometry>
+      </mxCell>
+      <mxCell id="B-caption" parent="1" vertex="1" value="B ← phần 2" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=22;align=center;verticalAlign=middle;spacing=12;strokeColor=none;fillColor=none;fontSize=20;spacing=0;">
+        <mxGeometry x="35" y="1310" width="250" height="40" as="geometry" />
+      </mxCell>
+      <mxCell id="A-caption" parent="1" vertex="1" value="A → phần 2" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=22;align=center;verticalAlign=middle;spacing=12;strokeColor=none;fillColor=none;fontSize=20;spacing=0;">
+        <mxGeometry x="620" y="1310" width="240" height="40" as="geometry" />
+      </mxCell>
+      <mxCell id="cp-e-delivery-room-failure" parent="1" edge="1" source="cp-delivery" target="cp-rooms" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#536273;strokeWidth=1.5;fontSize=20;fontFamily=Helvetica;labelBackgroundColor=#ffffff;exitX=0.75;exitY=1;entryX=0.25;entryY=1;">
+        <mxGeometry relative="1" as="geometry">
+          <Array as="points">
+            <mxPoint x="310" y="1150" />
+            <mxPoint x="590" y="1150" />
+          </Array>
+        </mxGeometry>
+      </mxCell>
+      <mxCell id="label-cp-e-client-auth" parent="1" vertex="1" value="Tài khoản /&lt;br&gt;HTTPS JSON" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=22;align=center;verticalAlign=middle;spacing=12;strokeColor=none;fillColor=#ffffff;fontSize=20;spacing=0;" associatedEdge="cp-e-client-auth">
+        <mxGeometry x="90" y="335" width="260" height="60" as="geometry" />
+      </mxCell>
+      <mxCell id="label-cp-e-client-hub" parent="1" vertex="1" value="SignalR: khởi tạo qua HTTPS;&lt;br&gt;hành động thời gian thực qua&lt;br&gt;WSS hoặc HTTPS dự phòng" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=22;align=center;verticalAlign=middle;spacing=12;strokeColor=none;fillColor=#ffffff;fontSize=20;spacing=0;" associatedEdge="cp-e-client-hub">
+        <mxGeometry x="530" y="325" width="300" height="85" as="geometry" />
+      </mxCell>
+      <mxCell id="label-cp-e-delivery-client" parent="1" vertex="1" value="SignalR: cập nhật thời gian thực&lt;br&gt;qua WSS hoặc HTTPS dự phòng" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=22;align=center;verticalAlign=middle;spacing=12;strokeColor=none;fillColor=#ffffff;fontSize=20;spacing=0;" associatedEdge="cp-e-delivery-client">
+        <mxGeometry x="250" y="110" width="400" height="60" as="geometry" />
+      </mxCell>
+      <mxCell id="label-cp-e-auth-data" parent="1" vertex="1" value="Đọc / ghi tài khoản" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=22;align=center;verticalAlign=middle;spacing=12;strokeColor=none;fillColor=#ffffff;fontSize=20;spacing=0;" associatedEdge="cp-e-auth-data">
+        <mxGeometry x="90" y="715" width="260" height="40" as="geometry" />
+      </mxCell>
+      <mxCell id="label-cp-e-hub-room" parent="1" vertex="1" value="Xác định phòng /&lt;br&gt;kiểm tra thành viên" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=22;align=center;verticalAlign=middle;spacing=12;strokeColor=none;fillColor=#ffffff;fontSize=20;spacing=0;" associatedEdge="cp-e-hub-room">
+        <mxGeometry x="555" y="735" width="250" height="60" as="geometry" />
+      </mxCell>
+      <mxCell id="label-cp-e-delivery-room-failure" parent="1" vertex="1" value="Lỗi kết nối / gửi / đầy hàng&lt;br&gt;→ xếp sự kiện rời phòng" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=22;align=center;verticalAlign=middle;spacing=12;strokeColor=none;fillColor=#ffffff;fontSize=20;spacing=0;" associatedEdge="cp-e-delivery-room-failure">
+        <mxGeometry x="300" y="1160" width="300" height="60" as="geometry" />
+      </mxCell>
+      <mxCell id="label-cp-e-match-delivery" parent="1" vertex="1" value="Sự kiện theo người nhận" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=22;align=center;verticalAlign=middle;spacing=12;strokeColor=none;fillColor=#ffffff;fontSize=20;spacing=0;" associatedEdge="cp-e-match-delivery">
+        <mxGeometry x="35" y="1175" width="160" height="75" as="geometry" />
+      </mxCell>
+      <mxCell id="label-cp-e-room-match" parent="1" vertex="1" value="Đưa sự kiện vào hàng đợi" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=22;align=center;verticalAlign=middle;spacing=12;strokeColor=none;fillColor=#ffffff;fontSize=20;spacing=0;" associatedEdge="cp-e-room-match">
+        <mxGeometry x="710" y="1175" width="160" height="75" as="geometry" />
+      </mxCell>
+      <mxCell id="export-bounds" parent="1" vertex="1" value="" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=22;align=center;verticalAlign=middle;spacing=12;strokeColor=none;fillColor=none;">
+        <mxGeometry x="0" y="0" width="900" height="1385" as="geometry" />
+      </mxCell>
+    </root>
+  </mxGraphModel>
+</diagram>
+<diagram id="component-report-2" name="Thành phần máy chủ — Phần 2">
+  <mxGraphModel page="1" pageScale="1" pageWidth="920" pageHeight="1420" background="#ffffff">
+    <root>
+      <mxCell id="0" />
+      <mxCell id="1" parent="0" />
+      <mxCell id="title" parent="1" vertex="1" value="&lt;b&gt;Thành phần máy chủ — Phần 2&lt;/b&gt;&lt;br&gt;Xử lý phòng và dữ liệu" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=22;align=center;verticalAlign=middle;spacing=12;strokeColor=none;fillColor=none;fontSize=26;">
+        <mxGeometry x="20" y="0" width="860" height="80" as="geometry" />
+      </mxCell>
+      <mxCell id="server" parent="1" vertex="1" value="" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=22;align=center;verticalAlign=middle;spacing=12;fillColor=none;strokeColor=#1168bd;dashed=1;">
+        <mxGeometry x="20" y="90" width="860" height="1290" as="geometry" />
+      </mxCell>
+      <mxCell id="boundary-label" parent="1" vertex="1" value="&lt;b&gt;Cùng máy chủ C# / ASP.NET Core ở phần 1&lt;/b&gt;" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=22;align=center;verticalAlign=middle;spacing=12;strokeColor=none;fillColor=none;fontSize=20;spacing=0;">
+        <mxGeometry x="50" y="95" width="800" height="40" as="geometry" />
+      </mxCell>
+      <mxCell id="mark-A" parent="1" vertex="1" value="A" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=22;align=center;verticalAlign=middle;spacing=12;shape=ellipse;spacing=0;strokeColor=#b71c1c;fontColor=#b71c1c;fillColor=#ffffff;fontStyle=1;">
+        <mxGeometry x="80" y="155" width="40" height="40" as="geometry" />
+      </mxCell>
+      <mxCell id="mark-B" parent="1" vertex="1" value="B" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=22;align=center;verticalAlign=middle;spacing=12;shape=ellipse;spacing=0;strokeColor=#b71c1c;fontColor=#b71c1c;fillColor=#ffffff;fontStyle=1;">
+        <mxGeometry x="780" y="155" width="40" height="40" as="geometry" />
+      </mxCell>
+      <mxCell id="A-caption" parent="1" vertex="1" value="Từ phần 1" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=22;align=center;verticalAlign=middle;spacing=12;strokeColor=none;fillColor=none;fontSize=20;spacing=0;">
+        <mxGeometry x="35" y="200" width="170" height="40" as="geometry" />
+      </mxCell>
+      <mxCell id="B-caption" parent="1" vertex="1" value="Về phần 1" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=22;align=center;verticalAlign=middle;spacing=12;strokeColor=none;fillColor=none;fontSize=20;spacing=0;">
+        <mxGeometry x="700" y="200" width="170" height="40" as="geometry" />
+      </mxCell>
+      <mxCell id="cp-match" parent="1" vertex="1" value="&lt;b&gt;Bộ xử lý phòng và điều phối trận&lt;/b&gt;&lt;br&gt;Giữ trạng thái phòng / trận có thẩm quyền.&lt;br&gt;Một hàng đợi tuần tự mỗi phòng: hành động, hết giờ, vào / rời phòng.&lt;br&gt;Bắt đầu trận; quản lý giai đoạn, lượt và chuyển vòng." style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=22;align=center;verticalAlign=middle;spacing=12;rounded=1;arcSize=8;fillColor=#d9e8fb;strokeColor=#1168bd;fontColor=#102a43;">
+        <mxGeometry x="270" y="240" width="360" height="250" as="geometry" />
+      </mxCell>
+      <mxCell id="cp-normal" parent="1" vertex="1" value="&lt;b&gt;Luật Vẽ đoán&lt;/b&gt;&lt;br&gt;Quyền vẽ, kiểm tra đáp án,&lt;br&gt;kết thúc lượt và điểm theo luật chốt.&lt;br&gt;Công thức điểm còn mở." style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=22;align=center;verticalAlign=middle;spacing=12;rounded=1;arcSize=8;fillColor=#d9e8fb;strokeColor=#1168bd;fontColor=#102a43;">
+        <mxGeometry x="40" y="570" width="360" height="210" as="geometry" />
+      </mxCell>
+      <mxCell id="cp-imposter" parent="1" vertex="1" value="&lt;b&gt;Luật Kẻ giả mạo&lt;/b&gt;&lt;br&gt;Vai ẩn; từ khóa / gợi ý riêng.&lt;br&gt;Hai lượt vẽ đảo thứ tự, thảo luận, bỏ phiếu.&lt;br&gt;Hòa phiếu / điểm còn mở." style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=22;align=center;verticalAlign=middle;spacing=12;rounded=1;arcSize=8;fillColor=#d9e8fb;strokeColor=#1168bd;fontColor=#102a43;">
+        <mxGeometry x="500" y="570" width="360" height="210" as="geometry" />
+      </mxCell>
+      <mxCell id="cp-canvas" parent="1" vertex="1" value="&lt;b&gt;Quản lý canvas&lt;/b&gt;&lt;br&gt;Kiểm tra quyền và đóng góp nét vẽ.&lt;br&gt;Giữ canvas và chủ sở hữu nét; cập nhật theo hàng đợi phòng.&lt;br&gt;Khóa vẽ theo giai đoạn / lượt." style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=22;align=center;verticalAlign=middle;spacing=12;rounded=1;arcSize=8;fillColor=#d9e8fb;strokeColor=#1168bd;fontColor=#102a43;">
+        <mxGeometry x="40" y="890" width="360" height="210" as="geometry" />
+      </mxCell>
+      <mxCell id="cp-keywords" parent="1" vertex="1" value="&lt;b&gt;Chọn từ khóa và gợi ý&lt;/b&gt;&lt;br&gt;Chọn từ hệ thống cho từng vòng.&lt;br&gt;Cặp đáp án — gợi ý được chuẩn bị.&lt;br&gt;Không để chủ phòng cung cấp đáp án." style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=22;align=center;verticalAlign=middle;spacing=12;rounded=1;arcSize=8;fillColor=#d9e8fb;strokeColor=#1168bd;fontColor=#102a43;">
+        <mxGeometry x="500" y="890" width="360" height="210" as="geometry" />
+      </mxCell>
+      <mxCell id="cp-data" parent="1" vertex="1" value="&lt;b&gt;Truy cập dữ liệu&lt;/b&gt;&lt;br&gt;EF Core / SQL Server provider.&lt;br&gt;Đọc / ghi tài khoản; đọc từ khóa / gợi ý.&lt;br&gt;Lưu kết quả trận bất đồng bộ." style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=22;align=center;verticalAlign=middle;spacing=12;rounded=1;arcSize=8;fillColor=#d9e8fb;strokeColor=#1168bd;fontColor=#102a43;">
+        <mxGeometry x="500" y="1200" width="360" height="165" as="geometry" />
+      </mxCell>
+      <mxCell id="cp-db" parent="1" vertex="1" value="&lt;b&gt;Cơ sở dữ liệu trò chơi&lt;/b&gt;&lt;br&gt;[Container: Microsoft SQL Server]&lt;br&gt;Tài khoản, từ khóa / gợi ý, kết quả" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=22;align=center;verticalAlign=middle;spacing=12;fillColor=#eeeeee;strokeColor=#666666;">
+        <mxGeometry x="40" y="1210" width="360" height="150" as="geometry" />
+      </mxCell>
+      <mxCell id="cp-e-room-match" parent="1" edge="1" source="mark-A" target="cp-match" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#536273;strokeWidth=1.5;fontSize=20;fontFamily=Helvetica;labelBackgroundColor=#ffffff;exitX=1;exitY=0.5;entryX=0.5;entryY=0;">
+        <mxGeometry relative="1" as="geometry">
+          <Array as="points">
+            <mxPoint x="450" y="175" />
+          </Array>
+        </mxGeometry>
+      </mxCell>
+      <mxCell id="cp-e-match-delivery" parent="1" edge="1" source="cp-match" target="mark-B" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#536273;strokeWidth=1.5;fontSize=20;fontFamily=Helvetica;labelBackgroundColor=#ffffff;exitX=0.8;exitY=0;entryX=0;entryY=0.5;">
+        <mxGeometry relative="1" as="geometry">
+          <Array as="points">
+            <mxPoint x="560" y="175" />
+          </Array>
+        </mxGeometry>
+      </mxCell>
+      <mxCell id="cp-e-match-normal" parent="1" edge="1" source="cp-match" target="cp-normal" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#536273;strokeWidth=1.5;fontSize=20;fontFamily=Helvetica;labelBackgroundColor=#ffffff;exitX=0;exitY=0.5;entryX=0.5;entryY=0;">
+        <mxGeometry relative="1" as="geometry">
+          <Array as="points">
+            <mxPoint x="220" y="365" />
+          </Array>
+        </mxGeometry>
+      </mxCell>
+      <mxCell id="cp-e-match-imposter" parent="1" edge="1" source="cp-match" target="cp-imposter" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#536273;strokeWidth=1.5;fontSize=20;fontFamily=Helvetica;labelBackgroundColor=#ffffff;exitX=1;exitY=0.5;entryX=0.5;entryY=0;">
+        <mxGeometry relative="1" as="geometry">
+          <Array as="points">
+            <mxPoint x="680" y="365" />
+          </Array>
+        </mxGeometry>
+      </mxCell>
+      <mxCell id="cp-e-match-canvas" parent="1" edge="1" source="cp-match" target="cp-canvas" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#536273;strokeWidth=1.5;fontSize=20;fontFamily=Helvetica;labelBackgroundColor=#ffffff;exitX=0.25;exitY=1;entryX=0.5;entryY=0;">
+        <mxGeometry relative="1" as="geometry">
+          <Array as="points">
+            <mxPoint x="430" y="530" />
+            <mxPoint x="430" y="835" />
+            <mxPoint x="220" y="835" />
+          </Array>
+          <mxPoint x="-110" y="100" as="offset" />
+        </mxGeometry>
+      </mxCell>
+      <mxCell id="cp-e-match-keyword" parent="1" edge="1" source="cp-match" target="cp-keywords" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#536273;strokeWidth=1.5;fontSize=20;fontFamily=Helvetica;labelBackgroundColor=#ffffff;exitX=0.75;exitY=1;entryX=0.5;entryY=0;">
+        <mxGeometry relative="1" as="geometry">
+          <Array as="points">
+            <mxPoint x="470" y="530" />
+            <mxPoint x="470" y="835" />
+            <mxPoint x="680" y="835" />
+          </Array>
+          <mxPoint x="100" y="100" as="offset" />
+        </mxGeometry>
+      </mxCell>
+      <mxCell id="cp-e-match-data" parent="1" edge="1" source="cp-match" target="cp-data" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#536273;strokeWidth=1.5;fontSize=20;fontFamily=Helvetica;labelBackgroundColor=#ffffff;exitX=1;exitY=0.8;entryX=1;entryY=0.5;">
+        <mxGeometry relative="1" as="geometry">
+          <Array as="points">
+            <mxPoint x="870" y="440" />
+            <mxPoint x="870" y="1280" />
+          </Array>
+          <mxPoint x="-75" y="0" as="offset" />
+        </mxGeometry>
+      </mxCell>
+      <mxCell id="cp-e-keyword-data" parent="1" edge="1" source="cp-keywords" target="cp-data" value="&lt;div style=&quot;width:180px;white-space:normal;text-align:center&quot;&gt;Đọc kho từ&lt;/div&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#536273;strokeWidth=1.5;fontSize=20;fontFamily=Helvetica;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;entryX=0.5;entryY=0;">
+        <mxGeometry relative="1" as="geometry" />
+      </mxCell>
+      <mxCell id="cp-e-data-db" parent="1" edge="1" source="cp-data" target="cp-db" value="&lt;div style=&quot;width:90px;white-space:normal;text-align:center&quot;&gt;TDS qua TLS&lt;/div&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#536273;strokeWidth=1.5;fontSize=20;fontFamily=Helvetica;labelBackgroundColor=#ffffff;exitX=0;exitY=0.5;entryX=1;entryY=0.5;">
+        <mxGeometry relative="1" as="geometry" />
+      </mxCell>
+      <mxCell id="mark-C" parent="1" vertex="1" value="C" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=22;align=center;verticalAlign=middle;spacing=12;shape=ellipse;spacing=0;strokeColor=#b71c1c;fontColor=#b71c1c;fillColor=#ffffff;fontStyle=1;">
+        <mxGeometry x="805" y="1130" width="40" height="40" as="geometry" />
+      </mxCell>
+      <mxCell id="cp-e-auth-data" parent="1" edge="1" source="mark-C" target="cp-data" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#536273;strokeWidth=1.5;fontSize=20;fontFamily=Helvetica;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;entryX=0.9;entryY=0;">
+        <mxGeometry relative="1" as="geometry">
+          <Array as="points">
+            <mxPoint x="825" y="1180" />
+          </Array>
+        </mxGeometry>
+      </mxCell>
+      <mxCell id="label-cp-e-match-normal" parent="1" vertex="1" value="Áp dụng luật" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=22;align=center;verticalAlign=middle;spacing=12;strokeColor=none;fillColor=#ffffff;fontSize=20;spacing=0;" associatedEdge="cp-e-match-normal">
+        <mxGeometry x="130" y="505" width="180" height="50" as="geometry" />
+      </mxCell>
+      <mxCell id="label-cp-e-match-imposter" parent="1" vertex="1" value="Áp dụng luật" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=22;align=center;verticalAlign=middle;spacing=12;strokeColor=none;fillColor=#ffffff;fontSize=20;spacing=0;" associatedEdge="cp-e-match-imposter">
+        <mxGeometry x="590" y="505" width="180" height="50" as="geometry" />
+      </mxCell>
+      <mxCell id="label-cp-e-match-data" parent="1" vertex="1" value="Lưu kết quả" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=22;align=center;verticalAlign=middle;spacing=12;strokeColor=none;fillColor=#ffffff;fontSize=20;spacing=0;" associatedEdge="cp-e-match-data">
+        <mxGeometry x="745" y="790" width="125" height="45" as="geometry" />
+      </mxCell>
+      <mxCell id="label-cp-e-match-canvas" parent="1" vertex="1" value="Kiểm tra / cập nhật nét" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=22;align=center;verticalAlign=middle;spacing=12;strokeColor=none;fillColor=#ffffff;fontSize=20;spacing=0;" associatedEdge="cp-e-match-canvas">
+        <mxGeometry x="100" y="815" width="240" height="50" as="geometry" />
+      </mxCell>
+      <mxCell id="label-cp-e-match-keyword" parent="1" vertex="1" value="Chọn từ / gợi ý" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=22;align=center;verticalAlign=middle;spacing=12;strokeColor=none;fillColor=#ffffff;fontSize=20;spacing=0;" associatedEdge="cp-e-match-keyword">
+        <mxGeometry x="575" y="850" width="210" height="35" as="geometry" />
+      </mxCell>
+      <mxCell id="export-bounds" parent="1" vertex="1" value="" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=22;align=center;verticalAlign=middle;spacing=12;strokeColor=none;fillColor=none;">
+        <mxGeometry x="0" y="0" width="900" height="1385" as="geometry" />
       </mxCell>
     </root>
   </mxGraphModel>

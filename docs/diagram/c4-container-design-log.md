@@ -252,3 +252,23 @@ Technical references consulted: [SignalR overview](https://learn.microsoft.com/a
 - Changes: updated text attributes on exactly six objects: `ct-client`, `ct-server`, `ct-db`, `ct-e-actions`, `ct-e-updates`, and `ct-player`. Client and both gameplay directions explicitly retain thời gian thực. Updated the two gameplay display templates with the approved HTTPS/WSS wording while preserving their widths, type sizes, and technologies.
 - Verification: parsed XML and checked unique IDs, parent/source/target references, and relative edge geometry on all seven pages. Exact comparison confirms only the approved attributes in six opening tags differ; removing those tags leaves the rest of the file byte-for-byte identical. All geometry, styles, connectors, legends, and six unrelated pages are preserved. Inspected `/tmp/c4-container-minimal-text-review.png`; new descriptions wrap within the existing boxes. `git diff --check` passed.
 - Limits: source layout intentionally remains unchanged and differs from the compact PNG export. No repository image regenerated; no application tests required or run.
+
+
+## 2026-11-14 — Align Component responsibilities with Context, Container, and concurrency
+
+- Authorization: the user approved the eight corrections identified in the cross-diagram review.
+- Files changed: `docs/diagram/c4-model.drawio.xml`, `docs/diagram/c4-container-design-log.md`, and `agent.md`.
+- Changes: updated Component terminology to Kẻ giả mạo/bỏ phiếu; aligned realtime transport labels; clarified Hub validation, room resolution/membership checks, authoritative room-state ownership, ordered canvas updates, host startup permissions, per-connection bounded queues/senders, and account writes. Added delivery-to-room-management failure notification feeding the existing room-event queue path. Retained ten logical components and open gameplay/failure policies.
+- Verification: XML parsing, unique IDs, parent/source/target references and relative edge geometry pass for all seven pages. The six other page blocks are byte-for-byte unchanged. Inspected temporary Component renders; corrected narrow wrapping of the new failure label. Updated descriptions fit existing boxes. Full page layout optimization remains deferred. No application tests were required; this records target architecture only.
+- Pending: Component/Container layout and export refinement; Context source/export terminology synchronization; Google Docs sizing and report references; architecture explanations/multi-room walkthrough; implementation/testing evidence; scoring/tie/reconnect/host-transfer/queue policies and instructor confirmation; final report review.
+
+
+## 2026-11-14 — Split Component diagram into two Google Docs report pages
+
+- Authorization: the user approved two compact portrait pages in the original XML, two PNG exports without the c4 prefix, and updates to the design and shared logs.
+- Files changed: `docs/diagram/c4-model.drawio.xml`, `docs/diagram/component-1.png`, `docs/diagram/component-2.png`, `docs/diagram/c4-container-design-log.md`, and `agent.md`.
+- Added pages: `component-report-1` (reception and delivery) and `component-report-2` (room processing and data). All seven existing pages remain byte-for-byte unchanged, including the complete overview. A/B/C endpoints preserve room actions, outgoing events, and account-persistence dependencies. Both pages identify the same server process.
+- Layout: two columns, compact boxes, consistent 22-unit body and 20-unit relationship text, light backgrounds, explicit label placement, and shared C#/ASP.NET Core boundary labels replacing repeated component technology tags. All ten component descriptions are preserved. Template legends and bottom notes are excluded from report views; the overview retains design notes.
+- Exports: both PNGs are 1866 × 2836, 2×, white background, 16-unit border, with matching bounds for consistent insertion scale.
+- Verification: XML, unique IDs, references, relative edges, exact component-description comparison, and logical endpoint comparison through A–C passed. Inspected final renders and two-page A4 proof `/tmp/component-a4-proof.pdf`. At 16 cm width each image is 24.32 cm tall, body text approximately 10.69 pt and relationships 9.72 pt; both fit with captions using left 3 cm and other 2 cm margins. Corrected intermediate label overlaps. No application tests required.
+- Limits/pending: actual Google Docs insertion and exported report PDF remain unchecked. Pending: report references/placement; deferred Container source layout; Context source/export terminology synchronization; architecture explanations/multi-room walkthrough; implementation/testing evidence; unresolved policies/instructor confirmation; final report review.
