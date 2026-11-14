@@ -23,8 +23,12 @@ Dùng page break và paragraph spacing, không căn trang bằng hàng loạt d�
 - Rà ở kích thước PDF 100%; tách hình hoặc dùng trang ngang nếu chữ nhỏ. Không ép nhiều sơ đồ vào một trang chỉ để đạt số trang mục tiêu.
 - Mỗi hình có caption, được dẫn trong nội dung và có ba phần giải thích: mục đích/thành phần; diễn tiến ví dụ; quy tắc/quyết định/giới hạn.
 - GUI ghi rõ ảnh ứng dụng hay wireframe dự kiến; giải thích hành động, validation, chuyển màn hình và lỗi.
-- C4 Component hiện tại là template, cần nội dung game thực sự. Không sử dụng template Class như kết quả nhóm.
-- Khi chỉnh draw.io, đọc [hướng dẫn tại thư mục diagram](../diagram/AGENTS.md), bảo toàn trang và legend ngoài phạm vi. XML hợp lệ chưa chứng minh hình đẹp; phải rà bản render.
+- C4 Component hiện tại đã mô tả mười trách nhiệm logic của server theo kiến trúc SignalR mục tiêu. Rà hình và phần giải thích theo đúng phiên bản này; không dùng template Class hoặc swimlane TCP lịch sử như kết quả kiến trúc hiện tại.
+- Dùng ba hình Context/concurrency trong `../diagram/c4-report.drawio.xml` và các PNG tương ứng; tối ưu Container/Component đang chờ duyệt riêng. Không coi hai phần concurrency là hai server.
+- [ ] Chèn Context, rồi Container/Component khi có bản đạt yêu cầu, rồi concurrency phần 1 và phần 2 trên hai trang kế tiếp. Chiều rộng ảnh khoảng 16 cm trên A4 dọc; giữ tỉ lệ và chừa chỗ caption.
+- [ ] Rà chữ trên PDF ở 100% sau chèn; mục tiêu nhãn chính khoảng 11–12 pt. Không thu nhỏ toàn bộ overview để thay cho hai hình nối tiếp.
+- [ ] Mục 2.4 có 2,5 trang; tổng mục tiêu nội bộ 25 trang và các vị trí dự kiến được cập nhật đồng bộ với đề cương.
+- Khi chỉnh draw.io, đọc [hướng dẫn tại gốc repository](../../AGENTS.md), bảo toàn trang và legend ngoài phạm vi. XML hợp lệ chưa chứng minh hình đẹp; phải rà bản render.
 
 ## 3. Ma trận yêu cầu và đầu ra
 
@@ -33,8 +37,8 @@ Dùng page break và paragraph spacing, không căn trang bằng hàng loạt d�
 | Mục tiêu, hai chế độ và yêu cầu môn học | Chương 1 | [ ] |
 | Core/supporting/generic subdomains | 1.4, bảng ngắn | [ ] |
 | C4 Context, Container, server Component | 2.1–2.3, ba sơ đồ và giải thích | [ ] |
-| Đa kết nối, async I/O và room ordering | 2.4, concurrency diagram | [ ] |
-| Stack, ports, frame và message structure | 2.5, hình và bảng contract | [ ] |
+| Đa kết nối, async I/O và room ordering | 2.4, hai phần concurrency nối tiếp | [ ] |
+| Phân lớp mạng, kênh/cổng và hợp đồng thông điệp trên SignalR | 2.5, hình và bảng contract | [ ] |
 | Server có CSDL, dữ liệu và bảo mật | 2.6 | [ ] |
 | User stories có flow minh họa | 3.1 | [ ] |
 | Luồng/trạng thái hai chế độ | 3.2–3.3 | [ ] |
@@ -50,9 +54,13 @@ Các flow và sơ đồ dùng draw.io theo yêu cầu môn học. Internet là �
 
 ## 4. Checklist nội dung
 
-- [ ] Một frame format thống nhất trong hình, văn bản, ví dụ và kết luận.
-- [ ] HTTPS/TCP, phiên và cổng nhất quán với thiết kế được nhóm xác nhận.
-- [ ] Phân biệt prototype với mục tiêu; EF Core, queue, Google sign-in không bị mô tả là đã có khi thiếu code.
+- [ ] Hợp đồng lời gọi Hub/sự kiện SignalR thống nhất giữa hình, văn bản, ví dụ và kết luận; tên, chiều, payload, điều kiện và lỗi được mô tả rõ.
+- [ ] SignalR phụ trách transport/framing; không trình bày frame TCP tự viết trong PDF cũ như giao thức gameplay hiện tại.
+- [ ] Tài khoản dùng HTTPS/JSON; gameplay dùng SignalR với HTTPS khởi tạo, WSS hoặc HTTPS dự phòng; Minimal API và Hub cùng tiến trình ASP.NET Core. Cổng và cấu hình được ghi đúng trạng thái xác nhận.
+- [ ] Trạng thái phòng nằm ngoài Hub; xử lý tuần tự theo phòng, queue gửi giới hạn và lọc người nhận được mô tả là trách nhiệm ứng dụng, không phải bảo đảm tự động của SignalR.
+- [ ] Yêu cầu network stack do nhóm tự phát triển được giữ nguyên; việc dùng SignalR đáp ứng yêu cầu này chưa được coi là đã chấp nhận khi thiếu xác nhận của giảng viên.
+- [ ] Context, Container và concurrency overview thống nhất phạm vi không tích hợp Google Identity; phần giải thích và ảnh xuất phản ánh đúng phạm vi này.
+- [ ] Phân biệt prototype với mục tiêu; Minimal API, SignalR, EF Core, queue và Google sign-in không bị mô tả là đã có hoặc đã kiểm thử khi thiếu bằng chứng.
 - [ ] Quyền vẽ, keyword, start, vote và kết thúc nhất quán giữa bảng luật và flow.
 - [ ] Luật chưa chốt được nêu rõ; không còn hai phương án trái nhau cùng được trình bày là chính thức.
 - [ ] Không còn mục rỗng; các sơ đồ có giải thích đủ để theo dõi một tình huống.
@@ -70,7 +78,7 @@ Các flow và sơ đồ dùng draw.io theo yêu cầu môn học. Internet là �
 - [ ] Font tiếng Việt không lỗi; tìm/copy một đoạn văn thành công.
 - [ ] Không còn comment, track changes, placeholder nội bộ hoặc trang trắng bất thường.
 - [ ] Rà “TODO”, “TBD”, “giả định”, “chưa chốt”: xử lý ghi chú nháp nhưng giữ công khai các vấn đề thực sự còn mở.
-- [ ] Kiểm tra lại byte example, JSON và thông tin hiển thị theo vai.
+- [ ] Kiểm tra ví dụ lời gọi/sự kiện, payload và thông tin hiển thị theo vai; không còn ví dụ frame TCP cũ được trình bày như giao thức SignalR.
 - [ ] Mở bằng trình xem thứ hai hoặc thiết bị khác nếu có.
 - [ ] Lưu nguồn, hình và PDF; xác định rõ bản cuối, tên file mới dùng chữ thường.
 - [ ] Tải đúng bản, mở lại bản đã tải lên khi có thể và lưu xác nhận nộp.

@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="draw.io" pages="3">
+  <diagram id="report-context" name="Bối cảnh hệ thống">
+    <mxGraphModel grid="1" gridSize="10" page="1" pageScale="1" pageWidth="760" pageHeight="850" background="#ffffff">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ctx-title" parent="1" vertex="1" value="&lt;b&gt;Draw &amp;amp; Guess — Bối cảnh hệ thống&lt;/b&gt;" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=20;align=center;verticalAlign=middle;spacing=14;fillColor=none;strokeColor=none;spacing=0;fontSize=24;">
+          <mxGeometry x="20" y="15" width="720" height="45" as="geometry" />
+        </mxCell>
+        <object placeholders="1" c4Name="Người chơi" c4Type="Person" c4Description="Người dùng đã đăng ký.&lt;br&gt;Tham gia phòng; chơi Vẽ đoán&lt;br&gt;hoặc Imposter; vẽ, đoán,&lt;br&gt;bỏ phiếu và xem kết quả." label="&lt;div style=&quot;font-size:20px;line-height:24px;text-align:center&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;br&gt;[Người dùng]&lt;div style=&quot;margin-top:8px&quot;&gt;%c4Description%&lt;/div&gt;&lt;/div&gt;" id="ctx-player">
+          <mxCell parent="1" style="html=1;dashed=0;whiteSpace=wrap;fillColor=#08427b;strokeColor=none;fontColor=#ffffff;shape=mxgraph.c4.person;align=center;metaEdit=1;points=[[0.5,0,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0]];metaData={&quot;c4Type&quot;:{&quot;editable&quot;:false}};fontSize=20;overflow=hidden;spacingLeft=6;spacingRight=6;" vertex="1">
+            <mxGeometry height="300" width="300" x="20" y="90" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Chủ phòng" c4Type="Person" c4Description="Một vai trò của người chơi.&lt;br&gt;Tạo phòng, chọn chế độ&lt;br&gt;và bắt đầu trận.&lt;br&gt;Đồng thời tham gia chơi." label="&lt;div style=&quot;font-size:20px;line-height:24px;text-align:center&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;br&gt;[Người dùng]&lt;div style=&quot;margin-top:8px&quot;&gt;%c4Description%&lt;/div&gt;&lt;/div&gt;" id="ctx-host">
+          <mxCell parent="1" style="html=1;dashed=0;whiteSpace=wrap;fillColor=#08427b;strokeColor=none;fontColor=#ffffff;shape=mxgraph.c4.person;align=center;metaEdit=1;points=[[0.5,0,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0]];metaData={&quot;c4Type&quot;:{&quot;editable&quot;:false}};fontSize=20;overflow=hidden;spacingLeft=6;spacingRight=6;" vertex="1">
+            <mxGeometry height="300" width="300" x="440" y="90" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="ctx-game" parent="1" vertex="1" value="&lt;b&gt;Draw &amp;amp; Guess Game&lt;/b&gt;&lt;br&gt;[Hệ thống phần mềm]&lt;br&gt;&lt;br&gt;Quản lý tài khoản, phòng và trò chơi thời gian thực.&lt;br&gt;Hỗ trợ Vẽ đoán, Imposter, bỏ phiếu, điểm và kết quả." style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=20;align=center;verticalAlign=middle;spacing=14;rounded=1;arcSize=8;fillColor=#dae8fc;strokeColor=#6c8ebf;fillColor=#1168BD;strokeColor=#1168BD;fontColor=#ffffff;">
+          <mxGeometry x="40" y="580" width="680" height="205" as="geometry" />
+        </mxCell>
+        <mxCell id="ctx-play" parent="1" edge="1" source="ctx-player" target="ctx-game" value="Đăng ký, đăng nhập,&lt;br&gt;vào phòng và chơi" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontFamily=Helvetica;fontSize=20;endArrow=block;endFill=1;strokeColor=#667085;strokeWidth=2;dashed=1;dashPattern=6 4;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;entryX=0.2;entryY=0;labelWidth=240;">
+          <mxGeometry relative="1" x="0" as="geometry">
+            <mxPoint x="0" y="-5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ctx-start" parent="1" edge="1" source="ctx-host" target="ctx-game" value="Tạo phòng, chọn chế độ&lt;br&gt;và bắt đầu trận" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontFamily=Helvetica;fontSize=20;endArrow=block;endFill=1;strokeColor=#667085;strokeWidth=2;dashed=1;dashPattern=6 4;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;entryX=0.8;entryY=0;labelWidth=240;">
+          <mxGeometry relative="1" x="0" as="geometry">
+            <mxPoint x="0" y="-5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="report-concurrency-1" name="Xử lý đồng thời — Phần 1">
+    <mxGraphModel grid="1" gridSize="10" page="1" pageScale="1" pageWidth="760" pageHeight="1040" background="#ffffff">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="p1-title" parent="1" vertex="1" value="&lt;b&gt;Xử lý đồng thời — Phần 1/2&lt;/b&gt;&lt;br&gt;Tiếp nhận và xử lý theo phòng" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=20;align=center;verticalAlign=middle;spacing=14;fillColor=none;strokeColor=none;spacing=0;fontSize=24;">
+          <mxGeometry x="20" y="15" width="720" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="p1-pool" parent="1" vertex="1" value="&lt;b&gt;Một tiến trình ASP.NET Core • .NET thread pool&lt;/b&gt;&lt;br&gt;Thực thi tác vụ sẵn sàng; I/O đang chờ không giữ luồng.&lt;br&gt;Các ô dưới đây là trách nhiệm logic, không phải thread riêng." style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=20;align=center;verticalAlign=middle;spacing=14;rounded=1;arcSize=6;fillColor=#fff2cc;strokeColor=#d6b656;">
+          <mxGeometry x="20" y="110" width="720" height="125" as="geometry" />
+        </mxCell>
+        <mxCell id="p1-clients" parent="1" vertex="1" value="&lt;b&gt;WinForms&lt;/b&gt;&lt;br&gt;A, B: phòng 1&lt;br&gt;C: phòng 2" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=20;align=center;verticalAlign=middle;spacing=14;rounded=1;arcSize=8;fillColor=#d5e8d4;strokeColor=#82b366;">
+          <mxGeometry x="20" y="275" width="230" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="p1-hub" parent="1" vertex="1" value="&lt;b&gt;1. SignalR Hub&lt;/b&gt;&lt;br&gt;Nhận lời gọi bất đồng bộ.&lt;br&gt;Kiểm tra phiên và dữ liệu." style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=20;align=center;verticalAlign=middle;spacing=14;rounded=1;arcSize=8;fillColor=#dae8fc;strokeColor=#6c8ebf;">
+          <mxGeometry x="340" y="275" width="400" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="p1-in" parent="1" edge="1" source="p1-clients" target="p1-hub" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontFamily=Helvetica;fontSize=20;endArrow=block;endFill=1;strokeColor=#667085;strokeWidth=2;labelBackgroundColor=#ffffff;exitX=1;exitY=0.5;entryX=0;entryY=0.5;">
+          <mxGeometry relative="1" x="0" as="geometry" />
+        </mxCell>
+        <mxCell id="p1-route" parent="1" vertex="1" value="&lt;b&gt;2. Định tuyến vào hàng đợi phòng&lt;/b&gt;&lt;br&gt;Xác định phòng hợp lệ.&lt;br&gt;Trạng thái phòng nằm ngoài Hub instance." style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=20;align=center;verticalAlign=middle;spacing=14;rounded=1;arcSize=8;fillColor=#dae8fc;strokeColor=#6c8ebf;">
+          <mxGeometry x="20" y="450" width="720" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="p1-route-edge" parent="1" edge="1" source="p1-hub" target="p1-route" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontFamily=Helvetica;fontSize=20;endArrow=block;endFill=1;strokeColor=#667085;strokeWidth=2;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;entryX=0.72;entryY=0;">
+          <mxGeometry relative="1" x="0" as="geometry" />
+        </mxCell>
+        <mxCell id="p1-room1" parent="1" vertex="1" value="&lt;b&gt;3a. Phòng 1 — A và B&lt;/b&gt;&lt;br&gt;Xử lý từng action theo thứ tự.&lt;br&gt;Kiểm tra vai / giai đoạn;&lt;br&gt;cập nhật trạng thái phòng." style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=20;align=center;verticalAlign=middle;spacing=14;rounded=1;arcSize=8;fillColor=#d5e8d4;strokeColor=#82b366;">
+          <mxGeometry x="20" y="630" width="330" height="165" as="geometry" />
+        </mxCell>
+        <mxCell id="p1-room2" parent="1" vertex="1" value="&lt;b&gt;3b. Phòng 2 — C&lt;/b&gt;&lt;br&gt;Xử lý từng action theo thứ tự.&lt;br&gt;Kiểm tra vai / giai đoạn;&lt;br&gt;cập nhật trạng thái phòng." style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=20;align=center;verticalAlign=middle;spacing=14;rounded=1;arcSize=8;fillColor=#d5e8d4;strokeColor=#82b366;">
+          <mxGeometry x="410" y="630" width="330" height="165" as="geometry" />
+        </mxCell>
+        <mxCell id="p1-a" parent="1" edge="1" source="p1-route" target="p1-room1" value="A / B" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontFamily=Helvetica;fontSize=20;endArrow=block;endFill=1;strokeColor=#667085;strokeWidth=2;labelBackgroundColor=#ffffff;exitX=0.23;exitY=1;entryX=0.5;entryY=0;">
+          <mxGeometry relative="1" x="0" as="geometry">
+            <mxPoint x="-45" y="0" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p1-c" parent="1" edge="1" source="p1-route" target="p1-room2" value="C" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontFamily=Helvetica;fontSize=20;endArrow=block;endFill=1;strokeColor=#667085;strokeWidth=2;labelBackgroundColor=#ffffff;exitX=0.77;exitY=1;entryX=0.5;entryY=0;">
+          <mxGeometry relative="1" x="0" as="geometry">
+            <mxPoint x="30" y="0" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p1-order" parent="1" vertex="1" value="&lt;b&gt;Tuần tự trong phòng • đồng thời giữa các phòng&lt;/b&gt;&lt;br&gt;Hành động, hết giờ và vào/rời phòng cùng qua hàng đợi.&lt;br&gt;Một phòng chờ I/O không giữ riêng luồng thực thi." style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=20;align=center;verticalAlign=middle;spacing=14;rounded=1;arcSize=6;fillColor=#fff2cc;strokeColor=#d6b656;">
+          <mxGeometry x="20" y="835" width="720" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="p1-next" parent="1" vertex="1" value="&lt;b&gt;Tiếp phần 2:&lt;/b&gt; đầu ra phòng → lọc người nhận → gửi cập nhật.&lt;br&gt;Phần 2 cũng mô tả lưu trữ và xử lý lỗi kết nối." style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=20;align=center;verticalAlign=middle;spacing=14;fillColor=none;strokeColor=none;spacing=0;">
+          <mxGeometry x="20" y="975" width="720" height="55" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="report-concurrency-2" name="Xử lý đồng thời — Phần 2">
+    <mxGraphModel grid="1" gridSize="10" page="1" pageScale="1" pageWidth="760" pageHeight="1110" background="#ffffff">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="p2-title" parent="1" vertex="1" value="&lt;b&gt;Xử lý đồng thời — Phần 2/2&lt;/b&gt;&lt;br&gt;Phân phối, lưu trữ và dọn dẹp" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=20;align=center;verticalAlign=middle;spacing=14;fillColor=none;strokeColor=none;spacing=0;fontSize=24;">
+          <mxGeometry x="20" y="15" width="720" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-rooms" parent="1" vertex="1" value="&lt;b&gt;Tiếp phần 1: đầu ra bộ xử lý phòng 1 / phòng 2&lt;/b&gt;&lt;br&gt;Cùng trạng thái có thẩm quyền tại server." style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=20;align=center;verticalAlign=middle;spacing=14;rounded=1;arcSize=8;fillColor=#d5e8d4;strokeColor=#82b366;">
+          <mxGeometry x="20" y="110" width="720" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-filter" parent="1" vertex="1" value="&lt;b&gt;4. Lọc theo người nhận&lt;/b&gt;&lt;br&gt;Gửi riêng từ khóa / gợi ý / vai ẩn.&lt;br&gt;Nét vẽ, lượt và kết quả chỉ gửi&lt;br&gt;tới người được phép nhận." style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=20;align=center;verticalAlign=middle;spacing=14;rounded=1;arcSize=8;fillColor=#dae8fc;strokeColor=#6c8ebf;">
+          <mxGeometry x="20" y="250" width="450" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-filter-edge" parent="1" edge="1" source="p2-rooms" target="p2-filter" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontFamily=Helvetica;fontSize=20;endArrow=block;endFill=1;strokeColor=#667085;strokeWidth=2;labelBackgroundColor=#ffffff;exitX=0.31;exitY=1;entryX=0.5;entryY=0;">
+          <mxGeometry relative="1" x="0" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-db" parent="1" vertex="1" value="&lt;b&gt;Lưu trữ async&lt;/b&gt;&lt;br&gt;EF Core / SQL Server.&lt;br&gt;Tài khoản, từ khóa /&lt;br&gt;gợi ý, kết quả trận.&lt;br&gt;&lt;br&gt;Kết nối CSDL:&lt;br&gt;TDS qua TLS." style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=20;align=center;verticalAlign=middle;spacing=14;rounded=1;arcSize=8;fillColor=#e1d5e7;strokeColor=#9673a6;">
+          <mxGeometry x="510" y="250" width="230" height="235" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-db-edge" parent="1" edge="1" source="p2-rooms" target="p2-db" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontFamily=Helvetica;fontSize=20;endArrow=block;endFill=1;strokeColor=#667085;strokeWidth=2;labelBackgroundColor=#ffffff;dashed=1;exitX=0.84;exitY=1;entryX=0.5;entryY=0;">
+          <mxGeometry relative="1" x="0" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-queue" parent="1" vertex="1" value="&lt;b&gt;5. Hàng đợi gửi có giới hạn&lt;/b&gt;&lt;br&gt;Hàng A / B / C, mỗi kết nối một hàng.&lt;br&gt;Cơ chế do ứng dụng quản lý." style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=20;align=center;verticalAlign=middle;spacing=14;rounded=1;arcSize=8;fillColor=#dae8fc;strokeColor=#6c8ebf;">
+          <mxGeometry x="20" y="445" width="450" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-queue-edge" parent="1" edge="1" source="p2-filter" target="p2-queue" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontFamily=Helvetica;fontSize=20;endArrow=block;endFill=1;strokeColor=#667085;strokeWidth=2;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;entryX=0.5;entryY=0;">
+          <mxGeometry relative="1" x="0" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-send" parent="1" vertex="1" value="&lt;b&gt;6. Gửi SignalR bất đồng bộ&lt;/b&gt;&lt;br&gt;Một bộ gửi tuần tự mỗi kết nối.&lt;br&gt;IHubContext → client qua WSS&lt;br&gt;hoặc transport HTTPS dự phòng." style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=20;align=center;verticalAlign=middle;spacing=14;rounded=1;arcSize=8;fillColor=#dae8fc;strokeColor=#6c8ebf;">
+          <mxGeometry x="20" y="610" width="450" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-send-edge" parent="1" edge="1" source="p2-queue" target="p2-send" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontFamily=Helvetica;fontSize=20;endArrow=block;endFill=1;strokeColor=#667085;strokeWidth=2;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;entryX=0.5;entryY=0;">
+          <mxGeometry relative="1" x="0" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-client" parent="1" vertex="1" value="&lt;b&gt;WinForms A / B / C&lt;/b&gt;&lt;br&gt;Nhận và hiển thị cập nhật được phép." style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=20;align=center;verticalAlign=middle;spacing=14;rounded=1;arcSize=8;fillColor=#d5e8d4;strokeColor=#82b366;">
+          <mxGeometry x="20" y="795" width="450" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-client-edge" parent="1" edge="1" source="p2-send" target="p2-client" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontFamily=Helvetica;fontSize=20;endArrow=block;endFill=1;strokeColor=#667085;strokeWidth=2;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;entryX=0.5;entryY=0;">
+          <mxGeometry relative="1" x="0" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-db-note" parent="1" vertex="1" value="&lt;b&gt;Thứ tự và ký hiệu&lt;/b&gt;&lt;br&gt;Kết quả DB đổi&lt;br&gt;trạng thái phải theo&lt;br&gt;thứ tự của phòng.&lt;br&gt;&lt;br&gt;Liền: luồng dữ liệu.&lt;br&gt;Đứt: I/O mọi phòng,&lt;br&gt;không bắt buộc cho&lt;br&gt;từng action." style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=20;align=center;verticalAlign=middle;spacing=14;rounded=1;arcSize=6;fillColor=#fff2cc;strokeColor=#d6b656;">
+          <mxGeometry x="510" y="525" width="230" height="350" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-cleanup" parent="1" vertex="1" value="&lt;b&gt;Mất kết nối / lỗi gửi / đầy hàng đợi&lt;/b&gt;&lt;br&gt;Dừng gửi → giải phóng tài nguyên → xếp sự kiện rời phòng&lt;br&gt;vào hàng đợi phòng → thông báo người còn lại.&lt;br&gt;Client chậm không chặn xử lý phòng. Giới hạn queue,&lt;br&gt;reconnect và chuyển chủ phòng vẫn chưa chốt." style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=20;align=center;verticalAlign=middle;spacing=14;rounded=1;arcSize=6;fillColor=#fff2cc;strokeColor=#d6b656;">
+          <mxGeometry x="20" y="920" width="720" height="160" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,4 +1,4 @@
-<mxfile host="Electron" agent="5.0 (Macintosh)" pages="6">
+<mxfile host="Electron" agent="5.0 (Macintosh)" pages="7">
   <diagram id="zNMGI6wU0Mi8Qe2H5Q59" name="C4 Context">
     <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -7,12 +7,12 @@
         <mxCell id="GE-451ExGiaeum3p-hQv-1" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;fontColor=#666666;" value="&lt;b&gt;Draw &amp;amp; Guess&lt;br&gt;Bối cảnh hệ thống&lt;/b&gt;" vertex="1">
           <mxGeometry height="35" width="300" x="70" y="5" as="geometry" />
         </mxCell>
-        <object placeholders="1" c4Name="Người chơi" c4Type="Person" c4Description="Người dùng đã đăng ký,&lt;br&gt;tham gia phòng, chơi&lt;br&gt;Vẽ đoán hoặc Imposter,&lt;br&gt;vẽ, đoán, bỏ phiếu&lt;br&gt;và xem kết quả." label="&lt;div style=&quot;font-size:11px;line-height:12px;text-align:center&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;br&gt;[%c4Type%]&lt;div style=&quot;margin-top:5px&quot;&gt;%c4Description%&lt;/div&gt;&lt;/div&gt;" id="lnmgxQ-TkLNhtuKLghFE-3">
+        <object placeholders="1" c4Name="Người chơi" c4Type="Person" c4Description="Người dùng đã đăng ký,&lt;br&gt;tham gia phòng, chơi&lt;br&gt;Vẽ đoán hoặc Imposter,&lt;br&gt;vẽ, đoán, bỏ phiếu&lt;br&gt;và xem kết quả." label="&lt;div style=&quot;font-size:11px;line-height:12px;text-align:center&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;br&gt;[Người dùng]&lt;div style=&quot;margin-top:5px&quot;&gt;%c4Description%&lt;/div&gt;&lt;/div&gt;" id="lnmgxQ-TkLNhtuKLghFE-3">
           <mxCell parent="1" style="html=1;dashed=0;whiteSpace=wrap;fillColor=#08427b;strokeColor=none;fontColor=#ffffff;shape=mxgraph.c4.person;align=center;metaEdit=1;points=[[0.5,0,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0]];metaData={&quot;c4Type&quot;:{&quot;editable&quot;:false}};fontSize=11;overflow=hidden;spacingLeft=6;spacingRight=6;" vertex="1">
             <mxGeometry height="155" width="190" x="70" y="75" as="geometry" />
           </mxCell>
         </object>
-        <object placeholders="1" c4Name="Draw &amp; Guess Game" c4Type="Software System" c4Description="Trò chơi nhiều người: quản lý tài khoản, phòng, vẽ và đoán thời gian thực; hỗ trợ Vẽ đoán, Imposter, bỏ phiếu, điểm và kết quả." label="&lt;b&gt;%c4Name%&lt;/b&gt;&lt;div&gt;[%c4Type%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;%c4Description%&lt;/div&gt;" link="data:page/id,7UhaJ9ljh7ebol46HkWr" id="lnmgxQ-TkLNhtuKLghFE-13">
+        <object placeholders="1" c4Name="Draw &amp; Guess Game" c4Type="Software System" c4Description="Trò chơi nhiều người: quản lý tài khoản, phòng, vẽ và đoán thời gian thực; hỗ trợ Vẽ đoán, Imposter, bỏ phiếu, điểm và kết quả." label="&lt;b&gt;%c4Name%&lt;/b&gt;&lt;div&gt;[Hệ thống phần mềm]&lt;/div&gt;&lt;br&gt;&lt;div&gt;%c4Description%&lt;/div&gt;" link="data:page/id,7UhaJ9ljh7ebol46HkWr" id="lnmgxQ-TkLNhtuKLghFE-13">
           <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#1168BD;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#1168BD;metaEdit=1;metaData={&quot;c4Type&quot;:{&quot;editable&quot;:false}};points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1">
             <mxGeometry height="135" width="350" x="100" y="450" as="geometry" />
           </mxCell>
@@ -84,33 +84,13 @@
             <mxGeometry relative="1" as="geometry" />
           </mxCell>
         </object>
-        <object placeholders="1" c4Name="Chủ phòng" c4Type="Person" c4Description="Một vai trò của người chơi:&lt;br&gt;tạo phòng, chọn chế độ&lt;br&gt;và bắt đầu trận.&lt;br&gt;Đồng thời tham gia chơi." label="&lt;div style=&quot;font-size:11px;line-height:12px;text-align:center&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;br&gt;[%c4Type%]&lt;div style=&quot;margin-top:5px&quot;&gt;%c4Description%&lt;/div&gt;&lt;/div&gt;" id="EwXlGVnZ-lc-afI8sIJ3-2">
+        <object placeholders="1" c4Name="Chủ phòng" c4Type="Person" c4Description="Một vai trò của người chơi:&lt;br&gt;tạo phòng, chọn chế độ&lt;br&gt;và bắt đầu trận.&lt;br&gt;Đồng thời tham gia chơi." label="&lt;div style=&quot;font-size:11px;line-height:12px;text-align:center&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;br&gt;[Người dùng]&lt;div style=&quot;margin-top:5px&quot;&gt;%c4Description%&lt;/div&gt;&lt;/div&gt;" id="EwXlGVnZ-lc-afI8sIJ3-2">
           <mxCell parent="1" style="html=1;dashed=0;whiteSpace=wrap;fillColor=#08427b;strokeColor=none;fontColor=#ffffff;shape=mxgraph.c4.person;align=center;metaEdit=1;points=[[0.5,0,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0]];metaData={&quot;c4Type&quot;:{&quot;editable&quot;:false}};fontSize=11;overflow=hidden;spacingLeft=6;spacingRight=6;" vertex="1">
             <mxGeometry height="155" width="190" x="350" y="75" as="geometry" />
           </mxCell>
         </object>
         <object placeholders="1" c4Type="Relationship" c4Description="Tạo phòng, chọn chế độ&lt;br&gt;và bắt đầu trận" label="&lt;div style=&quot;text-align:center&quot;&gt;&lt;b&gt;%c4Description%&lt;/b&gt;&lt;/div&gt;" id="EwXlGVnZ-lc-afI8sIJ3-3">
           <mxCell edge="1" parent="1" source="EwXlGVnZ-lc-afI8sIJ3-2" style="edgeStyle=none;rounded=0;html=1;strokeColor=#707070;strokeWidth=2;fontColor=#707070;dashed=1;endArrow=block;endFill=1;fontSize=10;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;entryX=0.9;entryY=0;" target="lnmgxQ-TkLNhtuKLghFE-13">
-            <mxGeometry relative="1" as="geometry" />
-          </mxCell>
-        </object>
-        <object placeholders="1" c4Name="Google Identity" c4Type="Software System" c4Description="Dịch vụ ngoài cung cấp đăng nhập Google.&lt;br&gt;Tích hợp dự kiến." label="&lt;b&gt;%c4Name%&lt;/b&gt;&lt;div&gt;[%c4Type%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;%c4Description%&lt;/div&gt;" id="c4-context-google-identity">
-          <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#999999;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#8A8A8A;metaEdit=1;metaData={&quot;c4Type&quot;:{&quot;editable&quot;:false}};points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1">
-            <mxGeometry height="135" width="200" x="590" y="450" as="geometry" />
-          </mxCell>
-        </object>
-        <object placeholders="1" c4Type="Relationship" c4Description="Đăng nhập bằng Google" label="&lt;div style=&quot;text-align:center&quot;&gt;&lt;b&gt;%c4Description%&lt;/b&gt;&lt;/div&gt;" id="c4-context-player-google">
-          <mxCell edge="1" parent="1" source="lnmgxQ-TkLNhtuKLghFE-3" style="edgeStyle=none;rounded=0;html=1;strokeColor=#707070;strokeWidth=2;fontColor=#707070;dashed=1;endArrow=block;endFill=1;fontSize=10;labelBackgroundColor=#ffffff;exitX=0.5;exitY=0;entryX=0.5;entryY=0;" target="c4-context-google-identity">
-            <mxGeometry relative="1" x="-0.2" as="geometry">
-              <Array as="points">
-                <mxPoint x="165" y="55" />
-                <mxPoint x="690" y="55" />
-              </Array>
-            </mxGeometry>
-          </mxCell>
-        </object>
-        <object placeholders="1" c4Type="Relationship" c4Description="Xác thực qua Google&lt;br&gt;(dự kiến)" label="&lt;div style=&quot;text-align:center&quot;&gt;&lt;b&gt;%c4Description%&lt;/b&gt;&lt;/div&gt;" id="c4-context-game-google">
-          <mxCell edge="1" parent="1" source="lnmgxQ-TkLNhtuKLghFE-13" style="edgeStyle=none;rounded=0;html=1;strokeColor=#707070;strokeWidth=2;fontColor=#707070;dashed=1;endArrow=block;endFill=1;fontSize=10;labelBackgroundColor=#ffffff;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="c4-context-google-identity">
             <mxGeometry relative="1" as="geometry" />
           </mxCell>
         </object>
@@ -190,17 +170,17 @@
         <mxCell id="ct-boundary" parent="6M9tTkYtrs8H_QPtwX7E-1" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=16;align=center;verticalAlign=middle;rounded=1;fillColor=none;strokeColor=#707070;dashed=1;verticalAlign=bottom;spacingBottom=16;align=left;spacingLeft=18;" value="&lt;b&gt;Draw &amp;amp; Guess&lt;/b&gt;&lt;br&gt;[Hệ thống phần mềm]" vertex="1">
           <mxGeometry height="850" width="1520" x="40" y="320" as="geometry" />
         </mxCell>
-        <object placeholders="1" c4Name="Ứng dụng người chơi" c4Type="Container" c4Description="Tài khoản, sảnh, canvas, đoán, vote và kết quả.&lt;br&gt;Cài trên máy từng người chơi.&lt;br&gt;Dùng SignalR .NET Client cho gameplay." c4Technology="C# / Windows Forms" label="&lt;div style=&quot;font-size:16px;line-height:21px;text-align:center&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;br&gt;[%c4Type%: %c4Technology%]&lt;div style=&quot;margin-top:10px&quot;&gt;%c4Description%&lt;/div&gt;&lt;/div&gt;" id="ct-client">
+        <object placeholders="1" c4Name="Ứng dụng người chơi" c4Type="Container" c4Description="Giao diện tài khoản, phòng và trò chơi.&lt;br&gt;Gửi hành động, hiển thị cập nhật&lt;br&gt;thời gian thực và kết quả.&lt;br&gt;Dùng SignalR .NET Client." c4Technology="C# / Windows Forms" label="&lt;div style=&quot;font-size:16px;line-height:21px;text-align:center&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;br&gt;[%c4Type%: %c4Technology%]&lt;div style=&quot;margin-top:10px&quot;&gt;%c4Description%&lt;/div&gt;&lt;/div&gt;" id="ct-client">
           <mxCell parent="ct-boundary" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=16;align=center;verticalAlign=middle;fontColor=#ffffff;spacing=10;rounded=1;arcSize=10;fillColor=#438DD5;strokeColor=#3C7FC0;" vertex="1">
             <mxGeometry height="170" width="440" x="450" y="30" as="geometry" />
           </mxCell>
         </object>
-        <object placeholders="1" c4Name="Máy chủ trò chơi" c4Type="Container" c4Description="Minimal API + SignalR Hub trong một tiến trình.&lt;br&gt;Xác thực, kết nối và quản lý phòng.&lt;br&gt;Điều phối Vẽ đoán / Imposter,&lt;br&gt;vai ẩn, bỏ phiếu và kết quả." c4Technology="C# / ASP.NET Core" label="&lt;div style=&quot;font-size:16px;line-height:21px;text-align:center&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;br&gt;[%c4Type%: %c4Technology%]&lt;div style=&quot;margin-top:10px&quot;&gt;%c4Description%&lt;/div&gt;&lt;/div&gt;" id="ct-server">
+        <object placeholders="1" c4Name="Máy chủ trò chơi" c4Type="Container" c4Description="Minimal API + SignalR Hub trong một tiến trình.&lt;br&gt;Xác thực, quản lý phòng và điều phối&lt;br&gt;Vẽ đoán / Kẻ giả mạo, vai ẩn,&lt;br&gt;bỏ phiếu và kết quả." c4Technology="C# / ASP.NET Core" label="&lt;div style=&quot;font-size:16px;line-height:21px;text-align:center&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;br&gt;[%c4Type%: %c4Technology%]&lt;div style=&quot;margin-top:10px&quot;&gt;%c4Description%&lt;/div&gt;&lt;/div&gt;" id="ct-server">
           <mxCell parent="ct-boundary" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=16;align=center;verticalAlign=middle;fontColor=#ffffff;spacing=10;rounded=1;arcSize=10;fillColor=#438DD5;strokeColor=#3C7FC0;" vertex="1">
             <mxGeometry height="190" width="440" x="450" y="410" as="geometry" />
           </mxCell>
         </object>
-        <object placeholders="1" c4Name="Cơ sở dữ liệu trò chơi" c4Type="Container" c4Description="Tài khoản, từ khóa / gợi ý&lt;br&gt;và kết quả trận được lưu lâu dài." c4Technology="Microsoft SQL Server" label="&lt;div style=&quot;font-size:15px;line-height:20px;text-align:center&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;br&gt;[%c4Type%: %c4Technology%]&lt;div style=&quot;margin-top:10px&quot;&gt;%c4Description%&lt;/div&gt;&lt;/div&gt;" id="ct-db">
+        <object placeholders="1" c4Name="Cơ sở dữ liệu trò chơi" c4Type="Container" c4Description="Lưu tài khoản, từ khóa / gợi ý&lt;br&gt;và kết quả trận." c4Technology="Microsoft SQL Server" label="&lt;div style=&quot;font-size:15px;line-height:20px;text-align:center&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;br&gt;[%c4Type%: %c4Technology%]&lt;div style=&quot;margin-top:10px&quot;&gt;%c4Description%&lt;/div&gt;&lt;/div&gt;" id="ct-db">
           <mxCell parent="ct-boundary" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=16;align=center;verticalAlign=middle;fontColor=#ffffff;spacing=10;shape=cylinder;boundedLbl=1;fillColor=#438DD5;strokeColor=#3C7FC0;" vertex="1">
             <mxGeometry height="160" width="440" x="450" y="650" as="geometry" />
           </mxCell>
@@ -211,14 +191,14 @@
               <Array as="points"><mxPoint x="180" y="149" /><mxPoint x="180" y="467" /></Array></mxGeometry>
           </mxCell>
         </object>
-        <object placeholders="1" c4Type="Relationship" c4Description="Gửi hành động chơi" c4Technology="ASP.NET Core SignalR" label="&lt;div style=&quot;width:300px;font-size:15px;line-height:20px;text-align:center&quot;&gt;&lt;b&gt;%c4Description%&lt;/b&gt;&lt;br&gt;[%c4Technology%]&lt;br&gt;Khởi tạo kết nối qua HTTPS.&lt;br&gt;Truyền dữ liệu qua WebSocket bảo mật (WSS);&lt;br&gt;nếu không khả dụng, dùng transport dự phòng qua HTTPS.&lt;/div&gt;" id="ct-e-actions">
+        <object placeholders="1" c4Type="Relationship" c4Description="Gửi hành động chơi." c4Technology="ASP.NET Core SignalR" label="&lt;div style=&quot;width:300px;font-size:15px;line-height:20px;text-align:center&quot;&gt;&lt;b&gt;%c4Description%&lt;/b&gt;&lt;br&gt;[%c4Technology%]&lt;br&gt;Khởi tạo qua HTTPS;&lt;br&gt;trao đổi thời gian thực qua WSS&lt;br&gt;hoặc HTTPS dự phòng.&lt;/div&gt;" id="ct-e-actions">
           <mxCell edge="1" parent="ct-boundary" source="ct-client" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=13;align=center;verticalAlign=middle;edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=block;endFill=1;strokeColor=#707070;strokeWidth=1.5;labelBackgroundColor=#ffffff;dashed=1;exitX=0.3;exitY=1;entryX=0.3;entryY=0;" target="ct-server">
             <mxGeometry relative="1" as="geometry">
               <mxPoint x="-105" as="offset" y="0" />
             </mxGeometry>
           </mxCell>
         </object>
-        <object placeholders="1" c4Type="Relationship" c4Description="Gửi cập nhật thời gian thực và kết quả" c4Technology="ASP.NET Core SignalR" label="&lt;div style=&quot;width:300px;font-size:15px;line-height:20px;text-align:center&quot;&gt;&lt;b&gt;%c4Description%&lt;/b&gt;&lt;br&gt;[%c4Technology%]&lt;br&gt;Truyền dữ liệu qua kết nối WSS&lt;br&gt;hoặc transport dự phòng qua HTTPS đã thiết lập.&lt;/div&gt;" id="ct-e-updates">
+        <object placeholders="1" c4Type="Relationship" c4Description="Gửi nét vẽ, trạng thái và kết quả" c4Technology="ASP.NET Core SignalR" label="&lt;div style=&quot;width:300px;font-size:15px;line-height:20px;text-align:center&quot;&gt;&lt;b&gt;%c4Description%&lt;/b&gt;&lt;br&gt;[%c4Technology%]&lt;br&gt;theo thời gian thực qua&lt;br&gt;kết nối WSS hoặc&lt;br&gt;HTTPS dự phòng.&lt;/div&gt;" id="ct-e-updates">
           <mxCell edge="1" parent="ct-boundary" source="ct-server" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=13;align=center;verticalAlign=middle;edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=block;endFill=1;strokeColor=#707070;strokeWidth=1.5;labelBackgroundColor=#ffffff;dashed=1;exitX=0.8;exitY=0;entryX=0.8;entryY=1;" target="ct-client">
             <mxGeometry relative="1" as="geometry">
               <mxPoint x="105" as="offset" y="0" />
@@ -230,12 +210,12 @@
             <mxGeometry relative="1" as="geometry"><mxPoint as="offset" x="330" y="0" /></mxGeometry>
           </mxCell>
         </object>
-        <object placeholders="1" c4Name="Người chơi" c4Type="Person" c4Description="Người dùng đã đăng ký,&lt;br&gt;chơi Vẽ đoán / Imposter,&lt;br&gt;vẽ, đoán, bỏ phiếu&lt;br&gt;và xem kết quả." label="&lt;div style=&quot;font-size:14px;line-height:18px;text-align:center&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;br&gt;[%c4Type%]&lt;div style=&quot;margin-top:10px&quot;&gt;%c4Description%&lt;/div&gt;&lt;/div&gt;" id="ct-player">
+        <object placeholders="1" c4Name="Người chơi" c4Type="Person" c4Description="Người dùng đã đăng ký,&lt;br&gt;chơi Vẽ đoán / Kẻ giả mạo,&lt;br&gt;vẽ, đoán, bỏ phiếu&lt;br&gt;và xem kết quả." label="&lt;div style=&quot;font-size:14px;line-height:18px;text-align:center&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;br&gt;[Người dùng]&lt;div style=&quot;margin-top:10px&quot;&gt;%c4Description%&lt;/div&gt;&lt;/div&gt;" id="ct-player">
           <mxCell parent="6M9tTkYtrs8H_QPtwX7E-1" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=16;align=center;verticalAlign=middle;fontColor=#ffffff;spacing=10;shape=mxgraph.c4.person;fillColor=#08427b;strokeColor=none;" vertex="1">
             <mxGeometry height="190" width="240" x="430" y="65" as="geometry" />
           </mxCell>
         </object>
-        <object placeholders="1" c4Name="Chủ phòng" c4Type="Person" c4Description="Vai trò của người chơi:&lt;br&gt;tạo phòng, chọn chế độ&lt;br&gt;và bắt đầu trận." label="&lt;div style=&quot;font-size:14px;line-height:18px;text-align:center&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;br&gt;[%c4Type%]&lt;div style=&quot;margin-top:10px&quot;&gt;%c4Description%&lt;/div&gt;&lt;/div&gt;" id="ct-host">
+        <object placeholders="1" c4Name="Chủ phòng" c4Type="Person" c4Description="Vai trò của người chơi:&lt;br&gt;tạo phòng, chọn chế độ&lt;br&gt;và bắt đầu trận." label="&lt;div style=&quot;font-size:14px;line-height:18px;text-align:center&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;br&gt;[Người dùng]&lt;div style=&quot;margin-top:10px&quot;&gt;%c4Description%&lt;/div&gt;&lt;/div&gt;" id="ct-host">
           <mxCell parent="6M9tTkYtrs8H_QPtwX7E-1" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=16;align=center;verticalAlign=middle;fontColor=#ffffff;spacing=10;shape=mxgraph.c4.person;fillColor=#08427b;strokeColor=none;" vertex="1">
             <mxGeometry height="190" width="240" x="770" y="65" as="geometry" />
           </mxCell>
@@ -612,7 +592,7 @@
         <mxCell id="ov-persistence" parent="ov-layer" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=16;align=center;verticalAlign=middle;rounded=1;arcSize=10;fillColor=#e1d5e7;strokeColor=#9673a6;spacing=12;" value="&lt;b&gt;Lưu trữ bất đồng bộ&lt;/b&gt;&lt;br&gt;EF Core / SQL Server provider&lt;br&gt;Đọc tài khoản, từ khóa / gợi ý&lt;br&gt;Lưu kết quả khi trận kết thúc" vertex="1">
           <mxGeometry height="160" width="340" x="1800" y="640" as="geometry" />
         </mxCell>
-        <mxCell id="ov-sql" parent="ov-layer" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=16;align=center;verticalAlign=middle;shape=cylinder;boundedLbl=1;fillColor=#e1d5e7;strokeColor=#9673a6;spacing=14;" value="&lt;b&gt;Microsoft SQL Server&lt;/b&gt;&lt;br&gt;&lt;br&gt;Tài khoản / liên kết Google&lt;br&gt;Kho từ khóa và gợi ý&lt;br&gt;Kết quả trận đấu" vertex="1">
+        <mxCell id="ov-sql" parent="ov-layer" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=16;align=center;verticalAlign=middle;shape=cylinder;boundedLbl=1;fillColor=#e1d5e7;strokeColor=#9673a6;spacing=14;" value="&lt;b&gt;Microsoft SQL Server&lt;/b&gt;&lt;br&gt;&lt;br&gt;Tài khoản&lt;br&gt;Kho từ khóa và gợi ý&lt;br&gt;Kết quả trận đấu" vertex="1">
           <mxGeometry height="200" width="280" x="2410" y="870" as="geometry" />
         </mxCell>
         <mxCell id="ov-cleanup" parent="ov-layer" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=16;align=center;verticalAlign=middle;text;strokeColor=none;fillColor=none;fontSize=15;" value="&lt;b&gt;Mất kết nối / lỗi gửi / đầy hàng đợi&lt;/b&gt;&lt;br&gt;Dừng gửi tới kết nối → giải phóng tài nguyên → đưa sự kiện rời phòng vào hàng đợi → thông báo người còn lại." vertex="1">
@@ -621,24 +601,24 @@
         <mxCell id="ov-legend" parent="ov-layer" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=16;align=center;verticalAlign=middle;shape=note;fillColor=#fff2cc;strokeColor=#d6b656;spacing=15;align=left;fontSize=15;" value="&lt;b&gt;Reading guide&lt;/b&gt;&lt;br&gt;Solid arrows: application data / message flow. Dashed arrow: asynchronous persistence dependency, applicable to every room.&lt;br&gt;The thread-pool band is an execution annotation, not a message-processing stage or a single global event loop.&lt;br&gt;Async persistence preserves per-room ordering when its result affects room state. Queue limits, reconnect, and host-transfer policies remain unspecified." vertex="1">
           <mxGeometry height="150" width="2320" x="350" y="1810" as="geometry" />
         </mxCell>
-        <mxCell id="ov-e-in-a" edge="1" parent="ov-layer" source="ov-client-a" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=16;align=center;verticalAlign=middle;fontSize=14;edgeStyle=none;rounded=0;endArrow=block;endFill=1;strokeColor=#667085;strokeWidth=1.8;labelBackgroundColor=#ffffff;jumpStyle=arc;jumpSize=10;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="ov-rx-a" value="&lt;div style=&quot;width:240px;white-space:nowrap;text-align:center&quot;&gt;Lời gọi Hub&lt;/div&gt;">
+        <mxCell id="ov-e-in-a" edge="1" parent="ov-layer" source="ov-client-a" style="html=1;whiteSpace=nowrap;fontFamily=Helvetica;fontSize=16;align=center;verticalAlign=middle;fontSize=14;edgeStyle=none;rounded=0;endArrow=block;endFill=1;strokeColor=#667085;strokeWidth=1.8;labelBackgroundColor=#ffffff;jumpStyle=arc;jumpSize=10;labelWidth=100;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="ov-rx-a" value="&lt;div style=&quot;width:100px;white-space:nowrap;text-align:center&quot;&gt;Lời gọi Hub&lt;/div&gt;">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint y="-16" as="offset" />
+            <mxPoint y="-24" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ov-e-in-b" edge="1" parent="ov-layer" source="ov-client-b" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=16;align=center;verticalAlign=middle;fontSize=14;edgeStyle=none;rounded=0;endArrow=block;endFill=1;strokeColor=#667085;strokeWidth=1.8;labelBackgroundColor=#ffffff;jumpStyle=arc;jumpSize=10;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="ov-rx-b" value="&lt;div style=&quot;width:240px;white-space:nowrap;text-align:center&quot;&gt;Lời gọi Hub&lt;/div&gt;">
+        <mxCell id="ov-e-in-b" edge="1" parent="ov-layer" source="ov-client-b" style="html=1;whiteSpace=nowrap;fontFamily=Helvetica;fontSize=16;align=center;verticalAlign=middle;fontSize=14;edgeStyle=none;rounded=0;endArrow=block;endFill=1;strokeColor=#667085;strokeWidth=1.8;labelBackgroundColor=#ffffff;jumpStyle=arc;jumpSize=10;labelWidth=100;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="ov-rx-b" value="&lt;div style=&quot;width:100px;white-space:nowrap;text-align:center&quot;&gt;Lời gọi Hub&lt;/div&gt;">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint y="-16" as="offset" />
+            <mxPoint y="-24" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ov-e-in-c" edge="1" parent="ov-layer" source="ov-client-c" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=16;align=center;verticalAlign=middle;fontSize=14;edgeStyle=none;rounded=0;endArrow=block;endFill=1;strokeColor=#667085;strokeWidth=1.8;labelBackgroundColor=#ffffff;jumpStyle=arc;jumpSize=10;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="ov-rx-c" value="&lt;div style=&quot;width:240px;white-space:nowrap;text-align:center&quot;&gt;Lời gọi Hub&lt;/div&gt;">
+        <mxCell id="ov-e-in-c" edge="1" parent="ov-layer" source="ov-client-c" style="html=1;whiteSpace=nowrap;fontFamily=Helvetica;fontSize=16;align=center;verticalAlign=middle;fontSize=14;edgeStyle=none;rounded=0;endArrow=block;endFill=1;strokeColor=#667085;strokeWidth=1.8;labelBackgroundColor=#ffffff;jumpStyle=arc;jumpSize=10;labelWidth=100;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="ov-rx-c" value="&lt;div style=&quot;width:100px;white-space:nowrap;text-align:center&quot;&gt;Lời gọi Hub&lt;/div&gt;">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint y="-16" as="offset" />
+            <mxPoint y="-24" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ov-e-route" edge="1" parent="ov-layer" source="ov-receivers" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=16;align=center;verticalAlign=middle;fontSize=14;edgeStyle=none;rounded=0;endArrow=block;endFill=1;strokeColor=#667085;strokeWidth=1.8;labelBackgroundColor=#ffffff;jumpStyle=arc;jumpSize=10;exitX=1;exitY=0.546875;entryX=0;entryY=0.5;" target="ov-router" value="&lt;div style=&quot;width:240px;white-space:nowrap;text-align:center&quot;&gt;Hành động&lt;/div&gt;">
+        <mxCell id="ov-e-route" edge="1" parent="ov-layer" source="ov-receivers" style="html=1;whiteSpace=nowrap;fontFamily=Helvetica;fontSize=16;align=center;verticalAlign=middle;fontSize=14;edgeStyle=none;rounded=0;endArrow=block;endFill=1;strokeColor=#667085;strokeWidth=1.8;labelBackgroundColor=#ffffff;jumpStyle=arc;jumpSize=10;labelWidth=80;exitX=1;exitY=0.546875;entryX=0;entryY=0.5;" target="ov-router" value="&lt;div style=&quot;width:80px;white-space:nowrap;text-align:center&quot;&gt;Hành động&lt;/div&gt;">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint y="-16" as="offset" />
+            <mxPoint y="-26" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="ov-e-room1" edge="1" parent="ov-layer" source="ov-router" style="html=1;whiteSpace=nowrap;fontFamily=Helvetica;fontSize=16;align=center;verticalAlign=middle;fontSize=14;edgeStyle=none;rounded=0;endArrow=block;endFill=1;strokeColor=#667085;strokeWidth=1.8;labelBackgroundColor=#ffffff;jumpStyle=arc;jumpSize=10;exitX=1;exitY=0.333333;entryX=0;entryY=0.5;labelWidth=60;" target="ov-room1" value="&lt;div style=&quot;width:60px;white-space:nowrap;text-align:center&quot;&gt;A / B&lt;/div&gt;">
@@ -667,9 +647,9 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="ov-e-events2" edge="1" parent="ov-layer" source="ov-room2" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=16;align=center;verticalAlign=middle;fontSize=14;edgeStyle=none;rounded=0;endArrow=block;endFill=1;strokeColor=#667085;strokeWidth=1.8;labelBackgroundColor=#ffffff;jumpStyle=arc;jumpSize=10;exitX=1;exitY=0.5;entryX=0;entryY=0.75;" target="ov-events" value="&lt;div style=&quot;width:240px;white-space:nowrap;text-align:center&quot;&gt;Sự kiện đã lọc&lt;/div&gt;">
+        <mxCell id="ov-e-events2" edge="1" parent="ov-layer" source="ov-room2" style="html=1;whiteSpace=nowrap;fontFamily=Helvetica;fontSize=16;align=center;verticalAlign=middle;fontSize=14;edgeStyle=none;rounded=0;endArrow=block;endFill=1;strokeColor=#667085;strokeWidth=1.8;labelBackgroundColor=#ffffff;jumpStyle=arc;jumpSize=10;labelWidth=130;exitX=1;exitY=0.5;entryX=0;entryY=0.75;" target="ov-events" value="&lt;div style=&quot;width:130px;white-space:nowrap;text-align:center&quot;&gt;Sự kiện đã lọc&lt;/div&gt;">
           <mxGeometry relative="1" x="-0.25" as="geometry">
-            <mxPoint y="16" as="offset" />
+            <mxPoint x="85" y="0" as="offset" />
             <Array as="points">
               <mxPoint x="1620" y="1300" />
               <mxPoint x="1620" y="1130" />
@@ -1004,4 +984,231 @@
       </root>
     </mxGraphModel>
   </diagram>
+  <diagram id="concurrency-vertical-swimlane-demo" name="Xử lý đồng thời — Demo swimlane dọc">
+  <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="2300" pageHeight="2120" math="0" shadow="0">
+    <root>
+      <mxCell id="ov-root" />
+      <mxCell id="ov-layer" parent="ov-root" />
+      <mxCell id="demo-lane-1" parent="ov-layer" vertex="1" value="Phần 1 — Tiếp nhận, xử lý phòng và gửi về client" style="swimlane;horizontal=1;startSize=70;rounded=0;collapsible=0;container=1;html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=24;fontStyle=1;align=center;verticalAlign=middle;fillColor=#e8eef7;swimlaneFillColor=#ffffff;strokeColor=#667085;strokeWidth=2;">
+        <mxGeometry x="20" y="360" width="1400" height="1050" as="geometry" />
+      </mxCell>
+      <mxCell id="demo-lane-2" parent="ov-layer" vertex="1" value="Phần 2 — Lọc, hàng gửi và lưu trữ" style="swimlane;horizontal=1;startSize=70;rounded=0;collapsible=0;container=1;html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=24;fontStyle=1;align=center;verticalAlign=middle;fillColor=#e8eef7;swimlaneFillColor=#ffffff;strokeColor=#667085;strokeWidth=2;">
+        <mxGeometry x="1420" y="360" width="850" height="1050" as="geometry" />
+      </mxCell>
+      <mxCell id="ov-title" parent="ov-layer" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=32;align=left;verticalAlign=middle;text;strokeColor=none;fillColor=none;" value="&lt;b&gt;Máy chủ trò chơi — Demo hai swimlane dọc&lt;/b&gt;" vertex="1">
+        <mxGeometry height="45" width="2250" x="20" y="15" as="geometry" />
+      </mxCell>
+      <mxCell id="ov-subtitle" parent="ov-layer" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=20;align=left;verticalAlign=middle;text;strokeColor=none;fillColor=none;" value="SignalR bất đồng bộ • .NET thread pool • xử lý tuần tự trong từng phòng • gửi theo thứ tự từng kết nối" vertex="1">
+        <mxGeometry height="35" width="2250" x="20" y="65" as="geometry" />
+      </mxCell>
+      <mxCell id="ov-pool" parent="ov-layer" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=20;align=center;verticalAlign=middle;rounded=1;arcSize=10;fillColor=#d5e8d4;strokeColor=#82b366;spacing=12;" value="&lt;b&gt;Một tiến trình ASP.NET Core — .NET thread pool dùng chung cho cả hai phần&lt;/b&gt;&lt;br&gt;&lt;br&gt;Thực thi tác vụ sẵn sàng và nghiệp vụ phòng; I/O đang chờ không giữ riêng luồng.&lt;br&gt;Hai lane là hai vùng trình bày cùng kiến trúc, không phải hai server hoặc hai thread." vertex="1">
+        <mxGeometry height="210" width="1100" x="1170" y="115" as="geometry" />
+      </mxCell>
+      <mxCell id="ov-clients" parent="demo-lane-1" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=22;align=center;verticalAlign=top;rounded=1;arcSize=10;fillColor=#d5e8d4;strokeColor=#82b366;spacing=12;spacingTop=15;" value="&lt;b&gt;Ứng dụng WinForms&lt;/b&gt;" vertex="1">
+        <mxGeometry height="600" width="200" x="20" y="140" as="geometry" />
+      </mxCell>
+      <mxCell id="ov-receivers" parent="demo-lane-1" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=22;align=center;verticalAlign=top;rounded=1;arcSize=10;fillColor=#dae8fc;strokeColor=#6c8ebf;spacing=8;spacingTop=4;" value="&lt;b&gt;SignalR Hub&lt;/b&gt;&lt;br&gt;Tiếp nhận lời gọi&lt;br&gt;đã xác thực" vertex="1">
+        <mxGeometry height="600" width="280" x="340" y="140" as="geometry" />
+      </mxCell>
+      <mxCell id="ov-client-a" parent="demo-lane-1" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=22;align=center;verticalAlign=middle;rounded=1;fillColor=#ffffff;strokeColor=#82b366;" value="&lt;b&gt;Máy A&lt;/b&gt;&lt;br&gt;Phòng 1" vertex="1">
+        <mxGeometry height="110" width="170" x="35" y="240" as="geometry" />
+      </mxCell>
+      <mxCell id="ov-rx-a" parent="demo-lane-1" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=22;align=center;verticalAlign=middle;rounded=1;fillColor=#ffffff;strokeColor=#6c8ebf;spacing=8;" value="&lt;b&gt;Kết nối A&lt;/b&gt;&lt;br&gt;Lời gọi Hub bất đồng bộ&lt;br&gt;Kiểm tra phiên / dữ liệu" vertex="1">
+        <mxGeometry height="110" width="250" x="355" y="240" as="geometry" />
+      </mxCell>
+      <mxCell id="ov-client-b" parent="demo-lane-1" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=22;align=center;verticalAlign=middle;rounded=1;fillColor=#ffffff;strokeColor=#82b366;" value="&lt;b&gt;Máy B&lt;/b&gt;&lt;br&gt;Phòng 1" vertex="1">
+        <mxGeometry height="110" width="170" x="35" y="410" as="geometry" />
+      </mxCell>
+      <mxCell id="ov-rx-b" parent="demo-lane-1" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=22;align=center;verticalAlign=middle;rounded=1;fillColor=#ffffff;strokeColor=#6c8ebf;spacing=8;" value="&lt;b&gt;Kết nối B&lt;/b&gt;&lt;br&gt;Lời gọi Hub bất đồng bộ&lt;br&gt;Kiểm tra phiên / dữ liệu" vertex="1">
+        <mxGeometry height="110" width="250" x="355" y="410" as="geometry" />
+      </mxCell>
+      <mxCell id="ov-client-c" parent="demo-lane-1" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=22;align=center;verticalAlign=middle;rounded=1;fillColor=#ffffff;strokeColor=#82b366;" value="&lt;b&gt;Máy C&lt;/b&gt;&lt;br&gt;Phòng 2" vertex="1">
+        <mxGeometry height="110" width="170" x="35" y="580" as="geometry" />
+      </mxCell>
+      <mxCell id="ov-rx-c" parent="demo-lane-1" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=22;align=center;verticalAlign=middle;rounded=1;fillColor=#ffffff;strokeColor=#6c8ebf;spacing=8;" value="&lt;b&gt;Kết nối C&lt;/b&gt;&lt;br&gt;Lời gọi Hub bất đồng bộ&lt;br&gt;Kiểm tra phiên / dữ liệu" vertex="1">
+        <mxGeometry height="110" width="250" x="355" y="580" as="geometry" />
+      </mxCell>
+      <mxCell id="ov-router" parent="demo-lane-1" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=22;align=center;verticalAlign=middle;rounded=1;arcSize=10;fillColor=#dae8fc;strokeColor=#6c8ebf;spacing=12;" value="&lt;b&gt;Định tuyến hành động&lt;/b&gt;&lt;br&gt;Xác định phòng hợp lệ" vertex="1">
+        <mxGeometry height="145" width="200" x="720" y="392.5" as="geometry" />
+      </mxCell>
+      <mxCell id="ov-room1" parent="demo-lane-1" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=22;align=center;verticalAlign=middle;rounded=1;arcSize=10;fillColor=#d5e8d4;strokeColor=#82b366;spacing=12;" value="&lt;b&gt;Hàng đợi + bộ xử lý phòng 1&lt;/b&gt;&lt;br&gt;&lt;br&gt;Máy A và B&lt;br&gt;Xử lý lần lượt từng hành động&lt;br&gt;Kiểm tra vai / giai đoạn → cập nhật" vertex="1">
+        <mxGeometry height="190" width="350" x="980" y="220" as="geometry" />
+      </mxCell>
+      <mxCell id="ov-room2" parent="demo-lane-1" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=22;align=center;verticalAlign=middle;rounded=1;arcSize=10;fillColor=#d5e8d4;strokeColor=#82b366;spacing=12;" value="&lt;b&gt;Hàng đợi + bộ xử lý phòng 2&lt;/b&gt;&lt;br&gt;&lt;br&gt;Máy C&lt;br&gt;Xử lý lần lượt từng hành động&lt;br&gt;Kiểm tra vai / giai đoạn → cập nhật" vertex="1">
+        <mxGeometry height="190" width="350" x="980" y="660" as="geometry" />
+      </mxCell>
+      <mxCell id="ov-room-note" parent="demo-lane-1" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=20;align=center;verticalAlign=middle;shape=note;fillColor=#fff2cc;strokeColor=#d6b656;spacing=6;" value="&lt;b&gt;Các phòng tiến triển&lt;br&gt;đồng thời.&lt;/b&gt;&lt;br&gt;Trong một phòng, thay đổi trạng thái là tuần tự.&lt;br&gt;Hành động, hết giờ, vào / rời phòng đều qua hàng đợi.&lt;br&gt;Server quyết định luật và trạng thái chung." vertex="1">
+        <mxGeometry height="210" width="350" x="980" y="440" as="geometry" />
+      </mxCell>
+      <mxCell id="ov-events" parent="demo-lane-2" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=22;align=center;verticalAlign=middle;rounded=1;arcSize=10;fillColor=#dae8fc;strokeColor=#6c8ebf;spacing=12;" value="&lt;b&gt;Lọc theo người nhận&lt;/b&gt;&lt;br&gt;&lt;br&gt;Riêng tư: từ khóa / gợi ý / vai ẩn&lt;br&gt;Công khai: nét vẽ, lượt,&lt;br&gt;kết quả được phép công bố" vertex="1">
+        <mxGeometry height="220" width="360" x="90" y="460" as="geometry" />
+      </mxCell>
+      <mxCell id="ov-queues" parent="demo-lane-2" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=22;align=center;verticalAlign=middle;rounded=1;arcSize=10;fillColor=#dae8fc;strokeColor=#6c8ebf;spacing=12;" value="&lt;b&gt;Hàng đợi gửi có giới hạn&lt;/b&gt;&lt;br&gt;&lt;br&gt;Hàng A | Hàng B | Hàng C&lt;br&gt;Hàng đợi ứng dụng cho mỗi kết nối" vertex="1">
+        <mxGeometry height="190" width="360" x="90" y="815" as="geometry" />
+      </mxCell>
+      <mxCell id="ov-send" parent="demo-lane-1" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=22;align=center;verticalAlign=middle;rounded=1;arcSize=10;fillColor=#dae8fc;strokeColor=#6c8ebf;spacing=12;" value="&lt;b&gt;Gửi SignalR bất đồng bộ&lt;/b&gt;&lt;br&gt;&lt;br&gt;Một bộ gửi tuần tự mỗi kết nối&lt;br&gt;IHubContext → gửi tới client" vertex="1">
+        <mxGeometry height="190" width="360" x="340" y="815" as="geometry" />
+      </mxCell>
+      <mxCell id="ov-persistence" parent="demo-lane-2" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=22;align=center;verticalAlign=middle;rounded=1;arcSize=10;fillColor=#e1d5e7;strokeColor=#9673a6;spacing=12;" value="&lt;b&gt;Lưu trữ bất đồng bộ&lt;/b&gt;&lt;br&gt;EF Core / SQL Server provider&lt;br&gt;Đọc tài khoản, từ khóa / gợi ý&lt;br&gt;Lưu kết quả khi trận kết thúc" vertex="1">
+        <mxGeometry height="190" width="340" x="90" y="100" as="geometry" />
+      </mxCell>
+      <mxCell id="ov-sql" parent="demo-lane-2" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=22;align=center;verticalAlign=middle;shape=cylinder;boundedLbl=1;fillColor=#e1d5e7;strokeColor=#9673a6;spacing=14;" value="&lt;b&gt;Microsoft SQL Server&lt;/b&gt;&lt;br&gt;&lt;br&gt;Tài khoản&lt;br&gt;Kho từ khóa và gợi ý&lt;br&gt;Kết quả trận đấu" vertex="1">
+        <mxGeometry height="240" width="300" x="500" y="220" as="geometry" />
+      </mxCell>
+      <mxCell id="ov-cleanup" parent="ov-layer" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=20;align=center;verticalAlign=middle;text;strokeColor=none;fillColor=none;" value="&lt;b&gt;Mất kết nối / lỗi gửi / đầy hàng đợi&lt;/b&gt;&lt;br&gt;Dừng gửi tới kết nối → giải phóng tài nguyên → đưa sự kiện rời phòng vào hàng đợi → thông báo người còn lại." vertex="1">
+        <mxGeometry height="90" width="2250" x="20" y="1460" as="geometry" />
+      </mxCell>
+      <mxCell id="ov-legend" parent="ov-layer" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=20;align=left;verticalAlign=middle;shape=note;fillColor=#fff2cc;strokeColor=#d6b656;spacing=15;" value="&lt;b&gt;Reading guide&lt;/b&gt;&lt;br&gt;Solid arrows: application data / message flow. Dashed arrow: asynchronous persistence dependency, applicable to every room.&lt;br&gt;The thread-pool band is an execution annotation, not a message-processing stage or a single global event loop.&lt;br&gt;Async persistence preserves per-room ordering when its result affects room state. Queue limits, reconnect, and host-transfer policies remain unspecified." vertex="1">
+        <mxGeometry height="230" width="1400" x="20" y="1600" as="geometry" />
+      </mxCell>
+      <mxCell id="ov-e-in-a" edge="1" parent="ov-layer" source="ov-client-a" style="html=1;whiteSpace=nowrap;fontFamily=Helvetica;fontSize=20;align=center;verticalAlign=middle;edgeStyle=none;rounded=0;strokeWidth=2;labelBackgroundColor=#ffffff;strokeColor=#667085;fontColor=#334155;dashed=0;endArrow=block;endFill=1;startArrow=none;exitX=1;exitY=0.5;entryX=0;entryY=0.5;labelWidth=110;" target="ov-rx-a" value="&lt;div style=&quot;width:110px;white-space:nowrap;text-align:center&quot;&gt;Lời gọi Hub&lt;/div&gt;">
+        <mxGeometry relative="1" x="-1" as="geometry">
+          <mxPoint x="75.0" y="-27.0" as="offset" />
+        </mxGeometry>
+      </mxCell>
+      <mxCell id="ov-e-in-b" edge="1" parent="ov-layer" source="ov-client-b" style="html=1;whiteSpace=nowrap;fontFamily=Helvetica;fontSize=20;align=center;verticalAlign=middle;edgeStyle=none;rounded=0;strokeWidth=2;labelBackgroundColor=#ffffff;strokeColor=#667085;fontColor=#334155;dashed=0;endArrow=block;endFill=1;startArrow=none;exitX=1;exitY=0.5;entryX=0;entryY=0.5;labelWidth=110;" target="ov-rx-b" value="&lt;div style=&quot;width:110px;white-space:nowrap;text-align:center&quot;&gt;Lời gọi Hub&lt;/div&gt;">
+        <mxGeometry relative="1" x="-1" as="geometry">
+          <mxPoint x="75.0" y="-27.0" as="offset" />
+        </mxGeometry>
+      </mxCell>
+      <mxCell id="ov-e-in-c" edge="1" parent="ov-layer" source="ov-client-c" style="html=1;whiteSpace=nowrap;fontFamily=Helvetica;fontSize=20;align=center;verticalAlign=middle;edgeStyle=none;rounded=0;strokeWidth=2;labelBackgroundColor=#ffffff;strokeColor=#667085;fontColor=#334155;dashed=0;endArrow=block;endFill=1;startArrow=none;exitX=1;exitY=0.5;entryX=0;entryY=0.5;labelWidth=110;" target="ov-rx-c" value="&lt;div style=&quot;width:110px;white-space:nowrap;text-align:center&quot;&gt;Lời gọi Hub&lt;/div&gt;">
+        <mxGeometry relative="1" x="-1" as="geometry">
+          <mxPoint x="75.0" y="-27.0" as="offset" />
+        </mxGeometry>
+      </mxCell>
+      <mxCell id="ov-e-route" edge="1" parent="ov-layer" source="ov-receivers" style="html=1;whiteSpace=nowrap;fontFamily=Helvetica;fontSize=20;align=center;verticalAlign=middle;edgeStyle=none;rounded=0;strokeWidth=2;labelBackgroundColor=#ffffff;strokeColor=#667085;fontColor=#334155;dashed=0;endArrow=block;endFill=1;startArrow=none;exitX=1;exitY=0.5416666666666666;entryX=0;entryY=0.5;labelWidth=95;" target="ov-router" value="&lt;div style=&quot;width:95px;white-space:nowrap;text-align:center&quot;&gt;Hành động&lt;/div&gt;">
+        <mxGeometry relative="1" x="-1" as="geometry">
+          <mxPoint x="50.0" y="-30.0" as="offset" />
+        </mxGeometry>
+      </mxCell>
+      <mxCell id="ov-e-room1" edge="1" parent="ov-layer" source="ov-router" style="html=1;whiteSpace=nowrap;fontFamily=Helvetica;fontSize=20;align=center;verticalAlign=middle;edgeStyle=none;rounded=0;strokeWidth=2;labelBackgroundColor=#ffffff;strokeColor=#667085;fontColor=#334155;dashed=0;endArrow=block;endFill=1;startArrow=none;exitX=1;exitY=0.25;entryX=0;entryY=0.5;labelWidth=65;" target="ov-room1" value="&lt;div style=&quot;width:65px;white-space:nowrap;text-align:center&quot;&gt;A / B&lt;/div&gt;">
+        <mxGeometry relative="1" x="-1" as="geometry">
+          <mxPoint x="5.0" y="-140.75" as="offset" />
+          <Array as="points">
+            <mxPoint x="970" y="788.75" />
+            <mxPoint x="970" y="675" />
+          </Array>
+        </mxGeometry>
+      </mxCell>
+      <mxCell id="ov-e-room2" edge="1" parent="ov-layer" source="ov-router" style="html=1;whiteSpace=nowrap;fontFamily=Helvetica;fontSize=20;align=center;verticalAlign=middle;edgeStyle=none;rounded=0;strokeWidth=2;labelBackgroundColor=#ffffff;strokeColor=#667085;fontColor=#334155;dashed=0;endArrow=block;endFill=1;startArrow=none;exitX=1;exitY=0.75;entryX=0;entryY=0.5;labelWidth=40;" target="ov-room2" value="&lt;div style=&quot;width:40px;white-space:nowrap;text-align:center&quot;&gt;C&lt;/div&gt;">
+        <mxGeometry relative="1" x="-1" as="geometry">
+          <mxPoint x="-15.0" y="226.75" as="offset" />
+          <Array as="points">
+            <mxPoint x="970" y="861.25" />
+            <mxPoint x="970" y="1115" />
+          </Array>
+        </mxGeometry>
+      </mxCell>
+      <mxCell id="ov-e-events1" edge="1" parent="ov-layer" source="ov-room1" style="html=1;whiteSpace=nowrap;fontFamily=Helvetica;fontSize=20;align=center;verticalAlign=middle;edgeStyle=none;rounded=0;strokeWidth=2;labelBackgroundColor=#ffffff;strokeColor=#667085;fontColor=#334155;dashed=0;endArrow=none;endFill=1;startArrow=none;exitX=1;exitY=0.5;entryX=0;entryY=0.5;labelWidth=130;" target="demo-B-left" value="">
+        <mxGeometry relative="1" x="0" as="geometry" />
+      </mxCell>
+      <mxCell id="ov-e-events2" edge="1" parent="ov-layer" source="ov-room2" style="html=1;whiteSpace=nowrap;fontFamily=Helvetica;fontSize=20;align=center;verticalAlign=middle;edgeStyle=none;rounded=0;strokeWidth=2;labelBackgroundColor=#ffffff;strokeColor=#667085;fontColor=#334155;dashed=0;endArrow=none;endFill=1;startArrow=none;exitX=1;exitY=0.5;entryX=0;entryY=0.5;labelWidth=130;" target="demo-C-left" value="">
+        <mxGeometry relative="1" x="0" as="geometry">
+          <Array as="points">
+            <mxPoint x="1360" y="1115" />
+            <mxPoint x="1360" y="985" />
+          </Array>
+        </mxGeometry>
+      </mxCell>
+      <mxCell id="ov-e-enqueue" edge="1" parent="ov-layer" source="ov-events" style="html=1;whiteSpace=nowrap;fontFamily=Helvetica;fontSize=20;align=center;verticalAlign=middle;edgeStyle=none;rounded=0;strokeWidth=2;labelBackgroundColor=#ffffff;strokeColor=#667085;fontColor=#334155;dashed=0;endArrow=block;endFill=1;startArrow=none;exitX=0.5;exitY=1;entryX=0.5;entryY=0;labelWidth=210;" target="ov-queues" value="&lt;div style=&quot;width:210px;white-space:nowrap;text-align:center&quot;&gt;Đưa vào hàng gửi&lt;/div&gt;">
+        <mxGeometry relative="1" x="-1" as="geometry">
+          <mxPoint x="120.0" y="55.0" as="offset" />
+        </mxGeometry>
+      </mxCell>
+      <mxCell id="ov-e-send" edge="1" parent="ov-layer" source="ov-queues" style="html=1;whiteSpace=nowrap;fontFamily=Helvetica;fontSize=20;align=center;verticalAlign=middle;edgeStyle=none;rounded=0;strokeWidth=2;labelBackgroundColor=#ffffff;strokeColor=#667085;fontColor=#334155;dashed=0;endArrow=none;endFill=1;startArrow=none;exitX=0;exitY=0.5;entryX=1;entryY=0.5;labelWidth=130;" target="demo-D-right" value="">
+        <mxGeometry relative="1" x="0" as="geometry" />
+      </mxCell>
+      <mxCell id="ov-e-return" edge="1" parent="ov-layer" source="ov-send" style="html=1;whiteSpace=nowrap;fontFamily=Helvetica;fontSize=20;align=center;verticalAlign=middle;edgeStyle=none;rounded=0;strokeWidth=2;labelBackgroundColor=#ffffff;strokeColor=#667085;fontColor=#334155;dashed=0;endArrow=block;endFill=1;startArrow=none;exitX=0;exitY=0.5;entryX=0.5;entryY=1;labelWidth=230;" target="ov-clients" value="&lt;div style=&quot;width:230px;white-space:nowrap;text-align:center&quot;&gt;Cập nhật tới A / B / C&lt;/div&gt;">
+        <mxGeometry relative="1" x="-1" as="geometry">
+          <mxPoint x="-200.0" y="-80.0" as="offset" />
+          <Array as="points">
+            <mxPoint x="140" y="1270" />
+          </Array>
+        </mxGeometry>
+      </mxCell>
+      <mxCell id="ov-e-persist" edge="1" parent="ov-layer" source="ov-room1" style="html=1;whiteSpace=nowrap;fontFamily=Helvetica;fontSize=20;align=center;verticalAlign=middle;edgeStyle=none;rounded=0;strokeWidth=2;labelBackgroundColor=#ffffff;strokeColor=#9673a6;fontColor=#9673a6;dashed=1;endArrow=none;endFill=1;startArrow=none;exitX=0.5;exitY=0;entryX=0;entryY=0.5;labelWidth=285;" target="demo-A-left" value="&lt;div style=&quot;width:285px;white-space:nowrap;text-align:center&quot;&gt;Đọc / ghi async (mọi phòng)&lt;/div&gt;">
+        <mxGeometry relative="1" x="-1" as="geometry">
+          <mxPoint x="75.0" y="-62.0" as="offset" />
+          <Array as="points">
+            <mxPoint x="1175" y="555" />
+          </Array>
+        </mxGeometry>
+      </mxCell>
+      <mxCell id="ov-e-db" edge="1" parent="ov-layer" source="ov-persistence" style="html=1;whiteSpace=nowrap;fontFamily=Helvetica;fontSize=20;align=center;verticalAlign=middle;edgeStyle=none;rounded=0;strokeWidth=2;labelBackgroundColor=#ffffff;strokeColor=#667085;fontColor=#334155;dashed=0;endArrow=block;endFill=1;startArrow=block;exitX=1;exitY=0.5;entryX=0.5;entryY=0;labelWidth=160;startFill=1;" target="ov-sql" value="&lt;div style=&quot;width:160px;white-space:nowrap;text-align:center&quot;&gt;TDS qua TLS&lt;/div&gt;">
+        <mxGeometry relative="1" x="-1" as="geometry">
+          <mxPoint x="120.0" y="-28.0" as="offset" />
+          <Array as="points">
+            <mxPoint x="2070" y="555" />
+          </Array>
+        </mxGeometry>
+      </mxCell>
+      <mxCell id="ov-model-brief" parent="ov-layer" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=20;align=left;verticalAlign=middle;rounded=1;arcSize=5;fillColor=#fff2cc;strokeColor=#d6b656;spacing=18;" value="&lt;b&gt;Mô hình: Hướng sự kiện + Thread Pool + I/O bất đồng bộ không chặn&lt;/b&gt;&lt;br&gt;&lt;br&gt;Lời gọi Hub, hết giờ và mất kết nối kích hoạt xử lý trên server.&lt;br&gt;.NET thread pool chạy tác vụ sẵn sàng; I/O đang chờ không giữ riêng luồng.&lt;br&gt;Hub chuyển hành động tới hàng đợi; trạng thái phòng nằm ngoài đối tượng Hub.&lt;br&gt;Mỗi phòng xử lý tuần tự; các phòng tiến triển đồng thời." vertex="1">
+        <mxGeometry height="210" width="1120" x="20" y="115" as="geometry" />
+      </mxCell>
+      <mxCell id="ov-signalr-note" parent="ov-layer" style="text;html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=20;align=left;verticalAlign=middle;spacing=12;" value="&lt;b&gt;SignalR thay thế tầng TCP tự viết&lt;/b&gt;&lt;br&gt;SignalR quản lý transport và framing; WebSockets (WSS) khi khả dụng.&lt;br&gt;Hàng đợi gửi là cơ chế ứng dụng; không phải bảo đảm tự có của SignalR.&lt;br&gt;Gửi riêng theo kết nối / danh tính đã xác thực; nhóm không thay thế kiểm tra quyền.&lt;br&gt;Giới hạn queue, reconnect và chuyển chủ phòng còn mở. Chú giải bên dưới giữ nguyên từ phiên bản TCP trước." vertex="1">
+        <mxGeometry height="230" width="810" x="1460" y="1600" as="geometry" />
+      </mxCell>
+      <mxCell id="demo-A-left" parent="demo-lane-1" vertex="1" value="A" style="ellipse;html=1;fontFamily=Helvetica;fontSize=22;fontStyle=1;fillColor=#ffffff;strokeColor=#b91c1c;strokeWidth=2;fontColor=#b91c1c;align=center;verticalAlign=middle;spacing=0;">
+        <mxGeometry x="1347.0" y="177.0" width="36" height="36" as="geometry" />
+      </mxCell>
+      <mxCell id="demo-A-right" parent="demo-lane-2" vertex="1" value="A" style="ellipse;html=1;fontFamily=Helvetica;fontSize=22;fontStyle=1;fillColor=#ffffff;strokeColor=#b91c1c;strokeWidth=2;fontColor=#b91c1c;align=center;verticalAlign=middle;spacing=0;">
+        <mxGeometry x="17.0" y="177.0" width="36" height="36" as="geometry" />
+      </mxCell>
+      <mxCell id="demo-B-left" parent="demo-lane-1" vertex="1" value="B" style="ellipse;html=1;fontFamily=Helvetica;fontSize=22;fontStyle=1;fillColor=#ffffff;strokeColor=#b91c1c;strokeWidth=2;fontColor=#b91c1c;align=center;verticalAlign=middle;spacing=0;">
+        <mxGeometry x="1347.0" y="297.0" width="36" height="36" as="geometry" />
+      </mxCell>
+      <mxCell id="demo-B-right" parent="demo-lane-2" vertex="1" value="B" style="ellipse;html=1;fontFamily=Helvetica;fontSize=22;fontStyle=1;fillColor=#ffffff;strokeColor=#b91c1c;strokeWidth=2;fontColor=#b91c1c;align=center;verticalAlign=middle;spacing=0;">
+        <mxGeometry x="17.0" y="297.0" width="36" height="36" as="geometry" />
+      </mxCell>
+      <mxCell id="demo-C-left" parent="demo-lane-1" vertex="1" value="C" style="ellipse;html=1;fontFamily=Helvetica;fontSize=22;fontStyle=1;fillColor=#ffffff;strokeColor=#b91c1c;strokeWidth=2;fontColor=#b91c1c;align=center;verticalAlign=middle;spacing=0;">
+        <mxGeometry x="1347.0" y="607.0" width="36" height="36" as="geometry" />
+      </mxCell>
+      <mxCell id="demo-C-right" parent="demo-lane-2" vertex="1" value="C" style="ellipse;html=1;fontFamily=Helvetica;fontSize=22;fontStyle=1;fillColor=#ffffff;strokeColor=#b91c1c;strokeWidth=2;fontColor=#b91c1c;align=center;verticalAlign=middle;spacing=0;">
+        <mxGeometry x="17.0" y="607.0" width="36" height="36" as="geometry" />
+      </mxCell>
+      <mxCell id="demo-D-left" parent="demo-lane-1" vertex="1" value="D" style="ellipse;html=1;fontFamily=Helvetica;fontSize=22;fontStyle=1;fillColor=#ffffff;strokeColor=#b91c1c;strokeWidth=2;fontColor=#b91c1c;align=center;verticalAlign=middle;spacing=0;">
+        <mxGeometry x="1347.0" y="892.0" width="36" height="36" as="geometry" />
+      </mxCell>
+      <mxCell id="demo-D-right" parent="demo-lane-2" vertex="1" value="D" style="ellipse;html=1;fontFamily=Helvetica;fontSize=22;fontStyle=1;fillColor=#ffffff;strokeColor=#b91c1c;strokeWidth=2;fontColor=#b91c1c;align=center;verticalAlign=middle;spacing=0;">
+        <mxGeometry x="17.0" y="892.0" width="36" height="36" as="geometry" />
+      </mxCell>
+      <mxCell id="demo-continuity-key" parent="ov-layer" vertex="1" value="&lt;b&gt;BẢN DEMO — Ghép các ký hiệu giống nhau khi đọc hai phần&lt;/b&gt;&lt;br&gt;A–A: phụ thuộc đọc/ghi async tới phần 2; B–B: đầu ra phòng 1; C–C: đầu ra phòng 2.&lt;br&gt;D–D: từ hàng gửi ở phần 2 trở lại bộ gửi ở phần 1, rồi cập nhật client.&lt;br&gt;Thread pool, lưu ý thứ tự DB và cleanup dùng chung. Đường ranh lane chỉ chia vùng trình bày.&lt;br&gt;Chưa xuất ảnh; vị trí chia, đường nối và bố cục cần được duyệt trước khi chuẩn bị bản chèn Google Docs." style="rounded=1;html=1;whiteSpace=wrap;spacing=16;fillColor=#fff2cc;strokeColor=#667085;fontFamily=Helvetica;fontSize=20;align=left;verticalAlign=middle;">
+        <mxGeometry x="20" y="1870" width="2250" height="210" as="geometry" />
+      </mxCell>
+      <mxCell id="demo-A-bridge" edge="1" parent="ov-layer" source="demo-A-left" target="demo-A-right" value="" style="html=1;whiteSpace=nowrap;fontFamily=Helvetica;fontSize=20;align=center;verticalAlign=middle;edgeStyle=none;rounded=0;strokeWidth=2;labelBackgroundColor=#ffffff;strokeColor=#9673a6;fontColor=#9673a6;dashed=1;endArrow=none;endFill=1;startArrow=none;exitX=1;exitY=0.5;entryX=0;entryY=0.5;labelWidth=130;">
+        <mxGeometry relative="1" x="0" as="geometry" />
+      </mxCell>
+      <mxCell id="demo-A-out" edge="1" parent="ov-layer" source="demo-A-right" target="ov-persistence" value="" style="html=1;whiteSpace=nowrap;fontFamily=Helvetica;fontSize=20;align=center;verticalAlign=middle;edgeStyle=none;rounded=0;strokeWidth=2;labelBackgroundColor=#ffffff;strokeColor=#9673a6;fontColor=#9673a6;dashed=1;endArrow=block;endFill=1;startArrow=none;exitX=1;exitY=0.5;entryX=0;entryY=0.5;labelWidth=130;">
+        <mxGeometry relative="1" x="0" as="geometry" />
+      </mxCell>
+      <mxCell id="demo-B-bridge" edge="1" parent="ov-layer" source="demo-B-left" target="demo-B-right" value="" style="html=1;whiteSpace=nowrap;fontFamily=Helvetica;fontSize=20;align=center;verticalAlign=middle;edgeStyle=none;rounded=0;strokeWidth=2;labelBackgroundColor=#ffffff;strokeColor=#667085;fontColor=#334155;dashed=0;endArrow=none;endFill=1;startArrow=none;exitX=1;exitY=0.5;entryX=0;entryY=0.5;labelWidth=130;">
+        <mxGeometry relative="1" x="0" as="geometry" />
+      </mxCell>
+      <mxCell id="demo-B-out" edge="1" parent="ov-layer" source="demo-B-right" target="ov-events" value="&lt;div style=&quot;width:170px;white-space:nowrap;text-align:center&quot;&gt;Sự kiện đã lọc&lt;/div&gt;" style="html=1;whiteSpace=nowrap;fontFamily=Helvetica;fontSize=20;align=center;verticalAlign=middle;edgeStyle=none;rounded=0;strokeWidth=2;labelBackgroundColor=#ffffff;strokeColor=#667085;fontColor=#334155;dashed=0;endArrow=block;endFill=1;startArrow=none;exitX=1;exitY=0.5;entryX=0.5;entryY=0;labelWidth=170;">
+        <mxGeometry relative="1" x="-1" as="geometry">
+          <mxPoint x="107.0" y="35.0" as="offset" />
+          <Array as="points">
+            <mxPoint x="1690" y="675" />
+          </Array>
+        </mxGeometry>
+      </mxCell>
+      <mxCell id="demo-C-bridge" edge="1" parent="ov-layer" source="demo-C-left" target="demo-C-right" value="" style="html=1;whiteSpace=nowrap;fontFamily=Helvetica;fontSize=20;align=center;verticalAlign=middle;edgeStyle=none;rounded=0;strokeWidth=2;labelBackgroundColor=#ffffff;strokeColor=#667085;fontColor=#334155;dashed=0;endArrow=none;endFill=1;startArrow=none;exitX=1;exitY=0.5;entryX=0;entryY=0.5;labelWidth=130;">
+        <mxGeometry relative="1" x="0" as="geometry" />
+      </mxCell>
+      <mxCell id="demo-C-out" edge="1" parent="ov-layer" source="demo-C-right" target="ov-events" value="&lt;div style=&quot;width:170px;white-space:nowrap;text-align:center&quot;&gt;Sự kiện đã lọc&lt;/div&gt;" style="html=1;whiteSpace=nowrap;fontFamily=Helvetica;fontSize=20;align=center;verticalAlign=middle;edgeStyle=none;rounded=0;strokeWidth=2;labelBackgroundColor=#ffffff;strokeColor=#667085;fontColor=#334155;dashed=0;endArrow=block;endFill=1;startArrow=none;exitX=1;exitY=0.5;entryX=0;entryY=0.75;labelWidth=170;">
+        <mxGeometry relative="1" x="-1" as="geometry">
+          <mxPoint x="127.0" y="80.0" as="offset" />
+        </mxGeometry>
+      </mxCell>
+      <mxCell id="demo-D-bridge" edge="1" parent="ov-layer" source="demo-D-right" target="demo-D-left" value="" style="html=1;whiteSpace=nowrap;fontFamily=Helvetica;fontSize=20;align=center;verticalAlign=middle;edgeStyle=none;rounded=0;strokeWidth=2;labelBackgroundColor=#ffffff;strokeColor=#667085;fontColor=#334155;dashed=0;endArrow=none;endFill=1;startArrow=none;exitX=0;exitY=0.5;entryX=1;entryY=0.5;labelWidth=130;">
+        <mxGeometry relative="1" x="0" as="geometry" />
+      </mxCell>
+      <mxCell id="demo-D-out" edge="1" parent="ov-layer" source="demo-D-left" target="ov-send" value="&lt;div style=&quot;width:180px;white-space:nowrap;text-align:center&quot;&gt;Lấy theo thứ tự&lt;/div&gt;" style="html=1;whiteSpace=nowrap;fontFamily=Helvetica;fontSize=20;align=center;verticalAlign=middle;edgeStyle=none;rounded=0;strokeWidth=2;labelBackgroundColor=#ffffff;strokeColor=#667085;fontColor=#334155;dashed=0;endArrow=block;endFill=1;startArrow=none;exitX=0;exitY=0.5;entryX=1;entryY=0.5;labelWidth=180;">
+        <mxGeometry relative="1" x="-1" as="geometry">
+          <mxPoint x="-317.0" y="-30.0" as="offset" />
+        </mxGeometry>
+      </mxCell>
+    </root>
+  </mxGraphModel>
+</diagram>
 </mxfile>

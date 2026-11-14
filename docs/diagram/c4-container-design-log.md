@@ -176,3 +176,79 @@ Technical references consulted: [SignalR overview](https://learn.microsoft.com/a
 - Reduced page size from 1700 × 2100 to a compact landscape 1600 × 1470. Moved the entire original 696 × 220 legend group below the diagram without changing its contents, size, or internal geometry.
 - Rendered previews exposed clipped actor/database text in the first layout; adjusted actor typography and shape heights, then inspected the corrected final preview. Temporary final PNG: `/tmp/c4-container-balanced-final.png`. Actual readability in the destination Google Doc depends on insertion size and was not tested in Google Docs.
 - Validation passed: XML, unique IDs, references, relative edges, unchanged names/descriptions/technology and label text, unchanged relationships, intact legend contents, and byte-for-byte preservation of all five other pages.
+
+
+## 2026-11-13 — Translate displayed actor types
+
+- Authorization: the user approved Vietnamese label terminology while retaining the C4 term Container and technology names.
+- Files: `c4-model.drawio.xml` (Container displayed actor labels) and this log; shared/export changes are recorded in root `agent.md` and the Context log.
+- Changes: changed displayed type text for `ct-player` and `ct-host` from the Person placeholder to Người dùng. English C4 metadata is retained. Container type labels remain unchanged.
+- Verification: rendered Container preview inspected; both translated labels fit. XML, IDs, references, relative edge geometry, and exact element comparisons passed. Legend and all other Container elements are unchanged. Four other pages are byte-for-byte preserved.
+- Limits: Component already uses Thành phần and concurrency has no applicable English type labels outside legends, so neither needed edits. Legends and historical pages remain unchanged.
+
+
+## 2026-11-14 — Export the current Container diagram without its legend
+
+- Authorization: the user approved the specific proposal for a 2×, tightly cropped, white-background Container PNG without the legend and updates to both logs.
+- Files changed: new `docs/diagram/c4-container.png`, `docs/diagram/c4-container-design-log.md`, and `agent.md`.
+- Method: extracted the current Container page (`7UhaJ9ljh7ebol46HkWr`) to a temporary copy, removed the legend group and descendants only from that copy, and rendered with draw.io 32.6.10 at 2× scale and a 16-unit border. Output dimensions: 3109 × 2377 pixels.
+- Verification: temporary XML parsing, unique IDs, and graph references passed; inspected the PNG for readable labels, intact model content, white background, and absent legend. PNG signature/dimensions checked. SHA-256 comparison confirms the complete source XML is unchanged. `git diff --check` passed.
+- Limits/pending: current diagram exported as-is; Container/Component layout optimization remains deferred. Google Docs insertion/readability at final placement size is not verified. Concurrency review/page-fit/export, report explanations/multi-room walkthrough, implementation/testing evidence, instructor confirmation/failure policies, and final document review remain pending. No application tests required or run.
+
+
+## 2026-11-14 — Remove title and architecture note from the Container export
+
+- Authorization: the user approved an export-only revision removing the top-left title and yellow architecture note, with both logs updated.
+- Files changed: `docs/diagram/c4-container.png`, `docs/diagram/c4-container-design-log.md`, and `agent.md`.
+- Changes: regenerated the 2× white PNG from a temporary Container copy without `ct-title`, `ct-note`, or the previously excluded legend. Output: 3109 × 2277 pixels, cropped with a 16-unit border. All actual model nodes, descriptions, relationships, and the system boundary are preserved.
+- Verification: export-copy XML/IDs/references passed; visually inspected the PNG for the requested removals, readable model labels, and intact crop. Checked PNG signature/dimensions. SHA-256 comparison confirms source `c4-model.drawio.xml` is unchanged. `git diff --check` passed.
+- Limits/pending: removed annotations remain in the editable source. This is an export revision only; Container/Component optimization, concurrency review/page-fit/export, report explanations/evidence, instructor confirmation/failure policies, and final document review remain pending.
+
+
+## 2026-11-14 — Compact the Container export and translate the mode label
+
+- Authorization: the user approved compacting both exports and replacing visible Imposter labels with Kẻ giả mạo, while preserving both editable XML files and font sizes.
+- Files: `c4-container.png` and this log; root `agent.md` records both exports.
+- Changes in the temporary export copy: narrowed the system boundary to 1080 units, recentered actors and the client/server/database column, tightened vertical spacing, and arranged authentication/action/update labels in separate clear columns. Moved the database connector label into clear space. Retained the previous title/note/legend exclusions. Replaced the two visible Imposter occurrences with Kẻ giả mạo.
+- Output: white, 2× PNG with 16-unit border, 2229 × 2247 pixels (previously 3109 × 2277). Source node/arrow fonts and all logical endpoints preserved.
+- Verification: inspected the rendered export for wrapping, clipping, overlaps, and margins. Temporary XML/IDs/references/relative edges, terminology, unchanged font sizes, and original edge endpoints passed. Both source XML SHA-256 hashes are unchanged. `git diff --check` passed.
+- Limits: layout and terminology changes apply to the PNG only; the editable source retains its prior layout and Imposter wording. Container source optimization remains deferred; actual Google Docs placement remains unchecked.
+
+
+## 2026-11-14 — Enlarge export typography and verify A4 portrait fit
+
+- Authorization: the user approved larger fonts in both exports and required Google Docs page fit, preserving source XML and updating both design logs and the shared log.
+- Files: `c4-container.png` and this log; root `agent.md` records both outputs.
+- Changes in the export copy: enlarged actors and connector labels to 18, main container text to 19, and database text to 18, with matching line heights. Actors use 18 rather than the proposed 17 to improve final document readability. Narrowed the boundary to 740 units; moved account and database relationship labels to a left rail and separated gameplay labels in the central gap. Resized/reflowed boxes and preserved all wording, technology names, endpoints, dashed relationships, and Kẻ giả mạo labels. A square boundary corner prevents its outline crossing the system label. Title, yellow note, and legend remain excluded.
+- Output: 1549 × 2357 PNG at 2×, white background, 16-unit border.
+- Verification: inspected final PNG and the Container page of `/tmp/c4-large-type-a4-proofs.pdf`. A4 portrait (594.96 × 841.92 pt), image width 16 cm, margins left 3 cm and others 2 cm; figure height about 24.35 cm, plus caption fits. At this insertion width, smallest body/connector type is about 10.5 pt and main box text about 11.1 pt. XML/IDs/references/relative edges, normalized wording, endpoints, PNG dimensions, source SHA-256, and `git diff --check` passed.
+- Limits: proof verifies physical fit/readability under these settings, not actual insertion into Google Docs. Keep one figure and short caption on its own page, preserving aspect ratio. Source XML remains unchanged; export-only layout/font/terminology differences persist.
+
+
+## 2026-11-14 — Scale down Container visuals while preserving current wording
+
+- Authorization: the user approved the revised Container-only scope: retain current wording, scale down text/arrows, adjust padding/label spacing, and verify overlap and A4 fit. The previously proposed shortened wording was explicitly superseded and was not applied.
+- Files changed: `docs/diagram/c4-container.png`, `docs/diagram/c4-container-design-log.md`, and `agent.md`.
+- Changes in the temporary export copy: rounded the approximately 12% type reduction to 16–17, reduced connector stroke from 1.5 to 1.3 and arrowhead size to 5, tightened box/actor dimensions and padding, and applied consistent dash spacing. Put actor bends above labels, moved account/database routes to clear left rails, and separated gameplay arrow gutters from text. Shifted the boundary below actor labels. Kept every current description/technology string exactly, including long HTTPS/WSS explanations and Kẻ giả mạo.
+- Output: 1549 × 2343, 2× white PNG.
+- Verification: inspected final render and `/tmp/c4-container-scaled-a4.pdf` (A4 portrait, 594.96 × 841.92 pt). At 16 cm width, image height is about 24.20 cm and a caption fits with left 3 cm/other 2 cm margins. XML/IDs/references/relative edges, exact wording/topology comparison, conservative connector-segment/label-bound checks, PNG dimensions, and `git diff --check` passed. SHA-256 checks confirm Context PNG and both repository XML sources are unchanged.
+- Limits/pending: smaller type is about 9.4–10 pt at 16 cm width, trading some text size for the user's requested visual spacing; actual Google Docs insertion remains unchecked. Changes remain export-only. Pending: concurrency review/page-fit/export; deferred source Container/Component layouts; report explanations/evidence; instructor confirmation/failure policies; final document review.
+
+
+## 2026-11-14 — Apply finalized Container descriptions and attach labels to connectors
+
+- Authorization: the user approved the finalized Client/Server/Database and both gameplay-direction descriptions, with explicit thời gian thực wording, and the pending correction attaching labels clearly to their arrows.
+- Files changed: `docs/diagram/c4-container.png`, `docs/diagram/c4-container-design-log.md`, and `agent.md`.
+- Changes in the temporary export copy: applied all five approved descriptions, retaining ASP.NET Core SignalR and other technology labels. Added explicit thời gian thực to the client and both gameplay directions. Centered every relationship label on its own connector with small white backgrounds and visible before/after segments; separated parallel channels and preserved logical endpoints. Enlarged the client box slightly for the approved text and balanced the update label's line breaks. Current scaled-down type, Kẻ giả mạo labels, dashed arrows, white background, and title/note/legend exclusions are retained.
+- Output: 1549 × 2343 PNG at 2×.
+- Verification: exact approved wording comparison (ignoring presentation breaks), technology/topology preservation, own-connector label-axis checks, XML/IDs/references/relative edges, PNG signature/dimensions, and `git diff --check` passed. Inspected final PNG and `/tmp/c4-container-final-wording-a4.pdf`: A4 portrait (594.96 × 841.92 pt), 16 cm image width, about 24.20 cm figure height, caption fits within left 3 cm/other 2 cm margins. Label associations are clear, with no visible text collisions. Hash checks confirm Context PNG and both editable XML files are unchanged.
+- Limits/pending: actual Google Docs insertion remains unchecked; use the verified width/margins and preserve aspect ratio. Source XML retains older wording/layout because this was an export-only change. Pending: concurrency review/page-fit/export; deferred source Container/Component layouts; report explanations/multi-room walkthrough; implementation/testing evidence; instructor confirmation/failure policies; final document review.
+
+
+## 2026-11-14 — Apply the minimal approved Container text changes to XML
+
+- Authorization: the user approved a Container-only source patch covering the five finalized descriptions, Player's Imposter → Kẻ giả mạo wording, and both logs; no layout or PNG changes.
+- Files changed: `docs/diagram/c4-model.drawio.xml`, this log, and root `agent.md`.
+- Changes: updated text attributes on exactly six objects: `ct-client`, `ct-server`, `ct-db`, `ct-e-actions`, `ct-e-updates`, and `ct-player`. Client and both gameplay directions explicitly retain thời gian thực. Updated the two gameplay display templates with the approved HTTPS/WSS wording while preserving their widths, type sizes, and technologies.
+- Verification: parsed XML and checked unique IDs, parent/source/target references, and relative edge geometry on all seven pages. Exact comparison confirms only the approved attributes in six opening tags differ; removing those tags leaves the rest of the file byte-for-byte identical. All geometry, styles, connectors, legends, and six unrelated pages are preserved. Inspected `/tmp/c4-container-minimal-text-review.png`; new descriptions wrap within the existing boxes. `git diff --check` passed.
+- Limits: source layout intentionally remains unchanged and differs from the compact PNG export. No repository image regenerated; no application tests required or run.

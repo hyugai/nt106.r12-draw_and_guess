@@ -1,31 +1,31 @@
-# Quy tắc làm việc trong repository
+# Repository working rules
 
-## Phạm vi
+## Scope
 
-Áp dụng cho toàn bộ repository. Đọc thêm `AGENTS.md` trong thư mục con trước khi làm việc tại đó. Chỉ dẫn trực tiếp của người dùng được ưu tiên khi có xung đột.
+These rules apply to the entire repository. Use only the root-level agent Markdown files: `AGENTS.md` for instructions and `agent.md` for the shared change log. Do not create or rely on nested agent instruction files. Direct user instructions take precedence in case of conflict.
 
-## Đề xuất và phê duyệt trước khi thay đổi
+## Proposals and approval before changes
 
-1. Có thể đọc, tìm kiếm và phân tích tệp để chuẩn bị phương án mà không cần xin phép. Không thực hiện thao tác ghi trong giai đoạn này.
-2. Trước khi tạo, sửa, xóa, đổi tên hoặc di chuyển bất kỳ tệp nào, trình bày phương án để người dùng xem xét. Nêu rõ đường dẫn từng tệp, vấn đề cần giải quyết, nội dung dự kiến, lựa chọn hoặc đánh đổi đáng chú ý và cách kiểm chứng.
-3. Sau khi trình bày phương án, dừng và chờ người dùng phê duyệt rõ ràng. Một yêu cầu chung như “cập nhật sơ đồ” chưa thay thế việc phê duyệt phương án cụ thể; không xem sự im lặng là đồng ý.
-4. Chỉ áp dụng các thay đổi trong phạm vi đã được phê duyệt. Không hỏi lại cho cùng phương án đã được duyệt. Nếu phát sinh tệp hoặc thay đổi ngoài phạm vi, trình bày bổ sung và chờ phê duyệt trước khi thực hiện phần đó.
-5. Giữ nguyên thay đổi sẵn có của người dùng. Không hoàn tác, ghi đè hoặc dọn dẹp tệp ngoài phạm vi được duyệt.
-6. Quy trình này cũng áp dụng cho mã nguồn, tài liệu, sơ đồ, cấu hình và chính các tệp hướng dẫn agent. Không dùng công cụ hoặc lệnh có tác dụng ghi ngầm để bỏ qua bước phê duyệt.
+1. You may read, search, and analyze files to prepare a proposal without permission. Do not perform writes during this preparation stage.
+2. Before creating, modifying, deleting, renaming, or moving any file, present a proposal for the user to review. Identify each file path, the problem to solve, the intended changes, significant choices or tradeoffs, and the verification method.
+3. After presenting the proposal, stop and wait for explicit user approval. A general request such as “update the diagram” does not replace approval of a specific proposal; silence is not consent.
+4. Apply changes only within the approved scope. Do not ask again for the same approved proposal. If additional files or changes become necessary, present a supplementary proposal and wait for approval before applying that part.
+5. Preserve the user's existing changes. Do not revert, overwrite, or clean up files outside the approved scope.
+6. This workflow applies to source code, documentation, diagrams, configuration, and agent instruction files themselves. Do not bypass approval with tools or commands that write implicitly.
 
-## Áp dụng và kiểm chứng
+## Implementation and verification
 
-- Dùng tiếng Anh khi trao đổi và thảo luận phương án với người dùng, bao gồm đề xuất, câu hỏi phê duyệt, cập nhật tiến độ và báo cáo kết quả.
-- Dùng tiếng Việt cho nội dung các tệp đầu ra, bao gồm tài liệu và nhãn sơ đồ, ngoại trừ tệp nhật ký dùng tiếng Anh. Giữ nguyên tên công nghệ, API và định danh cần thiết.
-- Thực hiện kiểm tra phù hợp với thay đổi đã duyệt. Nếu công cụ kiểm tra tạo hoặc sửa tệp trong repository, đưa các đầu ra đó vào phương án trước khi chạy.
-- Phân biệt thiết kế dự kiến, phần đã hiện thực và kết quả đã kiểm chứng. Không tự chốt luật chơi còn mở hoặc tuyên bố kiểm thử thành công khi chưa chạy.
-- Với draw.io, tuân thủ thêm `docs/diagram/AGENTS.md`; kiểm tra XML, ID, tham chiếu và giữ nguyên các trang hoặc chú giải ngoài phạm vi.
+- Use English when communicating and discussing proposals with the user, including proposals, approval questions, progress updates, and completion reports.
+- Use Vietnamese for output file contents, including documentation and diagram labels, except that agent instructions and logs use English. Preserve necessary technology names, API names, and identifiers.
+- Run checks appropriate to the approved changes. If a verification tool creates or modifies files in the repository, include those outputs in the proposal before running it.
+- Distinguish planned design, implemented functionality, and verified results. Do not settle unresolved gameplay rules independently or claim tests passed without running them.
+- For draw.io files, validate XML, IDs, and references, and preserve pages and legends outside the approved scope.
 
-## Nhật ký sau khi thay đổi
+## Logging after changes
 
-- Dùng tệp `agent.md` ở thư mục gốc làm nhật ký chung; không nhầm với `AGENTS.md`, là tệp quy tắc.
-- Viết nội dung nhật ký bằng tiếng Anh, bao gồm `agent.md` và các design log chuyên biệt.
-- Trong mỗi phương án, nêu việc cập nhật `agent.md` cùng các tệp chuyên biệt cần ghi nhật ký. Khi người dùng duyệt phương án đó, cập nhật nhật ký sau khi thực hiện và kiểm chứng; không cần xin duyệt lại cho cùng mục nhật ký đã được nêu.
-- Mỗi mục ghi ngày, yêu cầu hoặc căn cứ phê duyệt, các tệp đã thay đổi, nội dung chính, kết quả kiểm chứng và giới hạn hoặc việc còn chờ.
-- Chỉ nối thêm nhật ký; giữ lịch sử trước đó. Không ghi bí mật, token hoặc thông tin nhạy cảm.
-- Tiếp tục cập nhật các design log chuyên biệt nếu hướng dẫn thư mục yêu cầu; nhật ký chung không thay thế các tệp đó.
+- Use the root-level `agent.md` as the shared change log; do not confuse it with `AGENTS.md`, which contains instructions.
+- Write logs in English, including `agent.md` and specialized design logs.
+- Include updates to `agent.md` and any relevant specialized logs in each proposal. Once the user approves that proposal, update the logs after implementation and verification; do not request approval again for the same proposed log entry.
+- Each entry must record the date, request or approval basis, changed files, main changes, verification results, and limitations or pending work.
+- Append entries only; preserve prior history. Do not log secrets, tokens, or sensitive information.
+- Continue updating specialized design logs when included in the approved scope; the shared log does not replace them. Existing design logs remain project records, not nested agent instruction files.
